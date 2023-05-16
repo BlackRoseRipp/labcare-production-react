@@ -1,4 +1,6 @@
 import { Fragment, useState } from "react";
+import { AiOutlineClockCircle } from "react-icons/ai";
+import { FaArrowRight, FaPhoneSquareAlt } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useLocation } from "react-router-dom";
 import useScrollPosition from "../hooks/useScrollPosition";
@@ -8,7 +10,6 @@ import { pages, routes } from "./routes";
 
 const Navbar = () => {
   const [expanded, setExpanded] = useState(false);
-  const scrollPosition = useScrollPosition();
   const size = useWindowSize();
   const location = useLocation();
   const pathname = location.pathname;
@@ -20,14 +21,37 @@ const Navbar = () => {
     <Fragment>
       <nav
         className={classNames(
-          scrollPosition > 0
-            ? "shadow-[0_2px_12px_0_rgba(0,0,0,0.15)]"
-            : "shadow-none",
           pages.some((page) => page.path === pathname) ? "" : "hidden",
-          "bg-white fixed w-full py-4 px-2 top-0 flex flex-col justify-center items-center transition-all z-50"
+          "bg-blue-primary w-full py-4 px-2 flex flex-col justify-center items-center z-50"
         )}
       >
-        <div className="md:container flex flex-wrap justify-between items-center md:mx-auto w-full">
+        <div className="max-w-6xl mx-auto flex jusity-between items-center w-full">
+          <div className="flex items-center gap-6">
+            <a
+              href="tel:(888)LABQ-247"
+              className="text-white hover:text-blue-500 flex items-center text-xs"
+            >
+              <FaPhoneSquareAlt className="text-xl pr-2" />
+              (888) LABQ-247
+            </a>
+            <div className="flex items-center">
+              <AiOutlineClockCircle className="text-white text-2xl pr-2" />
+              <p className="text-white text-xs">24/7</p>
+            </div>
+          </div>
+          <div className="flex itemx-center"></div>
+        </div>
+      </nav>
+      <nav
+        className={classNames(
+          pages.some((page) => page.path === pathname) ? "" : "hidden",
+          "bg-white w-full py-4 px-2 flex flex-col justify-center items-center z-50"
+        )}
+      >
+        <div className="max-w-6xl flex justify-between items-center mx-auto w-full">
+          <a href="/" className="w-44">
+            <img src="/img/LabQ-Logo-1.svg" className="w-full" alt="Logo" />
+          </a>
           <button
             data-toggle="navbar"
             onClick={() => setExpanded(!expanded)}
@@ -39,31 +63,112 @@ const Navbar = () => {
             <GiHamburgerMenu />
           </button>
           <div className="flex">
-            <h1 className="logo text-green xl:text-6xl md:text-5xl text-3xl font-bold">
-              The Shalvah
-            </h1>
             <ul
               className={classNames(
                 size.width < 1024 ? "hidden" : "",
-                "flex flex-row justify-evenly items-center grow rounded-lg ml-4"
+                "flex flex-row justify-center items-center grow rounded-lg ml-4"
               )}
             >
               <li>
-                <NavButton to="/" primary="Home" />
+                <NavButton
+                  to="#"
+                  primary="Patient"
+                  dropdownLinks={[
+                    {
+                      primary: "Patient Portal",
+                      to: "https://app.labq.com",
+                    },
+                    {
+                      primary: "Locations",
+                      to: "#",
+                    },
+                    {
+                      primary: "Tests",
+                      to: "/tests",
+                    },
+                    {
+                      primary: "Appointment",
+                      to: "/appointment",
+                    },
+                    {
+                      primary: "Insurance",
+                      to: "/insurance",
+                    },
+                    {
+                      primary: "Billing",
+                      to: "/billing",
+                    },
+                    {
+                      primary: "Pay Your Bill",
+                      to: "https://www.firstaccept.net/labq5",
+                    },
+                  ]}
+                />
               </li>
               <li>
-                <NavButton to="/plans" primary="Plans" />
+                <NavButton
+                  to="#"
+                  primary="Doctor"
+                  dropdownLinks={[
+                    {
+                      primary: "Forms",
+                      to: "/forms",
+                    },
+                    {
+                      primary: "Insurance",
+                      to: "/insurance",
+                    },
+                    {
+                      primary: "Supplies",
+                      to: "/supplies",
+                    },
+                    {
+                      primary: "Tests",
+                      to: "/tests",
+                    },
+                    {
+                      primary: "Doctor's Portal",
+                      to: "https://labq.labsvc.net/labgen/",
+                    },
+                  ]}
+                />
               </li>
               <li>
-                <NavButton to="/contact" primary="Contact" />
+                <NavButton to="/services" primary="Services" />
+              </li>
+              <li>
+                <NavButton
+                  to="#"
+                  primary="About"
+                  dropdownLinks={[
+                    {
+                      primary: "About Us",
+                      to: "/about",
+                    },
+                    {
+                      primary: "Accredition & Licensing",
+                      to: "/accredition-licensing",
+                    },
+                    {
+                      primary: "News",
+                      to: "/news",
+                    },
+                  ]}
+                />
+              </li>
+              <li>
+                <NavButton to="/careers" primary="Careers" />
+              </li>
+              <li>
+                <NavButton to="/contact-us" primary="Contact" />
               </li>
             </ul>
           </div>
           <a
             href="#"
-            className="btn-primary text-white bg-green hover:bg-amber md:text-xl"
+            className="btn-primary text-blue-primary border-blue-primary border flex items-center font-semibold"
           >
-            Reserve
+            Covid-19 Testing <FaArrowRight className="ml-2 text-lg" />
           </a>
         </div>
         <div

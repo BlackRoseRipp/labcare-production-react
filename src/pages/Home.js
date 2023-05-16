@@ -24,7 +24,7 @@ const Home = () => {
               </a>
             </div>
           </div>
-          <div className="bg-[url(../public/img/pexels-ivan-rivero-1001965.jpg)] bg-cover bg-center bg-no-repeat lg:block hidden"></div>
+          <div className=" bg-cover bg-center bg-no-repeat lg:block hidden"></div>
           <div className="lg:hidden block container mx-auto">
             <img
               className="w-full rounded-xl mx-2 mb-6"
@@ -64,7 +64,7 @@ const Home = () => {
         </div>
       </section>
       <section className="py-32 container mx-auto">
-        <div className="bg-[url(../public/img/patterns/dots-background-1.png)] bg-cover rounded-lg max-w-6xl lg:mx-auto mx-2">
+        <div className=" bg-cover rounded-lg max-w-6xl lg:mx-auto mx-2">
           <div className="p-12 bg-green/10">
             <div className="border-amber border w-16 my-4 mx-auto"></div>
             <h2 className="heading text-5xl text-dark-green font-semibold text-center mb-12">
@@ -172,7 +172,7 @@ const Home = () => {
           About Happy Mothers
         </h2>
         <div className="max-w-6xl mx-auto bg-green/10 rounded-lg overflow-hidden grid lg:grid-cols-2">
-          <div className="bg-[url(../public/img/image-001.jpg)] bg-cover lg:bg-right bg-right-top lg:py-32 py-48"></div>
+          <div className=" bg-cover lg:bg-right bg-right-top lg:py-32 py-48"></div>
           <div className="p-4">
             <div className="bg-white lg:ml-[-36px] rounded-lg z-10 p-4">
               <p className="text-lg font-medium">

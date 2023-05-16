@@ -69,7 +69,7 @@ a {
 
 @media screen and (max-width: 1024px) {
   .btn-primary {
-    @apply py-1 px-3 rounded-md;
+    @apply py-3 px-6 rounded-md;
   }
 
   .banner {
