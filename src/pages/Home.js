@@ -1,8 +1,16 @@
 import { Fragment } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
-import { BsCheck2 } from "react-icons/bs";
-import { FaHandHoldingHeart, FaRegClock } from "react-icons/fa";
+import { BsCheck2, BsStarFill, BsStarHalf, BsStar } from "react-icons/bs";
+import {
+  FaHandHoldingHeart,
+  FaRegClock,
+  FaFacebook,
+  FaMapMarkedAlt,
+} from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 import { IoIosBed } from "react-icons/io";
+import { IoRibbonOutline } from "react-icons/io5";
+import { BiRun } from "react-icons/bi";
 import LAB_SPECIALTIES from "../store/LAB_SPECIALTIES.json";
 
 const Home = () => {
@@ -110,8 +118,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="py-32 container mx-auto">
-        <h2 className="heading text-4xl font-semibold text-center">
+      <section className="py-16 container mx-auto">
+        <h2 className="heading text-4xl font-semibold text-center mb-16">
           Lab Specialties
         </h2>
         <div className="grid grid-cols-4 w-full">
@@ -119,7 +127,7 @@ const Home = () => {
             <div
               className={classNames(
                 num.includes(i) ? "bg-[#F4F9FF]" : "bg-white",
-                "flex flex-col justify-center py-5 px-8"
+                "flex flex-col justify-center py-5 px-8 hover:shadow-[0_0_12px_0_rgba(0,0,0,0.25)] hover:z-30"
               )}
             >
               <img
@@ -130,152 +138,110 @@ const Home = () => {
             </div>
           ))}
         </div>
-      </section>
-      <section className="py-32 container mx-auto">
-        <div className=" bg-cover rounded-lg max-w-6xl lg:mx-auto mx-2">
-          <div className="p-12 bg-green/10">
-            <div className="border-amber border w-16 my-4 mx-auto"></div>
-            <h2 className="heading text-5xl text-dark-green font-semibold text-center mb-12">
-              We're here for you,
-              <br />
-              And your baby
-            </h2>
-            <div className="grid lg:grid-cols-3 gap-x-4 gap-y-8 pt-4">
-              <div className="flex flex-col justify-start items-center">
-                <FaRegClock className="text-6xl text-dark-green" />
-                <h4 className="text-2xl heading text-center font-semibold mt-4">
-                  24/7 Assistance
-                </h4>
-                <p className="text-center font-medium text-sm mt-4">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Eu turpis egestas pretium aenean pharetra magna ac. Accumsan
-                  lacus vel facilisis volutpat est.
-                </p>
+        <div className="max-w-screen-lg mx-auto flex items-center gap-x-16 my-16">
+          <h2 className="text-2xl font-medium">
+            What Our Patients Say About Us!
+          </h2>
+          <div className="shadow-md bg-white p-2 flex items-center hover:bg-slate-100 border-t-4 border-green-400 gap-x-4">
+            <FcGoogle className="w-[44px] h-[44px]" />
+            <div className="flex flex-col justify-center">
+              <p className="text-sm text-neutral-700">Google Rating</p>
+              <div className="flex items-center">
+                <span className="text-orange-500 text-xl mr-2">4.5</span>
+                <BsStarFill className="text-orange-500 w-[18px] h-[18px] mr-1" />
+                <BsStarFill className="text-orange-500 w-[18px] h-[18px] mr-1" />
+                <BsStarFill className="text-orange-500 w-[18px] h-[18px] mr-1" />
+                <BsStarFill className="text-orange-500 w-[18px] h-[18px] mr-1" />
+                <BsStarHalf className="text-orange-500 w-[18px] h-[18px] mr-1" />
               </div>
-              <div className="flex flex-col justify-start items-center">
-                <FaHandHoldingHeart className="text-6xl text-dark-green" />
-                <h4 className="text-2xl heading text-center font-semibold mt-4">
-                  Flexible Care
-                </h4>
-                <p className="text-center font-medium text-sm mt-4">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Eu turpis egestas pretium aenean pharetra magna ac. Accumsan
-                  lacus vel facilisis volutpat est.
-                </p>
+              <p className="text-sm text-neutral-500">Based on 1506 reviews</p>
+            </div>
+          </div>
+          <div className="shadow-md bg-white p-2 flex items-center hover:bg-slate-100 border-t-4 border-green-400 gap-x-4">
+            <FaFacebook className="w-[44px] h-[44px] text-[#3c5b9b]" />
+            <div className="flex flex-col justify-center">
+              <p className="text-sm text-neutral-700">Facebook Rating</p>
+              <div className="flex items-center">
+                <span className="text-[#3c5b9b] text-xl mr-2">3.7</span>
+                <BsStarFill className="text-[#3c5b9b] w-[18px] h-[18px] mr-1" />
+                <BsStarFill className="text-[#3c5b9b] w-[18px] h-[18px] mr-1" />
+                <BsStarFill className="text-[#3c5b9b] w-[18px] h-[18px] mr-1" />
+                <BsStarHalf className="text-[#3c5b9b] w-[18px] h-[18px] mr-1" />
+                <BsStar className="text-[#3c5b9b] w-[18px] h-[18px] mr-1" />
               </div>
-              <div className="flex flex-col justify-start items-center">
-                <IoIosBed className="text-6xl text-dark-green" />
-                <h4 className="text-2xl heading text-center font-semibold mt-4">
-                  Comfortable Lodging
-                </h4>
-                <p className="text-center font-medium text-sm mt-4">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Eu turpis egestas pretium aenean pharetra magna ac. Accumsan
-                  lacus vel facilisis volutpat est.
-                </p>
-              </div>
+              <p className="text-sm text-neutral-500">Based on 1506 reviews</p>
             </div>
           </div>
         </div>
       </section>
-      <section className="container mx-auto py-32">
-        <div className="grid lg:grid-cols-2 gap-x-4 gap-y-8">
-          <div className="flex flex-col justify-center items-center lg:items-end">
-            <div className="max-w-xl flex flex-col justify-center items-center lg:items-start">
-              <div className="border-amber border w-16 my-4 lg:mx-0 mx-auto"></div>
-              <h2 className="heading text-4xl text-green font-semibold lg:text-start text-center mb-12">
-                What to expect from your visit
-              </h2>
-              <p className="max-w-md text-lg font-medium mb-4 lg:text-start text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      <section className="grid grid-cols-2">
+        <div className="bg-[#F4F9FF] flex flex-col items-end justify-center gap-y-8 p-2">
+          <div className="flex group max-w-md">
+            <BiRun className="text-amber-400 bg-orange-200 rounded-full shrink-0 w-[50px] h-[50px] p-2" />
+            <div className="flex flex-col w-fit ml-4">
+              <h3 className="group-hover:text-blue-secondary text-neutral-800 text-2xl font-medium transition-all duration-300">
+                It's about time.
+              </h3>
+              <p>
+                Waiting for test results has got to be the most nerve wracking
+                experience of all time. Which is why speed takes a center stage
+                at LabQ. We’re proud to have one of the fastest turnaround track
+                record in the entire Tri State area, so that you can hold the
+                test results in your hands within a few hours from the time it
+                was administered. What does that mean for you?{" "}
+                <span className="font-bold">Fast results.</span>
               </p>
-              <div className="flex flex-col w-fit lg:mx-0 mx-auto">
-                <div className="flex my-1">
-                  <BsCheck2 className="text-green text-3xl" />
-                  <p className="text-lg font-medium ml-2">
-                    24/7 Care Team for mom and baby
-                  </p>
-                </div>
-                <div className="flex my-1">
-                  <BsCheck2 className="text-green text-3xl" />
-                  <p className="text-lg font-medium ml-2">24/7 Baby Room</p>
-                </div>
-                <div className="flex my-1">
-                  <BsCheck2 className="text-green text-3xl" />
-                  <p className="text-lg font-medium ml-2">Mother’s Lounge</p>
-                </div>
-                <div className="flex my-1">
-                  <BsCheck2 className="text-green text-3xl" />
-                  <p className="text-lg font-medium ml-2">Recovery Support</p>
-                </div>
-                <div className="flex my-1">
-                  <BsCheck2 className="text-green text-3xl" />
-                  <p className="text-lg font-medium ml-2">Nutritious Meals</p>
-                </div>
-                <div className="flex my-1">
-                  <BsCheck2 className="text-green text-3xl" />
-                  <p className="text-lg font-medium ml-2">
-                    Therapeutic Services
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
-          <div className="flex items-center justify-center">
-            <img
-              className="rounded-lg lg:w-3/5 w-96"
-              src="/img/Brasserie-final-large-7-683x1024.jpg"
-              alt="Your visit"
-            />
+          <div className="flex group max-w-md">
+            <IoRibbonOutline className="text-red-500 bg-red-300 rounded-full shrink-0 w-[50px] h-[50px] p-2" />
+            <div className="flex flex-col w-fit ml-4">
+              <h3 className="group-hover:text-blue-secondary text-neutral-800 text-2xl font-medium transition-all duration-300">
+                Higher accuracy
+              </h3>
+              <p>
+                We understand that diagnostics requires accuracy. With a fully
+                automated process, it significantly reduces the mistake margin.
+                Your specimen will not pass multiple checkpoints, nor will it
+                get handled by numerous technicians. What does that mean for
+                you? <span className="font-bold">Reliable results.</span>
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
-      <section className="container mx-auto py-32">
-        <div className="border-amber border w-16 my-4 mx-auto"></div>
-        <h2 className="heading text-4xl text-green font-semibold text-center mb-12">
-          About Happy Mothers
-        </h2>
-        <div className="max-w-6xl mx-auto bg-green/10 rounded-lg overflow-hidden grid lg:grid-cols-2">
-          <div className=" bg-cover lg:bg-right bg-right-top lg:py-32 py-48"></div>
-          <div className="p-4">
-            <div className="bg-white lg:ml-[-36px] rounded-lg z-10 p-4">
-              <p className="text-lg font-medium">
-                Our Happy Mothers experience is a unique area dedicated to
-                providing products and services that cater to the needs of
-                mother’s of newborns. Our mission is to make their lives
-                easierand happier by offering a wide range of products and
-                services.
-                <br />
-                <br />
-                Self-Care for Moms - Moms often forget to take care of
-                themselves while taking care of their families.
-                <br />
-                <br />
-                Breatfeeding Counselor - Our lactation consultants conduct daily
-                sessions to guide and educate breastfeeding mothers and their
-                most priciest babies.
-                <br />
-                <br />
-                Tailored Infact Services - With personalized baby care we can
-                make sure your orders and bab’y needs are followed to even the
-                most demanding mother and child. Caring for your baby like your
-                bubbie would.
+          <div className="flex group max-w-md">
+            <FaMapMarkedAlt className="text-green-500 bg-green-600/30 rounded-full shrink-0 w-[50px] h-[50px] p-2 overflow-visible" />
+            <div className="flex flex-col w-fit ml-4">
+              <h3 className="group-hover:text-blue-secondary text-neutral-800 text-2xl font-medium transition-all duration-300">
+                Right on track.
+              </h3>
+              <p>
+                Nothing should ever get lost in the shuffle. Especially
+                something as valuable as your specimen. Through a sophisticated
+                tracking system, we keep tabs on your specimen and can track it
+                during various stages. What does that mean for you?{" "}
+                <span className="font-bold">Complete transparency.</span>
+              </p>
+            </div>
+          </div>
+          <div className="flex group max-w-md">
+            <BiRun className="text-amber-400 bg-orange-200 rounded-full shrink-0 w-[50px] h-[50px] p-2" />
+            <div className="flex flex-col w-fit ml-4">
+              <h3 className="group-hover:text-blue-secondary text-neutral-800 text-2xl font-medium transition-all duration-300">
+                It's about time.
+              </h3>
+              <p>
+                Waiting for test results has got to be the most nerve wracking
+                experience of all time. Which is why speed takes a center stage
+                at LabQ. We’re proud to have one of the fastest turnaround track
+                record in the entire Tri State area, so that you can hold the
+                test results in your hands within a few hours from the time it
+                was administered. What does that mean for you?{" "}
+                <span className="font-bold">Fast results.</span>
               </p>
             </div>
           </div>
         </div>
-        <div className="text-center mt-12">
-          <a
-            href="#"
-            className="btn-primary text-green bg-transparent border-2 border-green hover:bg-amber hover:text-white hover:border-amber font-medium text-xl mt-8"
-          >
-            Make a Reservation Now
-          </a>
-        </div>
+        <div className="flex flex-col items-center justify-center"></div>
       </section>
     </Fragment>
   );
