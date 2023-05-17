@@ -15,7 +15,7 @@ const PageNotFound = () => {
             <div className="text-center my-12">
               <a
                 href="/"
-                className="btn-primary uppercase text-white font-medium border-2 border-white hover:bg-amber hover:border-amber text-2xl"
+                className="btn-primary uppercase text-blue-primary bg-white font-medium border-2 border-white text-2xl"
               >
                 Return Home
               </a>

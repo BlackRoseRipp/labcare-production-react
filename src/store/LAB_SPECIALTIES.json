@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Clinical Chemistry",
+    "icon": "home-icon-1.svg"
+  },
+  {
+    "title": "Diagnostic Immunology",
+    "icon": "home-icon-2.svg"
+  },
+  {
+    "title": "Bacteriology",
+    "icon": "home-icon-3.svg"
+  },
+  {
+    "title": "Cytopathology",
+    "icon": "home-icon-4.svg"
+  },
+  {
+    "title": "Endocrinology",
+    "icon": "home-icon-5.svg"
+  },
+  {
+    "title": "Hemotology",
+    "icon": "home-icon-6.svg"
+  },
+  {
+    "title": "Parasitology",
+    "icon": "home-icon-7.svg"
+  },
+  {
+    "title": "Clinical Toxicology",
+    "icon": "home-icon-8.svg"
+  },
+  {
+    "title": "Substance Monitoring",
+    "icon": "home-icon-9.svg"
+  },
+  {
+    "title": "Virology",
+    "icon": "home-icon-10.svg"
+  },
+  {
+    "title": "Oncology",
+    "icon": "home-icon-11.svg"
+  },
+  {
+    "title": "COVID-19",
+    "icon": "home-icon-12.svg"
+  }
+]

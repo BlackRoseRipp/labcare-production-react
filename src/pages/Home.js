@@ -1,66 +1,134 @@
 import { Fragment } from "react";
+import { AiOutlineSearch } from "react-icons/ai";
 import { BsCheck2 } from "react-icons/bs";
 import { FaHandHoldingHeart, FaRegClock } from "react-icons/fa";
 import { IoIosBed } from "react-icons/io";
+import LAB_SPECIALTIES from "../store/LAB_SPECIALTIES.json";
 
 const Home = () => {
+  const classNames = (...classes) => {
+    return classes.filter(Boolean).join(" ");
+  };
+  const num = [1, 3, 4, 6, 9, 11];
   return (
     <Fragment>
-      <section className="banner">
-        <div className="bg-green grid lg:grid-cols-2">
-          <div className="px-16 lg:py-32 py-16 flex items-center justify-start">
-            <div className="flex flex-col items-start justify-center xl:w-5/6 w-full">
-              <h1 className="heading text-white font-semibold text-5xl my-4">
-                Postnatal Care Begins Here
-              </h1>
-              <h3 className="heading text-white font-medium text-4xl my-4">
-                Feeling rested, rejuvenated and re-energized at our facility
+      <section className="bg-[url(../public/img/landing22.jpg)] bg-cover bg-center bg-no-repeat">
+        <div className="flex flex-col items-center justify-center py-5 max-w-screen-lg mx-auto">
+          <h1 className="heading text-blue-primary font-semibold text-5xl text-center my-4">
+            COVID-19 Mobile Testing Services
+          </h1>
+          <div className="bg-amber-300 p-3">
+            <p className="text-lg font-medium text-center">
+              ** Please note: Beginning May 10th, a prescription from your
+              Doctor will be required for covid testing.
+            </p>
+          </div>
+          <div className="grid grid-cols-4 gap-4 max-w-[725px] mx-auto my-12">
+            <div className="rounded-lg bg-white flex flex-col items-center justify-center w-full px-1 py-2">
+              <img className="w-[100px]" src="/img/icons/Asset-4mdpi.png" />
+              <h3 className="text-blue-secondary text-2xl text-center ">
+                PCR Test
               </h3>
-              <a
-                href="#"
-                className="btn-primary text-white bg-transparent border-2 border-amber hover:bg-amber font-medium text-xl mt-8"
-              >
-                Get Started
-              </a>
+            </div>
+            <div className="rounded-lg bg-white flex flex-col items-center justify-center w-full px-1 py-2">
+              <img className="w-[100px]" src="/img/icons/Asset-5mdpi.png" />
+              <h3 className="text-blue-secondary text-2xl text-center ">
+                Antigen
+              </h3>
+            </div>
+            <div className="rounded-lg bg-white flex flex-col items-center justify-center w-full px-1 py-2">
+              <img className="w-[100px]" src="/img/icons/Asset-6mdpi.png" />
+              <h3 className="text-blue-secondary text-2xl text-center ">
+                Antibody
+              </h3>
+            </div>
+            <div className="rounded-lg bg-white flex flex-col items-center justify-center w-full px-1 py-2">
+              <img className="w-[100px]" src="/img/icons/flu-rsv.png" />
+              <h3 className="text-blue-secondary text-2xl text-center ">
+                Winter Panel
+              </h3>
+              <p className="text-blue-secondary text-center">PCR + FLU + RSV</p>
             </div>
           </div>
-          <div className=" bg-cover bg-center bg-no-repeat lg:block hidden"></div>
-          <div className="lg:hidden block container mx-auto">
-            <img
-              className="w-full rounded-xl mx-2 mb-6"
-              src="/img/pexels-ivan-rivero-1001965.jpg"
-              alt="Hotel Shalvah"
-            />
+          <div className="flex items-center justify-center gap-8">
+            <p className="text-blue-primary text-xl">
+              Find a Testing Location Near You
+            </p>
+            <a
+              href="/covid-mobile-testing"
+              className="btn-primary border-blue-primary text-blue-primary border flex items-center justify-center"
+            >
+              <AiOutlineSearch className="mr-2" />
+              Search
+            </a>
+          </div>
+        </div>
+        <div className="bg-black/20 max-w-screen-xl rounded-lg mx-auto mt-12 py-4 px-12">
+          <div className="grid grid-cols-3 gap-8">
+            <div className="flex items-center justify-end border-r border-white">
+              <a
+                href="#"
+                className="flex items-center w-fit text-white font-semibold px-4 text-2xl"
+              >
+                <img
+                  src="/img/icons/untitled-1-022-01.svg"
+                  className="h-[50px] w-auto mr-4"
+                />
+                <span className="hover:text-slate-100 transition-all">
+                  COVID Testing
+                </span>
+              </a>
+            </div>
+            <div className="flex items-center justify-center">
+              <a
+                href="#"
+                className="flex items-center w-fit text-white font-semibold px-4 text-2xl"
+              >
+                <img
+                  src="/img/icons/labq-icon.png"
+                  className="h-[50px] w-auto mr-4"
+                />
+                <span className="hover:text-slate-100 transition-all">
+                  Automation & Innovation
+                </span>
+              </a>
+            </div>
+            <div className="flex items-center justify-start border-l border-white">
+              <a
+                href="#"
+                className="flex items-center w-fit text-white font-semibold px-4 text-2xl"
+              >
+                <img
+                  src="/img/icons/flu-rsv-icon.png"
+                  className="h-[50px] w-auto mr-4"
+                />
+                <span className="hover:text-slate-100 transition-all">
+                  FLU & RSV
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
       <section className="py-32 container mx-auto">
-        <div className="grid lg:grid-cols-2 gap-8">
-          <div className="lg:order-1 order-2 flex items-center justify-center">
-            <img
-              className="rounded-lg lg:w-3/5 w-96"
-              src="/img/pexels-laura-garcia-3398675.jpg"
-              alt="Mother caring for her baby"
-            />
-          </div>
-          <div className="flex flex-col lg:items-start items-center justify-center lg:order-2 order-1">
-            <div className="border-amber border w-16 my-4"></div>
-            <h2 className="heading text-4xl font-semibold text-green mb-4">
-              Childbirth is difficult
-            </h2>
-            <p className="max-w-md text-lg font-medium mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Cras
-              semper auctor neque vitae tempus quam. Purus sit amet volutpat
-              consequat mauris nunc congue nisi vitae.
-            </p>
-            <a
-              href="#contact"
-              className="btn-primary border-2 border-green text-green hover:text-white hover:bg-amber hover:border-amber mt-4 font-medium text-lg"
+        <h2 className="heading text-4xl font-semibold text-center">
+          Lab Specialties
+        </h2>
+        <div className="grid grid-cols-4 w-full">
+          {LAB_SPECIALTIES.map((e, i) => (
+            <div
+              className={classNames(
+                num.includes(i) ? "bg-[#F4F9FF]" : "bg-white",
+                "flex flex-col justify-center py-5 px-8"
+              )}
             >
-              Find Out More
-            </a>
-          </div>
+              <img
+                src={"/img/icons/" + e.icon}
+                className="w-[78px] h-[78px] hover:scale-110 transition-all duration-300 rounded-full border border-black hover:border-sky-400 p-3"
+              />
+              <h3 className="text-2xl mt-6">{e.title}</h3>
+            </div>
+          ))}
         </div>
       </section>
       <section className="py-32 container mx-auto">
