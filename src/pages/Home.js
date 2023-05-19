@@ -271,7 +271,7 @@ const Home = () => {
                 </div>
                 <div className="flex flex-col justify-center">
                   <a
-                    href="/category/news"
+                    href="/news"
                     className="rounded-full py-1 px-4 text-xs font-medium text-blue-secondary border border-black w-fit"
                   >
                     News
