@@ -78,12 +78,7 @@ function NavButton(props) {
     ) : (
       <div className="relative">
         <a
-          className={classNames(
-            path === to || activeDropdownLink
-              ? "border-sky-400"
-              : "border-transparent hover:border-sky-400",
-            "peer group bg-transparent py-2 px-5 transition-all flex items-center font-medium border-b-[3px]"
-          )}
+          className="border-transparent hover:border-sky-400 peer group bg-transparent py-2 px-5 transition-all flex items-center font-medium border-b-[3px]"
           href={to}
         >
           {primary}

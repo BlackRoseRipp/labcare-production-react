@@ -121,7 +121,7 @@ const Home = () => {
             <div
               className={classNames(
                 num.includes(i) ? "bg-[#F4F9FF]" : "bg-white",
-                "flex flex-col justify-center py-5 px-8 hover:shadow-[0_0_12px_0_rgba(0,0,0,0.25)] hover:z-30"
+                "flex flex-col justify-center py-5 px-8 hover:shadow-[0_0_12px_0_rgba(0,0,0,0.25)] hover:z-30 transition-all"
               )}
             >
               <img
@@ -136,7 +136,7 @@ const Home = () => {
           <h2 className="text-2xl font-medium">
             What Our Patients Say About Us!
           </h2>
-          <div className="shadow-md bg-white p-2 flex items-center hover:bg-slate-100 border-t-4 border-green-400 gap-x-4">
+          <div className="shadow-md bg-white p-2 flex items-center hover:bg-slate-100 border-t-4 border-green-400 gap-x-4 transition-all">
             <FcGoogle className="w-[44px] h-[44px]" />
             <div className="flex flex-col justify-center">
               <p className="text-sm text-neutral-700">Google Rating</p>
@@ -151,7 +151,7 @@ const Home = () => {
               <p className="text-sm text-neutral-500">Based on 1506 reviews</p>
             </div>
           </div>
-          <div className="shadow-md bg-white p-2 flex items-center hover:bg-slate-100 border-t-4 border-green-400 gap-x-4">
+          <div className="shadow-md bg-white p-2 flex items-center hover:bg-slate-100 border-t-4 border-green-400 gap-x-4 transition-all">
             <FaFacebook className="w-[44px] h-[44px] text-[#3c5b9b]" />
             <div className="flex flex-col justify-center">
               <p className="text-sm text-neutral-700">Facebook Rating</p>
@@ -310,7 +310,6 @@ const Home = () => {
                 alt="Camera"
               />
             </div>
-            <!--Third item-->
             <div
               className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
               data-te-carousel-item
