@@ -4,12 +4,14 @@ import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 const Home = React.lazy(() => import("../pages/Home"));
 const Tests = React.lazy(() => import("../pages/Tests"));
 const Insurance = React.lazy(() => import("../pages/Insurance"));
+const Services = React.lazy(() => import("../pages/Services"));
 const PageNotFound = React.lazy(() => import("../pages/PageNotFound"));
 
 export const pages = [
   { path: "/", component: <Home /> } /* 
   { path: "/tests", component: <Tests /> }, */,
   { path: "/insurance", component: <Insurance /> },
+  { path: "/services", component: <Services /> },
   { path: "*", component: <PageNotFound /> },
 ];
 
