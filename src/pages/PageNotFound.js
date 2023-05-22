@@ -2,28 +2,25 @@ import React, { Fragment } from "react";
 
 const PageNotFound = () => {
   return (
-    <Fragment>
-      <div className="bg-blue-primary">
-        <div className="flex flex-col items-center justify-center bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-no-repeat bg-contain min-h-screen">
-          <div className="container mx-auto">
-            <h1 className="text-white lg:text-[250px] text-9xl logo font-bold text-center mb-16 subpixel-antialiased my-auto">
-              404
-            </h1>
-            <h2 className="text-white text-3xl text-center">
-              Uh oh! We couldn't find the page you were looking for.
-            </h2>
-            <div className="text-center my-12">
-              <a
-                href="/"
-                className="btn-primary uppercase text-blue-primary bg-white font-medium border-2 border-white text-2xl"
-              >
-                Return Home
-              </a>
-            </div>
-          </div>
-        </div>
+    <section className="h-screen bg-[url(../public/img/404/Web-Under-Constructionbg.jpg)] bg-contain bg-center bg-no-repeat">
+      <h1 className="text-center text-blue-secondary/80 heading text-4xl font-bold py-12">
+        Coming Soon...
+      </h1>
+      <div className="flex lg:w-[350px] w-0 mx-auto">
+        <img
+          src="/img/404/Asset-2@0.25x-p3lhuy8ha2kfc72k10vvh9l73cpegawxjyxwb4jxfk.png"
+          className="w-3/5"
+        />
       </div>
-    </Fragment>
+      <div className="w-fit mx-auto mt-12">
+        <a
+          href="/"
+          className="rounded-lg py-4 px-8 text-xl text-center text-blue-secondary font-semibold bg-white border-2 border-black"
+        >
+          Return Home
+        </a>
+      </div>
+    </section>
   );
 };
 
