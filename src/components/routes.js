@@ -4,6 +4,7 @@ import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 const Home = React.lazy(() => import("../pages/Home"));
 const Tests = React.lazy(() => import("../pages/Tests"));
 const Insurance = React.lazy(() => import("../pages/Insurance"));
+const About = React.lazy(() => import("../pages/About"));
 const Services = React.lazy(() => import("../pages/Services"));
 const Locations = React.lazy(() => import("../pages/Locations"));
 const PageNotFound = React.lazy(() => import("../pages/PageNotFound"));
@@ -12,6 +13,7 @@ export const pages = [
   { path: "/", component: <Home /> } /* 
   { path: "/tests", component: <Tests /> }, */,
   { path: "/insurance", component: <Insurance /> },
+  { path: "/about", component: <About /> },
   { path: "/services", component: <Services /> },
   { path: "/location", component: <Locations /> },
   { path: "*", component: <PageNotFound /> },
