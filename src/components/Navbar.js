@@ -81,7 +81,7 @@ const Navbar = () => {
       <nav
         className={classNames(
           pages.some((page) => page.path === pathname) ? "" : "hidden",
-          "bg-white w-full py-4 px-2 flex flex-col justify-center items-center z-40"
+          "bg-white w-full py-4 px-2 flex flex-col justify-center items-center z-40 shadow-md"
         )}
       >
         <div className="max-w-6xl flex justify-between items-center mx-auto w-full">
@@ -144,7 +144,7 @@ const Navbar = () => {
               <li>
                 <NavButton
                   to="#"
-                  primary="Doctor"
+                  primary="Physicians"
                   dropdownLinks={[
                     {
                       primary: "Forms",
@@ -163,7 +163,7 @@ const Navbar = () => {
                       to: "/tests",
                     },
                     {
-                      primary: "Doctor's Portal",
+                      primary: "Physicians's Portal",
                       to: "https://labq.labsvc.net/labgen/",
                     },
                   ]}
