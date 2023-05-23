@@ -5,6 +5,7 @@ const Home = React.lazy(() => import("../pages/Home"));
 const Tests = React.lazy(() => import("../pages/Tests"));
 const Insurance = React.lazy(() => import("../pages/Insurance"));
 const Services = React.lazy(() => import("../pages/Services"));
+const Locations = React.lazy(() => import("../pages/Locations"));
 const PageNotFound = React.lazy(() => import("../pages/PageNotFound"));
 
 export const pages = [
@@ -12,6 +13,7 @@ export const pages = [
   { path: "/tests", component: <Tests /> }, */,
   { path: "/insurance", component: <Insurance /> },
   { path: "/services", component: <Services /> },
+  { path: "/location", component: <Locations /> },
   { path: "*", component: <PageNotFound /> },
 ];
 

@@ -116,7 +116,7 @@ const Navbar = () => {
                     },
                     {
                       primary: "Locations",
-                      to: "#",
+                      to: "/location",
                     },
                     {
                       primary: "Tests",
