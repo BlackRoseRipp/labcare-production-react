@@ -15,7 +15,9 @@ const Footer = () => {
     return classes.filter(Boolean).join(" ");
   };
 
-  return pages.some((page) => page.path === pathname) ? (
+  return pages.some(
+    (page) => page.path === pathname || page.path + "/" === pathname
+  ) ? (
     <Fragment>
       <footer className="py-12 mt-auto bg-blue-primary">
         <div className="max-w-screen-xl lg:mx-auto mx-8">

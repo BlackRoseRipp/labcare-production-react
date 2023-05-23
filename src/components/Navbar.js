@@ -22,7 +22,11 @@ const Navbar = () => {
     <Fragment>
       <nav
         className={classNames(
-          pages.some((page) => page.path === pathname) ? "" : "hidden",
+          pages.some(
+            (page) => page.path === pathname || page.path + "/" === pathname
+          )
+            ? ""
+            : "hidden",
           "bg-blue-primary w-full py-4 px-2 flex flex-col justify-center items-center z-50"
         )}
       >
@@ -80,7 +84,11 @@ const Navbar = () => {
       </nav>
       <nav
         className={classNames(
-          pages.some((page) => page.path === pathname) ? "" : "hidden",
+          pages.some(
+            (page) => page.path === pathname || page.path + "/" === pathname
+          )
+            ? ""
+            : "hidden",
           "bg-white w-full py-4 px-2 flex flex-col justify-center items-center z-40 shadow-md"
         )}
       >
