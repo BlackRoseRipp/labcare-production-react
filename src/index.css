@@ -67,6 +67,19 @@ a {
   @apply py-3 px-6 rounded-lg transition-all duration-300;
 }
 
+.form-input {
+  @apply mb-4 px-4 py-2 border border-neutral-400 bg-white rounded-lg transition-all;
+}
+
+.form-input:hover,
+.form-input:focus-within {
+  @apply border-black;
+}
+
+.form-input:focus-within {
+  @apply outline-none;
+}
+
 @media screen and (max-width: 1024px) {
   .btn-primary {
     @apply py-3 px-6 rounded-md;
