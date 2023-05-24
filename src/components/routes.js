@@ -8,6 +8,7 @@ const Forms = React.lazy(() => import("../pages/Forms"));
 const Supplies = React.lazy(() => import("../pages/Supplies"));
 const Billing = React.lazy(() => import("../pages/Billing"));
 const About = React.lazy(() => import("../pages/About"));
+const Licensing = React.lazy(() => import("../pages/Licensing"));
 const Services = React.lazy(() => import("../pages/Services"));
 const Locations = React.lazy(() => import("../pages/Locations"));
 const Contact = React.lazy(() => import("../pages/Contact"));
@@ -21,6 +22,7 @@ export const pages = [
   { path: "/supplies", component: <Supplies /> },
   { path: "/billing", component: <Billing /> },
   { path: "/about", component: <About /> },
+  { path: "/accredition-licensing", component: <Licensing /> },
   { path: "/services", component: <Services /> },
   { path: "/location", component: <Locations /> },
   { path: "/contact-us", component: <Contact /> },
