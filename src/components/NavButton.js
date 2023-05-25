@@ -78,13 +78,11 @@ function NavButton(props) {
     ) : (
       <div className="relative">
         <a
-          className="border-transparent hover:border-sky-400 peer group bg-transparent py-2 px-5 transition-all flex items-center font-medium border-b-[3px]"
+          className="border-transparent hover:border-sky-400 peer group bg-transparent py-2 px-5 transition-all flex items-start font-medium border-b-[3px]"
           href={to}
         >
           {primary}
-          <span className="ml-2 text-3xl lg:h-[28px]">
-            <MdKeyboardArrowDown className="group-hover:rotate-180 transition-all" />
-          </span>
+          <MdKeyboardArrowDown className="ml-2 text-3xl lg:h-[24px] group-hover:rotate-180 transition-all" />
         </a>
         <div
           className={

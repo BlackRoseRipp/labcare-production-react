@@ -5,12 +5,13 @@ import { IoLocationSharp } from "react-icons/io5";
 import { RxCaretRight } from "react-icons/rx";
 import { useParams } from "react-router-dom";
 import careerListings from "../../store/CAREER_LISTINGS.json";
+import PageNotFound from "../PageNotFound";
 
 const CareerListing = () => {
   const { id } = useParams();
 
   const job = careerListings.find((listing) => listing.id === id);
-  return (
+  return job ? (
     <Fragment>
       <section className="pt-24 max-w-6xl w-full mx-auto">
         <div className="mx-2 flex items-center gap-x-12">
@@ -88,6 +89,8 @@ const CareerListing = () => {
         </form>
       </section>
     </Fragment>
+  ) : (
+    <PageNotFound />
   );
 };
 

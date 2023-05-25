@@ -14,6 +14,7 @@ const Navbar = () => {
   const size = useWindowSize();
   const location = useLocation();
   const pathname = location.pathname;
+
   const classNames = (...classes) => {
     return classes.filter(Boolean).join(" ");
   };
@@ -26,7 +27,7 @@ const Navbar = () => {
             (page) =>
               page.path === pathname ||
               page.path + "/" === pathname ||
-              page.path.startsWith("/careers/")
+              pathname.startsWith("/careers/")
           )
             ? ""
             : "hidden",
@@ -91,7 +92,7 @@ const Navbar = () => {
             (page) =>
               page.path === pathname ||
               page.path + "/" === pathname ||
-              page.path.startsWith("/careers/")
+              pathname.startsWith("/careers/")
           )
             ? ""
             : "hidden",
