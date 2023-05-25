@@ -23,11 +23,14 @@ const Navbar = () => {
       <nav
         className={classNames(
           pages.some(
-            (page) => page.path === pathname || page.path + "/" === pathname
+            (page) =>
+              page.path === pathname ||
+              page.path + "/" === pathname ||
+              page.path.startsWith("/careers/")
           )
             ? ""
             : "hidden",
-          "bg-blue-primary w-full py-4 px-2 flex flex-col justify-center items-center z-50"
+          "bg-blue-primary w-full py-1 px-2 flex flex-col justify-center items-center z-50"
         )}
       >
         <div className="max-w-6xl mx-auto flex justify-between items-center w-full">
@@ -85,7 +88,10 @@ const Navbar = () => {
       <nav
         className={classNames(
           pages.some(
-            (page) => page.path === pathname || page.path + "/" === pathname
+            (page) =>
+              page.path === pathname ||
+              page.path + "/" === pathname ||
+              page.path.startsWith("/careers/")
           )
             ? ""
             : "hidden",

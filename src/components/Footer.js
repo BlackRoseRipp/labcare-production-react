@@ -16,7 +16,10 @@ const Footer = () => {
   };
 
   return pages.some(
-    (page) => page.path === pathname || page.path + "/" === pathname
+    (page) =>
+      page.path === pathname ||
+      page.path + "/" === pathname ||
+      page.path.startsWith("/careers/")
   ) ? (
     <Fragment>
       <footer className="py-12 mt-auto bg-blue-primary">

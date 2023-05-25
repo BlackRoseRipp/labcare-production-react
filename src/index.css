@@ -80,6 +80,18 @@ a {
   @apply outline-none;
 }
 
+.job-details section {
+  @apply py-8
+}
+
+.job-details h2 {
+  @apply text-3xl my-4
+}
+
+.job-details ul {
+  @apply list-disc list-inside ml-4
+}
+
 @media screen and (max-width: 1024px) {
   .btn-primary {
     @apply py-3 px-6 rounded-md;

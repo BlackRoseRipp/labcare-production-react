@@ -11,6 +11,10 @@ const About = React.lazy(() => import("../pages/About"));
 const Licensing = React.lazy(() => import("../pages/Licensing"));
 const Services = React.lazy(() => import("../pages/Services"));
 const Locations = React.lazy(() => import("../pages/Locations"));
+const Careers = React.lazy(() => import("../pages/careers/Careers"));
+const CareerListing = React.lazy(() =>
+  import("../pages/careers/CareerListing")
+);
 const Contact = React.lazy(() => import("../pages/Contact"));
 const PageNotFound = React.lazy(() => import("../pages/PageNotFound"));
 
@@ -25,6 +29,8 @@ export const pages = [
   { path: "/accredition-licensing", component: <Licensing /> },
   { path: "/services", component: <Services /> },
   { path: "/location", component: <Locations /> },
+  { path: "/careers", component: <Careers /> },
+  { path: "/careers/:id", component: <CareerListing /> },
   { path: "/contact-us", component: <Contact /> },
   { path: "*", component: <PageNotFound /> },
 ];

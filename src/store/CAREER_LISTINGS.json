@@ -1,0 +1,93 @@
+[
+  {
+    "id": "laboratory-assistant-brooklyn",
+    "secondID": "Laboratory Assistant – Brooklyn",
+    "title": "Laboratory Assistant",
+    "location": "Brooklyn, NY",
+    "status": "Full Time",
+    "rate": "$18.00 – $23.00 per hour",
+    "link": "",
+    "content": "<section> <h2>Full Job Description:</h2> <p> LabQ Diagnostics is a full-service, independent clinical laboratory servicing New York, New Jersey, and Pennsylvania that provides exceptional quality service with a quick turnaround time. As we continue to grow our company, we are searching to build a strong and motivated team, with members who desire to be a part of constructing an exceptional facility. </p><h2>Education and Qualifications:</h2> <ul> <li>Associate’s or Bachelor's degree in science preferred</li><li>Organized, attention to detail</li><li>Previous experience in clinical laboratory.</li></ul> <h2>Essential Duties and Responsibilities:</h2> <ul> <li> Assists in the laboratory by cleaning, washing, and disinfecting laboratory equipment and workbenches. </li><li>Plays supportive roles to technologists and technicians.</li><li> Helps with transferring specimens from a primary tube into a secondary tube and/or sample aliquoting. </li><li>Works directly under the lab supervisors.</li><li> Works with administrative and clerical work associates in the lab ordering supplies and filing records. </li><li> Gathers and transports specimens from the accessioning area to the appropriate technical department. </li><li>Files instrument printouts after the tests have been performed.</li><li>Files patient results print outs and calibration, QC documentation.</li><li>Scans completed samples into the scanning system</li><li> Helps when supplies arrive and have to be organized, labeled and stored. </li><li> Works in an organized manner in accordance with established laboratory policies and procedures. </li></ul></section><section> <div> <p><strong>Job Types:</strong> Full-time</p><p><strong>Salary</strong>: $18.00 – $23.00 per hour</p><p><strong>Work Remotely</strong>: No</p><p><strong>Work Location</strong>: One location</p></div></section>"
+  },
+  {
+    "id": "health-care-programmer",
+    "title": "Health Care Programmer proficient in HL7",
+    "location": "Budd Lake, NJ",
+    "status": "Full Time",
+    "rate": "$80,000 - $100,000 a year",
+    "link": "https://www.indeed.com/viewjob?cmp=LabQ-Diagnostics&t=Health+Care+Programmer+Proficient+Hl7&jk=bf4dfcaa5b9b3e7d&q=labq&vjs=3",
+    "content": ""
+  },
+  {
+    "id": "clinical-laboratory-technologist",
+    "title": "Clinical Laboratory Technologist",
+    "location": "Budd Lake, NJ",
+    "status": "Full Time",
+    "rate": "$27 - $33 an hour",
+    "link": "https://www.indeed.com/viewjob?cmp=LabQ-Diagnostics&t=Clinical+Laboratory+Technologist&jk=edcd1205df065ee3&q=labq&vjs=3",
+    "content": ""
+  },
+  {
+    "id": "content-writer",
+    "title": "Content Writer",
+    "location": "Budd Lake, NJ",
+    "status": "Full Time",
+    "rate": "$18.00 – $23.00 per hour",
+    "link": "/career",
+    "content": ""
+  },
+  {
+    "id": "call-center-representative",
+    "title": "Call Center Representative",
+    "location": "Budd Lake, NJ",
+    "status": "Full Time",
+    "rate": "$14.00 – $18.00 per hour",
+    "link": "https://www.indeed.com/viewjob?cmp=LabQ-Diagnostics&t=Call+Center+Representative&jk=f1ab9b41daaa2756&q=labq&vjs=3",
+    "content": ""
+  },
+  {
+    "id": "driver",
+    "title": "Driver",
+    "location": "Budd Lake, NJ",
+    "status": "Full Time",
+    "rate": "$18 per hour",
+    "link": "https://www.indeed.com/viewjob?cmp=LabQ-Diagnostics&t=Driver&jk=b6f34b7910029d09&q=labq&vjs=3",
+    "content": ""
+  },
+  {
+    "id": "medical-biller",
+    "title": "Medical / Laboratory Biller",
+    "location": "Budd Lake, NJ",
+    "status": "Full Time",
+    "rate": "$18.00 – $23.00 per hour",
+    "link": "https://www.indeed.com/viewjob?cmp=LabQ-Diagnostics&t=Medical&jk=9e247d45b9486ced&q=labq&vjs=3",
+    "content": ""
+  },
+  {
+    "id": "senior-web-developer",
+    "title": "Senior Web Developer",
+    "location": "Budd Lake, NJ",
+    "status": "Full Time",
+    "rate": "$100,000 - $125,000 per year",
+    "link": "https://www.indeed.com/viewjob?cmp=LabQ-Diagnostics&t=Senior+Web+Developer&jk=51153e95708fdf1a&q=labq&vjs=3",
+    "content": ""
+  },
+  {
+    "id": "covid-19-screener-testing-site-navigator",
+    "title": "COVID-19 Screener/ Testing Site Navigator",
+    "location": "Budd Lake, NJ",
+    "status": "Full Time",
+    "rate": "$15 - $17.50 per hour",
+    "link": "https://www.indeed.com/viewjob?cmp=LabQ-Diagnostics&t=Covid+Screener&jk=7cd88e9bf049429c&q=labq&vjs=3",
+    "content": ""
+  },
+  {
+    "id": "it-help-desk-specialist",
+    "title": "IT Help Desk Specialist",
+    "location": "Budd Lake, NJ",
+    "status": "Full Time",
+    "rate": "$22 - $28 per hour",
+    "link": "https://www.indeed.com/job/it-help-desk-specialist-b2a019d507e0cd7e",
+    "content": ""
+  }
+]
