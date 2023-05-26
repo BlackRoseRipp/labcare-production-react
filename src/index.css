@@ -99,6 +99,26 @@ a {
   -webkit-mask-size: contain;
 }
 
+.scrollbar::-webkit-scrollbar {
+  @apply w-2;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 3rem;
+  border: 2px solid white;
+}
+
+.scrollbar::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 4px;
+}
+
+.scrollbar::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 4px;
+}
+
 @media screen and (max-width: 1024px) {
   .btn-primary {
     @apply py-3 px-6 rounded-md;

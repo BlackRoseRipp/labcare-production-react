@@ -38,7 +38,7 @@ function StoreList(props) {
         placeholder="Find a location"
         onChange={filterLocations}
       /> */}
-      <div className="scrollbar overflow-y-auto bg-white h-[630px] p-4 rounded-xl border border-blue-light">
+      <div className="scrollbar overflow-y-auto bg-white h-[630px] p-4 rounded border">
         {filteredLocations.map((location) => {
           return (
             <div className="m-2 border-neutral-100 border hover:border-neutral-300 hover:bg-neutral-50 px-1 py-1.5 transition-all">

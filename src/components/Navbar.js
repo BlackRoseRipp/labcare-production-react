@@ -130,8 +130,12 @@ const Navbar = () => {
                       to: "https://app.labq.com",
                     },
                     {
-                      primary: "Locations",
+                      primary: "Lab Locations",
                       to: "/location",
+                    },
+                    {
+                      primary: "Covid Testing",
+                      to: "/covid-mobile-testing",
                     },
                     {
                       primary: "Tests",
