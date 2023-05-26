@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Boro Park",
+    "address": "4510 16th Ave, Brooklyn, NY 11204",
+    "phone": "(888) LABQ-247",
+    "city": "Brooklyn",
+    "state": "NY",
+    "blood": "false",
+    "rsv": "false",
+    "flu": "true",
+    "pcr": "true",
+    "rapid": "true"
+  },
+  {
+    "title": "3rd Ave & E 76th St",
+    "address": "1356 3rd Ave, Manhatten, NY 10075",
+    "phone": "(888) LABQ-247",
+    "city": "Manhattan",
+    "state": "NY",
+    "blood": "true",
+    "rsv": "true",
+    "flu": "true",
+    "pcr": "true",
+    "rapid": "true"
+  },
+  {
+    "title": "Lexington Ave/E 86th St",
+    "address": "Lexington Ave/E 86th St, Manhattan, NY 10075",
+    "phone": "(888) LABQ-247",
+    "city": "Manhattan",
+    "state": "NY",
+    "blood": "true",
+    "rsv": "true",
+    "flu": "true",
+    "pcr": "true",
+    "rapid": "true"
+  },
+  {
+    "title": "NJ Testing Center",
+    "address": "100 International Dr, Budd Lake, NJ 07828",
+    "phone": "(888) LABQ-247",
+    "city": "Budd Lake",
+    "state": "NJ",
+    "blood": "false",
+    "rsv": "true",
+    "flu": "true",
+    "pcr": "true",
+    "rapid": "false"
+  },
+  {
+    "title": "Upper West Side",
+    "address": "West 97th St & Amsterdam Avenue, Manhatten, NY 10025",
+    "phone": "(888) LABQ-247",
+    "city": "Manhattan",
+    "state": "NY",
+    "blood": "true",
+    "rsv": "true",
+    "flu": "true",
+    "pcr": "true",
+    "rapid": "true"
+  },
+  {
+    "title": "West Side (Broadway & W 71st St)",
+    "address": "2080 Broadway, Manhattan, NY 10023",
+    "phone": "(888) LABQ-247",
+    "city": "Manhattan",
+    "state": "NY",
+    "blood": "true",
+    "rsv": "true",
+    "flu": "true",
+    "pcr": "true",
+    "rapid": "true"
+  }
+]

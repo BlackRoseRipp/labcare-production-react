@@ -92,6 +92,13 @@ a {
   @apply list-disc list-inside ml-4
 }
 
+.mask-img {
+  -webkit-mask-image: url("../public/img/patterns/Asset-2.png");
+  -webkit-mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+}
+
 @media screen and (max-width: 1024px) {
   .btn-primary {
     @apply py-3 px-6 rounded-md;
