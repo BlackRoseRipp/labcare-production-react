@@ -12,6 +12,7 @@ const Licensing = React.lazy(() => import("../pages/Licensing"));
 const Services = React.lazy(() => import("../pages/Services"));
 const Locations = React.lazy(() => import("../pages/Locations"));
 const CovidLocations = React.lazy(() => import("../pages/CovidLocations"));
+const News = React.lazy(() => import("../pages/news/News"));
 const Careers = React.lazy(() => import("../pages/careers/Careers"));
 const CareerListing = React.lazy(() =>
   import("../pages/careers/CareerListing")
@@ -31,6 +32,7 @@ export const pages = [
   { path: "/services", component: <Services /> },
   { path: "/location", component: <Locations /> },
   { path: "/covid-mobile-testing", component: <CovidLocations /> },
+  { path: "/news", component: <News /> },
   { path: "/careers", component: <Careers /> },
   { path: "/careers/:id", component: <CareerListing /> },
   { path: "/contact-us", component: <Contact /> },
