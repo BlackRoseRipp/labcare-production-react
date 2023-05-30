@@ -1,13 +1,4 @@
-[
-  {
-    "id": "meet-labq-your-convenient-mobile-patient-service-center",
-    "title": "Meet LabQ: Your convenient mobile patient service center",
-    "subtitle": "There’s more to getting tested than the prick of your arm or the swab of your cheek. There’s the speed of the appointment, cleanliness of",
-    "cat": "News",
-    "img": "woman-collecting-blood-samples-for-testing-on-diff-2022-12-16-06-56-53-utc-scaled-1.jpg",
-    "date": "May 17, 2023",
-    "content": ""
-  },
+,
   {
     "id": "nearly-1k-covid-tests-offered-daily-at-morris-county-site",
     "title": "Nearly 1K COVID Tests Offered Daily At Morris County Site",
@@ -53,4 +44,3 @@
     "date": "January 10, 2021",
     "content": ""
   }
-]

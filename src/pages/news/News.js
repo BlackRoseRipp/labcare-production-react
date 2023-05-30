@@ -1,5 +1,5 @@
-import { Fragment } from "react";
-import articles from "../../store/ARTICLES.json";
+import { useEffect, useState } from "react";
+import newsList from "../../store/ARTICLES.json";
 
 const News = () => {
   return (
@@ -9,17 +9,15 @@ const News = () => {
       </h1>
       <section className="py-8 max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 mx-2 gap-6">
-          {articles.map((art) => (
+          {newsList.map((art) => (
             <div className="shadow-md hover:shadow-xl bg-white flex flex-col group overflow-hidden transition-all">
-              <a href={"/" + art.id} className="w-full">
-                <div
-                  className={
-                    "h-[360px] w-full bg-[url(../public/img/news/" +
-                    art.img +
-                    ")] bg-cover bg-center p-4"
-                  }
-                >
-                  <div className="rounded-full w-fit ml-auto bg-[#3892e7] py-2 px-3 text-xs text-white font-medium uppercase">
+              <a href={"/" + art.id} className="w-full relative">
+                <div className="h-[360px] w-full relative overflow-hidden">
+                  <img
+                    className="h-[360px] w-full max-w-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                    src={"/img/news/" + art.img}
+                  />
+                  <div className="rounded-full w-fit mt-4 mr-4 bg-[#3892e7] py-2 px-3 text-xs text-white font-medium uppercase absolute right-0">
                     {art.cat}
                   </div>
                 </div>
