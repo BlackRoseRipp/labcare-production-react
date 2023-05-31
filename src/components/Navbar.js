@@ -4,8 +4,8 @@ import { FaArrowRight, FaPhoneSquareAlt } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useLocation } from "react-router-dom";
-import useScrollPosition from "../hooks/useScrollPosition";
 import useWindowSize from "../hooks/useWindowSize";
+import newsList from "../store/ARTICLES.json";
 import NavButton from "./NavButton";
 import { pages, routes } from "./routes";
 
@@ -28,7 +28,7 @@ const Navbar = () => {
               page.path === pathname ||
               page.path + "/" === pathname ||
               pathname.startsWith("/careers/")
-          )
+          ) || newsList.some((article) => article.id === pathname.slice(1))
             ? ""
             : "hidden",
           "bg-blue-primary w-full py-1 px-2 flex flex-col justify-center items-center z-50"
@@ -92,7 +92,8 @@ const Navbar = () => {
             (page) =>
               page.path === pathname ||
               page.path + "/" === pathname ||
-              pathname.startsWith("/careers/")
+              pathname.startsWith("/careers/") ||
+              newsList.some((article) => article.id === pathname.slice(1))
           )
             ? ""
             : "hidden",

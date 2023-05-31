@@ -5,6 +5,7 @@
     "subtitle": "There’s more to getting tested than the prick of your arm or the swab of your cheek. There’s the speed of the appointment, cleanliness of",
     "cat": "News",
     "img": "woman-collecting-blood-samples-for-testing-on-diff-2022-12-16-06-56-53-utc-scaled-1.jpg",
+    "imgSizing": "width",
     "date": "May 17, 2023",
     "content": ""
   },
@@ -14,6 +15,7 @@
     "subtitle": "By Josh Bakan  |   Patch / MSN News RANDOLPH, NJ — More than 800 people received free COVID-19 tests on the first day of Morris",
     "cat": "In The News",
     "img": "AASFpsg.jpg",
+    "imgSizing": "height",
     "date": "January 20, 2022",
     "content": ""
   },
@@ -23,6 +25,7 @@
     "subtitle": "By MICHAEL ELSEN-ROONEY   |  NEW YORK DAILY NEWS The idea for a mobile testing van came after parents at Public School 8 in Brooklyn Heights",
     "cat": "In The News",
     "img": "XDCSZRJXHFCYXKSEQJUR6AGATU.jpg",
+    "imgSizing": "height",
     "date": "October 20, 2021",
     "content": ""
   },
@@ -32,6 +35,7 @@
     "subtitle": "LabQ Diagnostics, a rising star in the laboratory sector, launched a state-of-the-art clinical trial department. While this announcement comes to the delight of many, it",
     "cat": "News",
     "img": "LabQ-Research-1-1536x1022.jpg",
+    "imgSizing": "height",
     "date": "July 15, 2021",
     "content": ""
   },
@@ -41,6 +45,7 @@
     "subtitle": "PRESS RELEASE Mt. Olive, NJ – On Wednesday, May 19th, HQ Health partnered with Robert Greenbaum, the mayor of Mt. Olive, to host an Open",
     "cat": "News",
     "img": "189195214_4165785780154267_6720674629117732980_n.jpg",
+    "imgSizing": "width",
     "date": "May 24, 2021",
     "content": ""
   },
@@ -50,6 +55,7 @@
     "subtitle": "BY JONATHAN INOA MANHATTAN PUBLISHED 3:00 PM ET JAN. 09, 2021 Hacerse una prueba del COVID-19 se toma alrededor de 5 minutos en un laboratorio",
     "cat": "News",
     "img": "20210620_200027-1.jpg",
+    "imgSizing": "width",
     "date": "January 10, 2021",
     "content": ""
   }

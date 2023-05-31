@@ -6,6 +6,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { useLocation } from "react-router-dom";
+import newsList from "../store/ARTICLES.json";
 import { pages } from "./routes";
 
 const Footer = () => {
@@ -19,7 +20,8 @@ const Footer = () => {
     (page) =>
       page.path === pathname ||
       page.path + "/" === pathname ||
-      pathname.startsWith("/careers/")
+      pathname.startsWith("/careers/") ||
+      newsList.some((article) => article.id === pathname.slice(1))
   ) ? (
     <Fragment>
       <footer className="py-12 mt-auto bg-blue-primary">
