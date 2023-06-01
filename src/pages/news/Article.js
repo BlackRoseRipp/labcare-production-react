@@ -3,13 +3,11 @@ import { Fragment } from "react";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { useParams } from "react-router-dom";
 import HowWeWork from "../../components/ArticleWidgets/HowWeWork";
+import PatientReviews from "../../components/ArticleWidgets/PatientReviews";
 import newsList from "../../store/ARTICLES.json";
 
 const Article = () => {
   const { id } = useParams();
-  const classNames = (...classes) => {
-    return classes.filter(Boolean).join(" ");
-  };
 
   const article = newsList.find((article) => article.id === id);
 
@@ -48,7 +46,12 @@ const Article = () => {
             </div>
           </div>
           <div className="my-6 news-content">{parse(article.content)}</div>
-          <HowWeWork />
+          {article.widgets.some((widget) => widget === "PatientReviews") ? (
+            <PatientReviews />
+          ) : null}
+          {article.widgets.some((widget) => widget === "HowWeWork") ? (
+            <HowWeWork />
+          ) : null}
           <div className="border-t border-t-neutral-200 w-full my-12"></div>
           <div className="bg-blue-primary mx-2 rounded-lg py-9 px-7 flex flex-col items-center gap-12">
             <h2 className="text-white text-4xl font-semibold heading">
