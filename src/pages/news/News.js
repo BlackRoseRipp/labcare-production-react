@@ -15,7 +15,7 @@ const News = () => {
         <div className="grid lg:grid-cols-2 mx-2 gap-6">
           {newsList.map((art) => (
             <div className="shadow-md hover:shadow-xl bg-white flex flex-col group overflow-hidden transition-all">
-              <a href={"/" + art.id} className="w-full relative">
+              <a href={"/news/" + art.id} className="w-full relative">
                 <div className="h-[360px] w-full relative overflow-hidden">
                   {console.log(art.imgSizing)}
                   <img
@@ -36,13 +36,13 @@ const News = () => {
 
               <div className="p-7">
                 <a
-                  href={"/" + art.id}
+                  href={"/news/" + art.id}
                   className="text-xl font-semibold text-blue-primary"
                 >
                   {art.title}
                 </a>
                 <p className="text-neutral-500 text-sm my-4">{art.subtitle}</p>
-                <a href={"/" + art.id} className="text-[#3892e7] text-xs">
+                <a href={"/news/" + art.id} className="text-[#3892e7] text-xs">
                   READ MORE »
                 </a>
               </div>

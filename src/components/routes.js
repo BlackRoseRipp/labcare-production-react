@@ -22,8 +22,7 @@ const Contact = React.lazy(() => import("../pages/Contact"));
 const PageNotFound = React.lazy(() => import("../pages/PageNotFound"));
 
 export const pages = [
-  { path: "/", component: <Home /> } /* 
-  { path: "/tests", component: <Tests /> }, */,
+  { path: "/", component: <Home /> },
   { path: "/insurance", component: <Insurance /> },
   { path: "/forms", component: <Forms /> },
   { path: "/supplies", component: <Supplies /> },
@@ -34,7 +33,7 @@ export const pages = [
   { path: "/location", component: <Locations /> },
   { path: "/covid-mobile-testing", component: <CovidLocations /> },
   { path: "/news", component: <News /> },
-  { path: "/:id", component: <Article /> },
+  { path: "/news/:id", component: <Article /> },
   { path: "/careers", component: <Careers /> },
   { path: "/careers/:id", component: <CareerListing /> },
   { path: "/contact-us", component: <Contact /> },
