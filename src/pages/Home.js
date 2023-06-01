@@ -5,13 +5,15 @@ import { BsFileBarGraph, BsStar, BsStarFill, BsStarHalf } from "react-icons/bs";
 import { FaFacebook, FaMapMarkedAlt } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { IoRibbonOutline } from "react-icons/io5";
+import useWindowSize from "../hooks/useWindowSize";
 import LAB_SPECIALTIES from "../store/LAB_SPECIALTIES.json";
 
 const Home = () => {
+  const size = useWindowSize();
   const classNames = (...classes) => {
     return classes.filter(Boolean).join(" ");
   };
-  const num = [1, 3, 4, 6, 9, 11];
+  const num = size.width < 1024 ? [1, 2, 5, 6, 9, 10] : [1, 3, 4, 6, 9, 11];
   return (
     <Fragment>
       <section className="bg-[url(../public/img/landing22.jpg)] bg-cover bg-center bg-no-repeat">
@@ -25,7 +27,7 @@ const Home = () => {
               Doctor will be required for covid testing.
             </p>
           </div>
-          <div className="grid grid-cols-4 gap-4 max-w-[725px] mx-auto my-12">
+          <div className="grid md:grid-cols-4 grid-cols-2 gap-4 max-w-[725px] mx-auto my-12">
             <div className="rounded-lg bg-white flex flex-col items-center justify-center w-full px-1 py-2">
               <img className="w-[100px]" src="/img/icons/Asset-4mdpi.png" />
               <h3 className="text-blue-secondary text-2xl text-center ">
@@ -52,7 +54,7 @@ const Home = () => {
               <p className="text-blue-secondary text-center">PCR + FLU + RSV</p>
             </div>
           </div>
-          <div className="flex items-center justify-center gap-8">
+          <div className="flex sm:flex-row flex-col items-center justify-center gap-8">
             <p className="text-blue-primary text-xl">
               Find a Testing Location Near You
             </p>
@@ -65,7 +67,7 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className="bg-black/20 max-w-screen-xl rounded-lg mx-auto mt-12 py-4 px-12">
+        <div className="bg-black/20 max-w-screen-xl rounded-lg mx-auto mt-12 py-4 px-12 md:opacity-100 opacity-0 md:w-full w-0 overflow-hidden sm:block hidden">
           <div className="grid grid-cols-3 gap-8">
             <div className="flex items-center justify-end border-r border-white">
               <a
@@ -116,12 +118,18 @@ const Home = () => {
         <h2 className="heading text-4xl font-semibold text-center mb-16">
           Lab Specialties
         </h2>
-        <div className="grid grid-cols-4 w-full">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 w-full">
           {LAB_SPECIALTIES.map((e, i) => (
             <div
               className={classNames(
-                num.includes(i) ? "bg-[#F4F9FF]" : "bg-white",
-                "flex flex-col justify-center py-5 px-8 hover:shadow-[0_0_12px_0_rgba(0,0,0,0.25)] hover:z-30 transition-all"
+                size.width < 768
+                  ? i % 2 === 0
+                    ? "bg-white"
+                    : "bg-[#F4F9FF]"
+                  : num.includes(i)
+                  ? "bg-[#F4F9FF]"
+                  : "bg-white",
+                "flex flex-col justify-center md:items-start items-center py-5 px-8 hover:shadow-[0_0_12px_0_rgba(0,0,0,0.25)] hover:z-30 transition-all"
               )}
             >
               <img
@@ -132,7 +140,7 @@ const Home = () => {
             </div>
           ))}
         </div>
-        <div className="max-w-screen-lg mx-auto flex items-center gap-x-16 my-16">
+        <div className="max-w-screen-lg mx-auto flex lg:flex-row flex-col items-center gap-x-16 gap-y-8 my-16">
           <h2 className="text-2xl font-medium">
             What Our Patients Say About Us!
           </h2>
@@ -168,8 +176,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="grid grid-cols-2">
-        <div className="bg-[#F4F9FF] flex flex-col items-end justify-center gap-y-8 pr-2 pl-56 py-20">
+      <section className="grid lg:grid-cols-2">
+        <div className="bg-[#F4F9FF] flex flex-col items-end justify-center gap-y-8 pr-2 lg:pl-56 pl-2 py-20 lg:order-1 order-2">
           <div className="flex group">
             <BiRun className="text-amber-400 bg-orange-200 rounded-full shrink-0 w-[50px] h-[50px] p-2" />
             <div className="flex flex-col w-fit ml-4">
@@ -236,28 +244,28 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center pr-56">
-          <h2 className="text-4xl text-center font-medium heading">
+        <div className="flex flex-col items-center justify-center lg:pr-56 lg:order-2 order-1">
+          <h2 className="text-4xl text-center font-medium heading lg:mb-0 mb-16">
             Your Local Lab
           </h2>
         </div>
       </section>
-      <section className="container mx-auto py-16">
+      <section className="max-w-screen-lg mx-auto py-16">
         <div
           id="newsBlogControls"
-          className="relative w-4/5 mx-auto"
+          className="relative lg:w-4/5 mx-2 lg:mx-auto"
           data-te-carousel-init
           data-te-carousel-slide
         >
           {/* <!--Carousel items--> */}
-          <div className="relative w-[90%] mx-auto overflow-hidden after:clear-both after:block after:content-['']">
+          <div className="relative sm:w-[90%] w-[85%] mx-auto overflow-hidden after:clear-both after:block after:content-['']">
             {/* <!--First item--> */}
             <div
               className="relative flex justify-center float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
               data-te-carousel-item
               data-te-carousel-active
             >
-              <div className="grid grid-cols-2 gap-8">
+              <div className="grid lg:grid-cols-2 gap-8">
                 <div className="flex items-center justify-center">
                   <a
                     className="rounded-xl overflow-hidden group"
@@ -292,7 +300,7 @@ const Home = () => {
                   </p>
                   <a
                     className="text-sm font-medium transition-all hover:text-blue-secondary"
-                    href="/labq-ribbon-cutting-ceremony-for-newest-lab-and-data-hub-in-mt-olive"
+                    href="/news/labq-ribbon-cutting-ceremony-for-newest-lab-and-data-hub-in-mt-olive"
                   >
                     Read More
                   </a>

@@ -57,7 +57,7 @@ const News = () => {
       <section className="py-14 max-w-6xl mx-auto">
         <div className="bg-blue-primary mx-2 rounded-lg py-9 px-7 flex flex-col items-center gap-12">
           <h2 className="text-white text-4xl font-semibold heading">
-            Subscribe for the latest LabQ news
+            Subscribe for the latest LabCare news
           </h2>
           <form className="flex items-center gap-4 py-8">
             <input

@@ -25,7 +25,8 @@ const Services = () => {
                 There’s more to getting tested than the prick of your arm or the
                 swab of your cheek. There’s the cleanliness of the facility, the
                 bedside manner of the technician and the ease of accessing your
-                results. <strong>You’ll get it all, and more, at LabQ.</strong>
+                results.{" "}
+                <strong>You’ll get it all, and more, at LabCare.</strong>
               </p>
               <a
                 href="/location"
@@ -77,8 +78,9 @@ const Services = () => {
               </h2>
               <p className="mb-4">
                 There are times when venturing out to take a prescribed test is
-                not an option. We get that. Which is why LabQ will come down to
-                your home and administer the test at the comfort of you bedside.{" "}
+                not an option. We get that. Which is why LabCare will come down
+                to your home and administer the test at the comfort of you
+                bedside.{" "}
                 <strong>
                   You should have access to the test you need, wherever you are.
                 </strong>
@@ -102,7 +104,7 @@ const Services = () => {
                 Partner with the Pros
               </h2>
               <p className="mb-4">
-                You care about your patients and want the best for them. LabQ
+                You care about your patients and want the best for them. LabCare
                 provides a lot more than superior storage and collection
                 routines. It’s our leading edge technology and high capacity
                 that has medical facilities clamoring for partnerships.{" "}

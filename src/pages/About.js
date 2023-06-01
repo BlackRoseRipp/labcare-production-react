@@ -14,7 +14,7 @@ const About = () => {
                 Really, it’s all about you.
               </h1>
               <p className="text-xl text-blue-primary font-medium leading-10">
-                We can boast about LabQ’s accomplishments forever, but at the
+                We can boast about LabCare’s accomplishments forever, but at the
                 end of the day it’s about bringing you the best in diagnostics.
                 Nothing else.
               </p>

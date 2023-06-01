@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import { useLocation } from "react-router-dom";
 import newsList from "../store/ARTICLES.json";
+import careerListing from "../store/CAREER_LISTINGS.json";
 import { pages } from "./routes";
 
 const Footer = () => {
@@ -20,14 +21,16 @@ const Footer = () => {
     (page) =>
       page.path === pathname ||
       page.path + "/" === pathname ||
-      pathname.startsWith("/careers/") ||
-      newsList.some((article) => article.id === pathname.slice(1))
+      (pathname.startsWith("/careers/") &&
+        careerListing.some((listing) => listing.id === pathname.slice(9))) ||
+      (newsList.some((article) => article.id === pathname.slice(6)) &&
+        pathname.startsWith("/news/"))
   ) ? (
     <Fragment>
       <footer className="py-12 mt-auto bg-blue-primary">
         <div className="max-w-screen-xl lg:mx-auto mx-8">
           <div className="grid lg:grid-cols-3 gap-4">
-            <div className="flex flex-col justify-center gap-4">
+            <div className="flex flex-col justify-center lg:items-start items-center gap-4">
               <a href="/" className="w-1/3">
                 <img src="/img/LabQ-Logo-White.svg" className="w-full" />
               </a>
@@ -72,7 +75,7 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col lg:items-start items-center">
               <h3 className="heading text-blue-secondary text-3xl font-medium">
                 Navigation
               </h3>
@@ -171,26 +174,26 @@ const Footer = () => {
         </div>
       </footer>
       <footer className="bg-white py-4">
-        <div className="max-w-screen-xl lg:mx-auto mx-8 flex items-center justify-center">
-          <p className="text-blue-primary font-medium mx-4">
+        <div className="max-w-screen-xl lg:mx-auto mx-8 flex lg:flex-row flex-col items-center justify-center">
+          <p className="text-blue-primary font-medium mx-4 lg:pb-0 pb-2">
             &copy; LabCare Diagnostics. All Right Reserved{" "}
             {new Date().getFullYear()}.
           </p>
           <a
             href="/privacy-policy"
-            className="border-l border-neutral-300 px-4 text-blue-primary font-medium"
+            className="lg:border-l border-t border-neutral-300 px-4 lg:py-0 py-2 text-blue-primary font-medium"
           >
             Privacy Policy
           </a>
           <a
             href="/terms-and-conditions"
-            className="border-l border-neutral-300 px-4 text-blue-primary font-medium"
+            className="lg:border-l border-t border-neutral-300 px-4 lg:py-0 py-2 text-blue-primary font-medium"
           >
             Terms & Conditions
           </a>
           <a
             href="/accessibility-statement"
-            className="border-l border-neutral-300 px-4 text-blue-primary font-medium"
+            className="lg:border-l border-t border-neutral-300 px-4 lg:py-0 py-2 text-blue-primary font-medium"
           >
             Accessibility Statement
           </a>

@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import HowWeWork from "../../components/ArticleWidgets/HowWeWork";
 import PatientReviews from "../../components/ArticleWidgets/PatientReviews";
 import newsList from "../../store/ARTICLES.json";
+import PageNotFound from "../PageNotFound";
 
 const Article = () => {
   const { id } = useParams();
@@ -55,7 +56,7 @@ const Article = () => {
           <div className="border-t border-t-neutral-200 w-full my-12"></div>
           <div className="bg-blue-primary mx-2 rounded-lg py-9 px-7 flex flex-col items-center gap-12">
             <h2 className="text-white text-4xl font-semibold heading">
-              Subscribe for the latest LabQ news
+              Subscribe for the latest LabCare news
             </h2>
             <form className="flex items-center gap-4 py-8">
               <input
@@ -72,7 +73,9 @@ const Article = () => {
         </div>
       </section>
     </Fragment>
-  ) : null;
+  ) : (
+    <PageNotFound />
+  );
 };
 
 export default Article;
