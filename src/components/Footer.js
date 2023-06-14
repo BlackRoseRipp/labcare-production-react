@@ -181,19 +181,19 @@ const Footer = () => {
           </p>
           <a
             href="/privacy-policy"
-            className="lg:border-l border-t border-neutral-300 px-4 lg:py-0 py-2 text-blue-primary font-medium"
+            className="lg:border-l border-t lg:border-t-0 border-neutral-300 px-4 lg:py-0 py-2 text-blue-primary font-medium"
           >
             Privacy Policy
           </a>
           <a
             href="/terms-and-conditions"
-            className="lg:border-l border-t border-neutral-300 px-4 lg:py-0 py-2 text-blue-primary font-medium"
+            className="lg:border-l border-t lg:border-t-0 border-neutral-300 px-4 lg:py-0 py-2 text-blue-primary font-medium"
           >
             Terms & Conditions
           </a>
           <a
             href="/accessibility-statement"
-            className="lg:border-l border-t border-neutral-300 px-4 lg:py-0 py-2 text-blue-primary font-medium"
+            className="lg:border-l border-t lg:border-t-0 border-neutral-300 px-4 lg:py-0 py-2 text-blue-primary font-medium"
           >
             Accessibility Statement
           </a>

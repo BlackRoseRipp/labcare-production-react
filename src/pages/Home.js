@@ -5,6 +5,7 @@ import { BsFileBarGraph, BsStar, BsStarFill, BsStarHalf } from "react-icons/bs";
 import { FaFacebook, FaMapMarkedAlt } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { IoRibbonOutline } from "react-icons/io5";
+import BlogSlider from "../components/BlogSlider";
 import useWindowSize from "../hooks/useWindowSize";
 import LAB_SPECIALTIES from "../store/LAB_SPECIALTIES.json";
 
@@ -14,6 +15,7 @@ const Home = () => {
     return classes.filter(Boolean).join(" ");
   };
   const num = size.width < 1024 ? [1, 2, 5, 6, 9, 10] : [1, 3, 4, 6, 9, 11];
+
   return (
     <Fragment>
       <section className="bg-[url(../public/img/landing22.jpg)] bg-cover bg-center bg-no-repeat">
@@ -28,31 +30,43 @@ const Home = () => {
             </p>
           </div>
           <div className="grid md:grid-cols-4 grid-cols-2 gap-4 max-w-[725px] mx-auto my-12">
-            <div className="rounded-lg bg-white flex flex-col items-center justify-center w-full px-1 py-2">
+            <a
+              href="/covid"
+              className="rounded-lg bg-white flex flex-col items-center justify-center w-full px-1 py-2"
+            >
               <img className="w-[100px]" src="/img/icons/Asset-4mdpi.png" />
               <h3 className="text-blue-secondary text-2xl text-center ">
                 PCR Test
               </h3>
-            </div>
-            <div className="rounded-lg bg-white flex flex-col items-center justify-center w-full px-1 py-2">
+            </a>
+            <a
+              href="/covid"
+              className="rounded-lg bg-white flex flex-col items-center justify-center w-full px-1 py-2"
+            >
               <img className="w-[100px]" src="/img/icons/Asset-5mdpi.png" />
               <h3 className="text-blue-secondary text-2xl text-center ">
                 Antigen
               </h3>
-            </div>
-            <div className="rounded-lg bg-white flex flex-col items-center justify-center w-full px-1 py-2">
+            </a>
+            <a
+              href="/covid"
+              className="rounded-lg bg-white flex flex-col items-center justify-center w-full px-1 py-2"
+            >
               <img className="w-[100px]" src="/img/icons/Asset-6mdpi.png" />
               <h3 className="text-blue-secondary text-2xl text-center ">
                 Antibody
               </h3>
-            </div>
-            <div className="rounded-lg bg-white flex flex-col items-center justify-center w-full px-1 py-2">
+            </a>
+            <a
+              href="/covid-mobile-testing"
+              className="rounded-lg bg-white flex flex-col items-center justify-center w-full px-1 py-2"
+            >
               <img className="w-[100px]" src="/img/icons/flu-rsv.png" />
               <h3 className="text-blue-secondary text-2xl text-center ">
                 Winter Panel
               </h3>
               <p className="text-blue-secondary text-center">PCR + FLU + RSV</p>
-            </div>
+            </a>
           </div>
           <div className="flex sm:flex-row flex-col items-center justify-center gap-8">
             <p className="text-blue-primary text-xl">
@@ -250,110 +264,8 @@ const Home = () => {
           </h2>
         </div>
       </section>
-      <section className="max-w-screen-lg mx-auto py-16">
-        <div
-          id="newsBlogControls"
-          className="relative lg:w-4/5 mx-2 lg:mx-auto"
-          data-te-carousel-init
-          data-te-carousel-slide
-        >
-          {/* <!--Carousel items--> */}
-          <div className="relative sm:w-[90%] w-[85%] mx-auto overflow-hidden after:clear-both after:block after:content-['']">
-            {/* <!--First item--> */}
-            <div
-              className="relative flex justify-center float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-              data-te-carousel-item
-              data-te-carousel-active
-            >
-              <div className="grid lg:grid-cols-2 gap-8">
-                <div className="flex items-center justify-center">
-                  <a
-                    className="rounded-xl overflow-hidden group"
-                    href="/labq-ribbon-cutting-ceremony-for-newest-lab-and-data-hub-in-mt-olive"
-                  >
-                    <img
-                      className="w-full group-hover:scale-110 transition-all"
-                      src="/img/news/189195214_4165785780154267_6720674629117732980_n.jpg"
-                    />
-                  </a>
-                </div>
-                <div className="flex flex-col justify-center">
-                  <a
-                    href="/news"
-                    className="rounded-full py-1 px-4 text-xs font-medium text-blue-secondary border border-black w-fit"
-                  >
-                    News
-                  </a>
-                  <a
-                    href="/labq-ribbon-cutting-ceremony-for-newest-lab-and-data-hub-in-mt-olive"
-                    className="text-3xl font-semibold"
-                  >
-                    LabQ Ribbon Cutting Ceremony for newest lab and data hub in
-                    Mt. Olive.
-                  </a>
-                  <p className="text-neutral-500 my-4">
-                    PRESS RELEASE Mt. Olive, NJ – On Wednesday, May 19th, HQ
-                    Health partnered with Robert Greenbaum, the mayor of Mt.
-                    Olive, to host an Open House and Ribbon Cutting. The event
-                    was held for the new HQ Center at 100 International Dr., in
-                    the International Trade Center in Mt....
-                  </p>
-                  <a
-                    className="text-sm font-medium transition-all hover:text-blue-secondary"
-                    href="/news/labq-ribbon-cutting-ceremony-for-newest-lab-and-data-hub-in-mt-olive"
-                  >
-                    Read More
-                  </a>
-                </div>
-              </div>
-            </div>
-            {/* <!--Second item--> */}
-            {/* <div
-              className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-              data-te-carousel-item
-            >
-              <img
-                src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
-                className="block w-full"
-                alt="Camera"
-              />
-            </div>
-            <div
-              className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-              data-te-carousel-item
-            >
-              <img
-                src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
-                className="block w-full"
-                alt="Exotic Fruits"
-              />
-            </div> */}
-          </div>
-
-          {/* <!--Carousel controls - prev item--> */}
-          <button
-            className="absolute overflow-hidden bottom-0 left-0 top-0 z-[1] flex w-8 items-center justify-center border-0 bg-none p-0 text-center text-white transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:outline-none focus:text-white focus:no-underline focus:outline-none motion-reduce:transition-none group"
-            type="button"
-            data-te-target="#newsBlogControls"
-            data-te-slide="prev"
-          >
-            <span className="inline-block h-8 w-8 mr-16 before:bg-[#3892e7] before:rotate-[-60deg] before:content-[''] before:w-[16px] before:h-[3px] before:absolute before:left-1/4 after:bg-[#3892e7] after:rotate-[60deg] after:content-[''] after:w-[16px] after:h-[3px] after:absolute after:left-1/4 after:translate-y-3 before:group-hover:-rotate-45 after:group-hover:rotate-45 after:group-hover:translate-y-[11px] before:group-hover:translate-y-[1px] before:transition-all after:transition-all"></span>
-            <span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
-              Previous
-            </span>
-          </button>
-          <button
-            className="absolute overflow-hidden bottom-0 right-0 top-0 z-[1] flex w-8 items-center justify-center border-0 bg-none p-0 text-center text-white transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:outline-none focus:text-white focus:no-underline focus:outline-none motion-reduce:transition-none group"
-            type="button"
-            data-te-target="#newsBlogControls"
-            data-te-slide="next"
-          >
-            <span className="inline-block h-8 w-8 mr-16 before:bg-[#3892e7] before:rotate-[60deg] before:content-[''] before:w-[16px] before:h-[3px] before:absolute before:left-1/4 after:bg-[#3892e7] after:rotate-[-60deg] after:content-[''] after:w-[16px] after:h-[3px] after:absolute after:left-1/4 after:translate-y-3 before:group-hover:rotate-45 after:group-hover:-rotate-45 after:group-hover:translate-y-[11px] before:group-hover:translate-y-[1px] before:transition-all after:transition-all"></span>
-            <span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
-              Next
-            </span>
-          </button>
-        </div>
+      <section className="max-w-screen-xl mx-auto py-16">
+        <BlogSlider />
       </section>
     </Fragment>
   );

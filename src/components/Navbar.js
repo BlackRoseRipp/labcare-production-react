@@ -119,9 +119,9 @@ const Navbar = () => {
           "bg-white w-full py-4 px-2 flex flex-col justify-center items-center z-40 shadow-md"
         )}
       >
-        <div className="max-w-6xl flex justify-between items-center mx-auto w-full">
-          <a href="/" className="w-44">
-            <img src="/img/LabQ-Logo-1.svg" className="w-full" alt="Logo" />
+        <div className="max-w-7xl flex justify-between items-center mx-auto w-full">
+          <a href="/" className="w-48">
+            <img src="/img/LabCare-Logo.png" className="w-full" alt="Logo" />
           </a>
           <button
             data-toggle="navbar"
