@@ -3,6 +3,7 @@ import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 const Home = React.lazy(() => import("../pages/Home"));
 const Tests = React.lazy(() => import("../pages/Tests"));
+const Appointment = React.lazy(() => import("../pages/Appointment"));
 const Insurance = React.lazy(() => import("../pages/Insurance"));
 const Forms = React.lazy(() => import("../pages/Forms"));
 const Supplies = React.lazy(() => import("../pages/Supplies"));
@@ -20,6 +21,9 @@ const CareerListing = React.lazy(() =>
   import("../pages/careers/CareerListing")
 );
 const Contact = React.lazy(() => import("../pages/Contact"));
+const Accessibility = React.lazy(() => import("../pages/legal/Accessibility"));
+const Privacy = React.lazy(() => import("../pages/legal/Privacy"));
+const Terms = React.lazy(() => import("../pages/legal/Terms"));
 const PageNotFound = React.lazy(() => import("../pages/PageNotFound"));
 
 export const pages = [
@@ -31,6 +35,7 @@ export const pages = [
   { path: "/about", component: <About /> },
   { path: "/accredition-licensing", component: <Licensing /> },
   { path: "/services", component: <Services /> },
+  { path: "/appointment", component: <Appointment /> },
   { path: "/location", component: <Locations /> },
   { path: "/covid-mobile-testing", component: <CovidLocations /> },
   { path: "/covid", component: <Covid /> },
@@ -38,6 +43,9 @@ export const pages = [
   { path: "/news/:id", component: <Article /> },
   { path: "/careers", component: <Careers /> },
   { path: "/careers/:id", component: <CareerListing /> },
+  { path: "/accessibility-statement", component: <Accessibility /> },
+  { path: "/privacy-policy", component: <Privacy /> },
+  { path: "/terms-and-conditions", component: <Terms /> },
   { path: "/contact-us", component: <Contact /> },
   { path: "*", component: <PageNotFound /> },
 ];
