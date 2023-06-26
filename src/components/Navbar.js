@@ -238,7 +238,7 @@ const Navbar = () => {
             </li>
           </ul>
           <a
-            href="#"
+            href="/covid"
             className="btn-primary text-blue-primary border-blue-primary border lg:flex hidden items-center font-semibold"
           >
             Covid-19 Testing <FaArrowRight className="ml-2 text-lg" />

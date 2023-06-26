@@ -31,8 +31,11 @@ const Footer = () => {
         <div className="max-w-screen-xl lg:mx-auto mx-8">
           <div className="grid lg:grid-cols-3 gap-4">
             <div className="flex flex-col justify-center lg:items-start items-center gap-4">
-              <a href="/" className="w-1/3">
-                <img src="/img/LabQ-Logo-White.svg" className="w-full" />
+              <a href="/" className="w-1/2">
+                <img
+                  src="/img/LabCare-Logo.png"
+                  className="w-full bg-transparent rounded p-4"
+                />
               </a>
               <div className="flex items-center gap-x-2">
                 <a
