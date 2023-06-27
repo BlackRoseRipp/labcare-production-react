@@ -156,10 +156,10 @@ const Navbar = () => {
                     primary: "Covid Testing",
                     to: "/covid-mobile-testing",
                   },
-                  {
+                  /* {
                     primary: "Tests",
                     to: "/tests",
-                  },
+                  }, */
                   {
                     primary: "Appointment",
                     to: "/appointment",
@@ -195,11 +195,11 @@ const Navbar = () => {
                   {
                     primary: "Supplies",
                     to: "/supplies",
-                  },
+                  } /* 
                   {
                     primary: "Tests",
                     to: "/tests",
-                  },
+                  }, */,
                   {
                     primary: "Physicians's Portal",
                     to: "https://labq.labsvc.net/labgen/",

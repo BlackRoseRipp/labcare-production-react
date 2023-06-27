@@ -126,7 +126,7 @@ const Footer = () => {
                   </a>
                 </div>
                 <div className="flex flex-col gap-y-2">
-                  <a
+                  {/* <a
                     href="/tests"
                     className={classNames(
                       pathname === "/tests"
@@ -135,7 +135,7 @@ const Footer = () => {
                     )}
                   >
                     Tests
-                  </a>
+                  </a> */}
                   <a
                     href="/careers"
                     className={classNames(
