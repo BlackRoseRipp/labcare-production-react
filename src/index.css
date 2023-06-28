@@ -162,6 +162,34 @@ a {
   margin-top: 4px;
 }
 
+.mobile-testing-slide {
+  background-image: linear-gradient(to right, RGBA(15,47,100,1) 0%,RGBA(15,47,100,0.2) 100%);
+}
+
+.your-lab-animation {
+  position: relative;
+  text-decoration: none;
+}
+
+.your-lab-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom left;
+  animation-name: yourLabLine;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes yourLabLine {
+  from {transform: scaleX(0);}
+  to {transform: scaleX(1);}
+}
+
 @media screen and (max-width: 1024px) {
   .btn-primary {
     @apply py-3 px-6 rounded-md;
