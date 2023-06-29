@@ -7,7 +7,7 @@ const PatientReviews = () => {
   return (
     <Fragment>
       <div className="border-t border-[#3892e7] mb-12 w-full"></div>
-      <section className="grid lg:grid-cols-3 gap-x-8 my-16 mx-8">
+      <section className="grid lg:grid-cols-3 gap-x-8 gap-y-4 my-16 mx-8">
         <div className="flex items-center justify-center">
           <h2 className="text-2xl font-medium">
             What Our Patients Say About Us!

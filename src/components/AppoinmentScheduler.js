@@ -221,7 +221,7 @@ const AppointmentScheduler = () => {
                 NY 11204, USA
               </p>
             </div>
-            <div className="flex items-start justify-evenly w-full px-3 my-8">
+            <div className="flex sm:flex-row flex-col sm:items-start items-center justify-evenly w-full px-3 my-8">
               <DatePicker
                 selected={startDate}
                 onChange={(date) => setStartDate(date)}
@@ -230,7 +230,7 @@ const AppointmentScheduler = () => {
                 maxDate={addDays(new Date(), 7)}
                 filterDate={isNotSaturday}
               />
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid sm:grid-cols-3 grid-cols-2 gap-4">
                 {AvailableTimes(startDate).map((slot) => (
                   <button
                     className="bg-[#337ab7] border-[#2e6da4] hover:bg-[#2e6da4] text-white text-sm px-3 py-1.5 rounded transition-all"

@@ -22,9 +22,9 @@ const Article = () => {
         />
       </section>
       <section className="max-w-6xl mx-auto mb-32">
-        <div className="rounded-lg p-12 shadow-lg mt-[-132px] bg-white z-40">
+        <div className="rounded-lg px-2 md:p-12 shadow-lg md:mt-[-132px] bg-white z-40">
           <h1 className="heading font-semibold text-4xl">{article.title}</h1>
-          <div className="flex items-center my-6 gap-12">
+          <div className="flex sm:flex-row flex-col sm:items-center my-6 gap-12">
             <div className="flex flex-col gap-2">
               <h3 className="text-neutral-500 text-xl">Published On</h3>
               <div className="flex">
@@ -54,11 +54,11 @@ const Article = () => {
             <HowWeWork />
           ) : null}
           <div className="border-t border-t-neutral-200 w-full my-12"></div>
-          <div className="bg-blue-primary mx-2 rounded-lg py-9 px-7 flex flex-col items-center gap-12">
-            <h2 className="text-white text-4xl font-semibold heading">
+          <div className="bg-blue-primary md:mx-2 rounded-lg py-9 px-7 flex flex-col items-center gap-12">
+            <h2 className="text-white text-4xl font-semibold heading md:text-start text-center">
               Subscribe for the latest LabCare news
             </h2>
-            <form className="flex items-center gap-4 py-8">
+            <form className="flex md:flex-row flex-col items-center gap-4 py-8">
               <input
                 type="email"
                 className="px-4 py-2"

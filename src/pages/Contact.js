@@ -8,7 +8,7 @@ const Contact = () => {
         <EmbedMap src="https://www.google.com/maps/d/u/1/embed?mid=1t4t-nOECLsl8qrOi6BYdzBdC6ma5EYg&ehbc=2E312F" />
       </section>
       <section className="mt-[-150px] z-40">
-        <div className="max-w-6xl mx-auto p-10 rounded-lg shadow-[0_0_10px_10px_rgba(0,0,0,0.25)] bg-[#F4F9FF] grid grid-cols-3 gap-12">
+        <div className="max-w-6xl mx-auto p-10 rounded-lg shadow-[0_0_10px_10px_rgba(0,0,0,0.25)] bg-[#F4F9FF] grid md:grid-cols-3 gap-12">
           <div className="flex flex-col">
             <img
               className="w-full h-[244px] rounded-lg"
@@ -117,7 +117,7 @@ const Contact = () => {
         <h1 className="heading font-bold text-center text-4xl mb-4 mx-2">
           Get in touch with us
         </h1>
-        <form className="grid lg:grid-cols-2 gap-4 w-full mx-2">
+        <form className="grid lg:grid-cols-2 gap-4 w-full px-2">
           <input
             className="form-input lg:col-span-2"
             type="name"

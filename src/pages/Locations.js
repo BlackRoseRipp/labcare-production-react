@@ -3,13 +3,13 @@ import { Fragment } from "react";
 const Locations = () => {
   return (
     <Fragment>
-      <div className="bg-blue-primary py-2 grid grid-cols-2 gap-x-12">
-        <div className="flex items-center justify-end">
+      <div className="bg-blue-primary py-2 grid md:grid-cols-2 gap-x-12">
+        <div className="hidden md:flex items-center justify-end">
           <h4 className="text-white font-bold text-lg">
             CHECK OUR COVID-19 TESTING SITES IN NYC, NJ, PA
           </h4>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center md:justify-start justify-center">
           <a
             className="border border-white text-white text-xs px-4 py-3 font-medium"
             href="/covid-mobile-testing"
@@ -33,7 +33,7 @@ const Locations = () => {
               alt="Brooklyn - Sunset Park Location"
             />
           </div>
-          <div className="flex flex-col justify-center items-center gap-6 w-[37.5%]">
+          <div className="hidden md:flex flex-col justify-center items-center gap-6 w-[37.5%]">
             <img
               className="w-full"
               src="/img/147478104_759704334961702_2772377612182770053_n-1.jpg"
@@ -48,8 +48,8 @@ const Locations = () => {
         </div>
       </section>
       <section className="bg-[#F4F9FF] py-6">
-        <div className="max-w-6xl mx-auto grid grid-cols-3">
-          <div className="flex flex-col gap-4">
+        <div className="max-w-6xl mx-auto grid sm:grid-cols-3 sm:gap-0 gap-6">
+          <div className="flex flex-col sm:items-start items-center gap-4">
             <h3 className="text-blue-primary text-lg font-medium">
               Patient / Office hours
             </h3>
@@ -73,7 +73,7 @@ const Locations = () => {
             </p>
             <p className="text-neutral-500">Sunday:&nbsp;&nbsp;&nbsp;Closed</p>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col sm:items-start items-center gap-4">
             <h3 className="text-blue-primary text-lg font-medium">Lab hours</h3>
             <p className="text-neutral-500">Monday:&nbsp;&nbsp;&nbsp;24/7</p>
             <p className="text-neutral-500">Tuesday:&nbsp;&nbsp;&nbsp;24/7</p>
@@ -83,7 +83,7 @@ const Locations = () => {
             <p className="text-neutral-500">Saturday:&nbsp;&nbsp;&nbsp;24/7</p>
             <p className="text-neutral-500">Sunday:&nbsp;&nbsp;&nbsp;24/7</p>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col sm:items-start items-center gap-4">
             <a
               href="tel:%20(718)%20534-5227"
               className="text-blue-primary text-lg font-medium"
@@ -120,7 +120,7 @@ const Locations = () => {
               alt="Brooklyn - Boro Park Location"
             />
           </div>
-          <div className="flex flex-col justify-center items-center gap-6 w-[32.5%]">
+          <div className="hidden md:flex flex-col justify-center items-center gap-6 w-[32.5%]">
             <img
               className="w-full"
               src="/img/20201027_112503-1.jpg"
@@ -135,8 +135,8 @@ const Locations = () => {
         </div>
       </section>
       <section className="bg-[#F4F9FF] py-6">
-        <div className="max-w-6xl mx-auto grid grid-cols-3">
-          <div className="flex flex-col gap-4">
+        <div className="max-w-6xl mx-auto grid sm:grid-cols-3 sm:gap-0 gap-6">
+          <div className="flex flex-col sm:items-start items-center gap-4">
             <h3 className="text-blue-primary text-lg font-medium">
               Patient / Office hours
             </h3>
@@ -162,7 +162,7 @@ const Locations = () => {
               Sunday:&nbsp;&nbsp;&nbsp;10AM – 6PM
             </p>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col sm:items-start items-center gap-4">
             <h3 className="text-blue-primary text-lg font-medium">Lab hours</h3>
             <p className="text-neutral-500">
               Monday:&nbsp;&nbsp;&nbsp;9AM – 5PM
@@ -186,7 +186,7 @@ const Locations = () => {
               Sunday:&nbsp;&nbsp;&nbsp;10AM – 6PM
             </p>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col sm:items-start items-center gap-4">
             <a
               href="tel:%20(718)%20247-8000"
               className="text-blue-primary text-lg font-medium"
@@ -223,7 +223,7 @@ const Locations = () => {
               alt="New Jersey - Mount Olive Location"
             />
           </div>
-          <div className="flex flex-col justify-center items-center gap-6 w-[29.7%]">
+          <div className="hidden md:flex flex-col justify-center items-center gap-6 w-[29.7%]">
             <img
               className="w-full"
               src="/img/72fe787c-fdec-45bb-8cb1-b66dd12ffc02.jpg"
@@ -238,8 +238,8 @@ const Locations = () => {
         </div>
       </section>
       <section className="bg-[#F4F9FF] py-6">
-        <div className="max-w-6xl mx-auto grid grid-cols-3">
-          <div className="flex flex-col gap-4">
+        <div className="max-w-6xl mx-auto grid sm:grid-cols-3 sm:gap-0 gap-6">
+          <div className="flex flex-col sm:items-start items-center gap-4">
             <h3 className="text-blue-primary text-lg font-medium">
               Patient / Office hours
             </h3>
@@ -263,7 +263,7 @@ const Locations = () => {
             </p>
             <p className="text-neutral-500">Sunday:&nbsp;&nbsp;&nbsp;Closed</p>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col sm:items-start items-center gap-4">
             <h3 className="text-blue-primary text-lg font-medium">Lab hours</h3>
             <p className="text-neutral-500">Monday:&nbsp;&nbsp;&nbsp;24/7</p>
             <p className="text-neutral-500">Tuesday:&nbsp;&nbsp;&nbsp;24/7</p>
@@ -273,7 +273,7 @@ const Locations = () => {
             <p className="text-neutral-500">Saturday:&nbsp;&nbsp;&nbsp;24/7</p>
             <p className="text-neutral-500">Sunday:&nbsp;&nbsp;&nbsp;24/7</p>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col sm:items-start items-center gap-4">
             <a
               href="tel:%20(732)%20359-5227"
               className="text-blue-primary text-lg font-medium"

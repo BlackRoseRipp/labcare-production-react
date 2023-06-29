@@ -14,7 +14,7 @@ const CareerListing = () => {
   return job ? (
     <Fragment>
       <section className="pt-24 max-w-6xl w-full mx-auto">
-        <div className="mx-2 flex items-center gap-x-12">
+        <div className="px-2 flex items-center gap-x-12">
           <a href="/careers" className="flex items-centertext-neutral-500">
             Careers <RxCaretRight className="shrink-0 text-[#3892E7] w-6 h-6" />
           </a>
@@ -23,7 +23,7 @@ const CareerListing = () => {
           </p>
         </div>
       </section>
-      <section className="flex items-center justify-between mt-12 max-w-6xl w-full lg:mx-auto mx-2">
+      <section className="flex md:flex-row flex-col md:items-center justify-between mt-12 max-w-6xl w-full lg:mx-auto px-2">
         <h1 className="text-4xl">{job.title}</h1>
         <div className="flex items-center">
           <IoLocationSharp className="shrink-0 w-6 h-6 text-[#3892E7]" />
@@ -34,11 +34,11 @@ const CareerListing = () => {
           <h6 className="text-xl ml-2">{job.status}</h6>
         </div>
       </section>
-      <section className="job-details max-w-6xl lg:mx-auto mx-2">
+      <section className="job-details max-w-6xl mx-auto px-2">
         {parse(job.content)}
       </section>
       <section className="max-w-6xl w-full mx-auto py-12">
-        <form className="mx-2 grid grid-cols-2 gap-3">
+        <form className="px-2 grid lg:grid-cols-2 gap-3 w-full">
           <input
             className="form-input lg:col-span-2"
             type="name"
@@ -70,7 +70,7 @@ const CareerListing = () => {
           <div className="flex flex-col">
             <label htmlFor="jobResumeInput">Upload Resume</label>
             <input
-              className="py-2 px-3 text-slate-500 w-fit file:mr-4 file:py-2 file:px-4
+              className="py-2 px-3 text-slate-500 md:w-fit w-full file:mr-4 file:py-2 file:px-4
             file:rounded-lg file:border-0
             file:text-sm file:font-semibold
             file:bg-[#3892E7] file:text-white cursor-pointer file:cursor-pointer transition-all duration-300"

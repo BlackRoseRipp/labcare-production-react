@@ -11,15 +11,15 @@ const Covid = () => {
       <section className="bg-[#ECECEC] h-[566px]">
         <div className="bg-[url(../public/img/lab-Q-covid.png)] bg-no-repeat bg-right bg-contain h-full">
           <div className="max-w-6xl mx-auto flex items-center h-full">
-            <h1 className="w-3/5 heading font-bold text-6xl">
+            <h1 className="w-full md:w-3/5 md:text-start text-center heading font-bold text-6xl">
               Quick and accurate results for COVID-19 testing.
             </h1>
           </div>
         </div>
       </section>
       <section className="max-w-6xl mx-auto py-16">
-        <div className="flex gap-4 py-12 border-b border-neutral-500">
-          <div className="flex flex-col gap-8">
+        <div className="flex md:flex-row flex-col gap-4 py-12 border-b border-neutral-500 mx-2">
+          <div className="flex flex-col md:items-start items-center gap-8">
             <a
               href="/covid-mobile-testing"
               className="text-center w-fit border border-black shadow-xl bg-white p-4 text-lg font-medium hover:shadow-sm hover:text-[#3892e7]"
@@ -44,7 +44,7 @@ const Covid = () => {
               Doctor will be required for covid testing.
             </p>
           </div>
-          <div className="w-3/5 shrink-0">
+          <div className="w-3/5 md:mx-0 mx-auto shrink-0">
             <a href="/covid-mobile-testing">
               <img
                 className="w-full"
@@ -54,15 +54,15 @@ const Covid = () => {
             </a>
           </div>
         </div>
-        <div className="flex gap-4 py-12 border-b border-neutral-500">
-          <div className="w-1/2 shrink-0">
+        <div className="flex md:flex-row flex-col md:items-start items-center gap-4 py-12 border-b border-neutral-500 mx-2">
+          <div className="w-1/2 md:mx-0 mx-auto shrink-0 md:order-1 order-2">
             <img
               className="w-full"
               src="/img/labq-mobile-slider-2.png"
               alt="Covid Mobile Testing"
             />
           </div>
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col md:items-start items-center gap-8 md:order-2 order-1">
             <h2 className="font-semibold text-4xl">
               Turnaround Time​{" "}
               <span className="text-[#3892e7] font-bold">Matters.</span>
@@ -78,8 +78,8 @@ const Covid = () => {
             </p>
           </div>
         </div>
-        <div className="flex gap-4 py-12 border-b border-neutral-500">
-          <div className="flex flex-col gap-8">
+        <div className="flex md:flex-row flex-col gap-4 py-12 border-b border-neutral-500 mx-2">
+          <div className="flex flex-col md:items-start items-center gap-8">
             <h2 className="font-semibold text-4xl">
               It all boils down to{" "}
               <span className="text-[#3892e7] font-bold">technology.</span>
@@ -92,7 +92,7 @@ const Covid = () => {
               Bragging aside, what’s it to you?​
             </p>
           </div>
-          <div className="w-3/5 shrink-0">
+          <div className="w-3/5 shrink-0 md:mx-0 mx-auto">
             <img
               className="w-full"
               src="/img/labq-auto2-1-1024x576.jpg"
@@ -100,18 +100,17 @@ const Covid = () => {
             />
           </div>
         </div>
-        <div className="flex gap-4 py-12 border-b border-neutral-500">
-          <div className="w-1/2 shrink-0">
+        <div className="flex md:flex-row flex-col md:items-start items-center mx-2 gap-4 py-12 border-b border-neutral-500">
+          <div className="w-1/2 shrink-0 md:mx-0 mx-auto md:order-1 order-2">
             <img
               className="w-full"
               src="/img/labq-portal-1024x683.jpg"
               alt="Covid Mobile Testing"
             />
           </div>
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col md:items-start items-center gap-8">
             <h2 className="font-semibold text-4xl">
               Test Results
-              <br />
               <br />
               <span className="text-[#3892e7] font-bold">
                 The after matters too.

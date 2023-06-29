@@ -6,10 +6,10 @@ const HowWeWork = () => {
     <Fragment>
       <div className="border-t border-[#3892e7] mb-12 w-full"></div>
       <section className="flex flex-col items-center gap-8 pb-12">
-        <h2 className="heading text-4xl font-bold text-neutral-800">
+        <h2 className="heading text-4xl font-bold text-neutral-800 lg:block hidden">
           How We Work
         </h2>
-        <div className="flex justify-center">
+        <div className="hidden lg:flex justify-center">
           <div className="w-min flex flex-col items-center px-2 group before:content-[''] before:w-14 before:border before:border-dotted before:border-neutral-300 before:block before:translate-x-[95px] before:translate-y-[75px]">
             <div className="mx-4 z-10 overflow-hidden rounded-full bg-[url(../public/img/news/woman-with-tablet.jpg)] bg-cover bg-center h-[150px] w-[150px]">
               <div className="w-full h-full flex items-center justify-center group-hover:bg-black/50 transition-all">
@@ -63,7 +63,7 @@ const HowWeWork = () => {
           href="/covid-mobile-testing"
           className="bg-blue-primary text-white py-6 uppercase w-full text-center text-xl font-medium flex items-center justify-center"
         >
-          <AiOutlineSearch className="shrink-0 mr-4 w-7 h-auto" />
+          <AiOutlineSearch className="shrink-0 mr-4 w-7 h-auto sm:block hidden" />
           Find a mobile patient service center near you
         </a>
       </section>

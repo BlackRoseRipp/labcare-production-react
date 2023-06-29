@@ -42,7 +42,7 @@ const Home = () => {
         data-te-carousel-slide
       >
         <div
-          class="absolute bottom-0 left-0 right-0 z-[2] list-none justify-center gap-8 bg-black/20 max-w-screen-xl rounded-lg mx-auto mt-12 py-4 px-12 md:opacity-100 opacity-0 md:w-full w-0 overflow-hidden sm:flex hidden"
+          class="absolute bottom-0 left-0 right-0 z-[2] list-none justify-center gap-8 bg-black/20 max-w-screen-xl rounded-lg mx-auto mt-12 py-4 px-12 w-full overflow-hidden flex"
           data-te-carousel-indicators
         >
           <button
@@ -58,7 +58,7 @@ const Home = () => {
               src="/img/icons/labq-tests1.svg"
               className="h-[50px] w-auto mr-4"
             />
-            <span className="hover:text-slate-100 transition-all">
+            <span className="hover:text-slate-100 transition-all md:block hidden">
               {" "}
               Mobile Labs{" "}
             </span>
@@ -74,7 +74,7 @@ const Home = () => {
               src="/img/icons/labq-icon.png"
               className="h-[50px] w-auto mr-4"
             />
-            <span className="hover:text-slate-100 transition-all">
+            <span className="hover:text-slate-100 transition-all md:block hidden">
               Automation & Innovation
             </span>
           </button>
@@ -89,7 +89,7 @@ const Home = () => {
               src="/img/icons/Untitled-1-04-03.svg"
               className="h-[50px] w-auto mr-4"
             />
-            <span className="hover:text-slate-100 transition-all">
+            <span className="hover:text-slate-100 transition-all md:block hidden">
               {" "}
               COVID Testing{" "}
             </span>
@@ -102,13 +102,13 @@ const Home = () => {
             data-te-carousel-active
           >
             <div class="w-full h-full pb-24 mobile-testing-slide">
-              <div className="grid lg:grid-cols-2 py-5 max-w-screen-xl mx-auto pt-12">
+              <div className="grid lg:grid-cols-2 py-5 max-w-screen-xl lg:mx-auto mx-2 pt-12">
                 <div className="flex flex-col gap-6">
-                  <h2 className="text-6xl text-white heading">
+                  <h2 className="text-6xl text-white heading lg:text-start text-center">
                     Access convenient medical screening at our{" "}
                     <span className="font-semibold">mobile lab</span>
                   </h2>
-                  <h4 className="text-white text-lg">
+                  <h4 className="text-white text-lg lg:text-start text-center">
                     Lab testing with LabCare’s mobile units located throughout
                     New York City is easy and convenient.
                   </h4>
@@ -170,6 +170,20 @@ const Home = () => {
                     </a>
                   </div>
                 </div>
+                <div className="hidden lg:flex flex-col justify-end items-center">
+                  <div className="flex justify-end w-full">
+                    <img
+                      src="/img/icons/labq-600test.svg"
+                      className="h-32 w-32 rounded-full bg-white/50 hover:bg-white"
+                      alt="600 Tests"
+                    />
+                  </div>
+                  <img
+                    src="/img/VAN_Mockup.png"
+                    className="w-[500px] h-auto"
+                    alt="Mobile Van"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -177,7 +191,7 @@ const Home = () => {
             class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none bg-[url(../public/img/Untitled-2-3.jpg)] bg-cover bg-center bg-no-repeat pb-24 lg:h-[667px]"
             data-te-carousel-item
           >
-            <div className="flex flex-col justify-center h-full py-5 max-w-screen-lg mx-auto">
+            <div className="flex flex-col justify-center h-full py-5 max-w-screen-lg lg:mx-auto mx-2">
               <h3 className="text-blue-secondary font-semibold text-xl mb-4">
                 Quick Reliable Results Save Lives
               </h3>

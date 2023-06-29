@@ -13,7 +13,7 @@ const Forms = () => {
           <div className="mx-2 border-t border-black"></div>
         </div>
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-4 gap-8 mx-2">
+          <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-8 mx-2">
             <a
               href="/forms/labq_custom_panel_request_form.pdf"
               className="flex items-center"

@@ -8,18 +8,18 @@ const About = () => {
     <Fragment>
       <section className="bg-[#F4F9FF] py-16">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-2 gap-8 mx-2">
-            <div className="flex flex-col justify-center py-4">
-              <h1 className="text-blue-primary font-semibold text-6xl heading mb-12">
+          <div className="grid md:grid-cols-2 gap-8 mx-2">
+            <div className="flex flex-col sm:items-start items-center justify-center py-4">
+              <h1 className="text-blue-primary sm:text-start text-center font-semibold text-6xl heading mb-12">
                 Really, it’s all about you.
               </h1>
-              <p className="text-xl text-blue-primary font-medium leading-10">
+              <p className="text-xl text-blue-primary sm:text-start text-center font-medium leading-10">
                 We can boast about LabCare’s accomplishments forever, but at the
                 end of the day it’s about bringing you the best in diagnostics.
                 Nothing else.
               </p>
             </div>
-            <div className="flex item-center justify-center">
+            <div className="hidden md:flex item-center justify-center">
               <div className="w-full h-full bg-[url(../public/img/20210216_163452-01-scaled.jpg)] bg-cover bg-top"></div>
             </div>
           </div>
@@ -28,7 +28,7 @@ const About = () => {
           </h3>
         </div>
       </section>
-      <section className="grid grid-cols-8 p-16 gap-12">
+      <section className="grid lg:grid-cols-8 sm:grid-cols-4 xs:grid-cols-2 p-16 gap-12">
         <div className="flex flex-col items-center justify-center gap-8">
           <img
             className="w-full"
@@ -94,9 +94,9 @@ const About = () => {
       <div className="mx-4 border-t border-[#8b98b8]"></div>
       <section className="py-16">
         <div className="max-w-6xl mx-auto">
-          <div className="mx-2 grid grid-cols-2 gap-y-12">
-            <div className="grid grid-cols-2 gap-6">
-              <div className="flex item-center justify-center">
+          <div className="mx-2 grid lg:grid-cols-2 gap-y-12">
+            <div className="grid sm:grid-cols-2 gap-6">
+              <div className="flex item-center justify-center sm:h-auto h-60">
                 <div className="w-full h-full bg-[url(../public/img/20210216_163936-scaled.jpg)] bg-cover bg-top"></div>
               </div>
               <div className="flex flex-col justify-center h-60">
@@ -109,11 +109,11 @@ const About = () => {
                 </h6>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-6">
-              <div className="flex item-center justify-center">
+            <div className="grid sm:grid-cols-2 gap-6">
+              <div className="flex item-center justify-center lg:order-1 sm:order-2 sm:h-auto h-60">
                 <div className="w-full h-full bg-[url(../public/img/LAbQ-Automation.jpg)] bg-cover bg-top"></div>
               </div>
-              <div className="flex flex-col justify-center h-60">
+              <div className="flex flex-col justify-center h-60 lg:order-2 order-1">
                 <h2 className="text-2xl font-semibold mb-4 text-blue-primary">
                   WE AUTOMATE —
                 </h2>
@@ -122,8 +122,8 @@ const About = () => {
                 </h6>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-6">
-              <div className="flex flex-col justify-center h-60 px-4">
+            <div className="grid sm:grid-cols-2 gap-6">
+              <div className="flex flex-col justify-center h-60 px-4 lg:order-1 order-2">
                 <h2 className="text-2xl font-semibold mb-4 text-blue-primary">
                   WE INTEGRATE —
                 </h2>
@@ -131,12 +131,12 @@ const About = () => {
                   so that you can get easy access to your results.​
                 </h6>
               </div>
-              <div className="flex item-center justify-center">
+              <div className="flex item-center justify-center lg:order-2 order-1 sm:h-auto h-60">
                 <div className="w-full h-full bg-[url(../public/img/72fe787c-fdec-45bb-8cb1-b66dd12ffc02.jpg)] bg-cover bg-top"></div>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-6">
-              <div className="flex flex-col justify-center h-60 px-4">
+            <div className="grid sm:grid-cols-2 gap-6">
+              <div className="flex flex-col justify-center h-60 px-4 sm:order-1 order-2">
                 <h2 className="text-2xl font-semibold mb-4 text-blue-primary">
                   WE COMMUNICATE —
                 </h2>
@@ -144,24 +144,24 @@ const About = () => {
                   so that you can get the experience you should.​
                 </h6>
               </div>
-              <div className="flex item-center justify-center">
+              <div className="flex item-center justify-center sm:h-auto h-60 sm:order-2 order-1">
                 <div className="w-full h-full bg-[url(../public/img/20210218_164250-01.jpg)] bg-cover bg-top"></div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="grid grid-cols-2">
-        <div className="bg-[#F4F9FF] flex items-center justify-end h-[345px]">
-          <div className="w-[74%] py-20">
+      <section className="grid lg:grid-cols-2">
+        <div className="bg-[#F4F9FF] flex items-center lg:justify-end justify-center sm:h-[345px]">
+          <div className="xs:w-[74%] w-11/12 py-20">
             <h2 className="text-4xl text-center font-medium heading">
               Your Local Lab
             </h2>
           </div>
         </div>
-        <div className="flex items-center">
-          <div className="w-[74%]">
-            <div className="flex group pl-8">
+        <div className="flex lg:justify-start justify-center items-center sm:h-[345px]">
+          <div className="xs:w-[74%] w-11/12 sm:py-0 py-6">
+            <div className="flex group lg:pl-8">
               <BiRun className="text-amber-400 bg-orange-200 rounded-full shrink-0 w-[50px] h-[50px] p-2" />
               <div className="flex flex-col w-fit ml-4">
                 <h3 className="group-hover:text-blue-secondary text-neutral-800 text-2xl font-medium transition-all duration-300">
@@ -180,9 +180,9 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-end">
-          <div className="w-[74%]">
-            <div className="flex group pr-8">
+        <div className="flex items-center lg:justify-end justify-center sm:h-[345px] lg:bg-white bg-[#F4F9FF]">
+          <div className="xs:w-[74%] w-11/12 sm:py-0 py-6">
+            <div className="flex group lg:pr-8">
               <IoRibbonOutline className="text-red-500 bg-red-300 rounded-full shrink-0 w-[50px] h-[50px] p-2" />
               <div className="flex flex-col w-fit ml-4">
                 <h3 className="group-hover:text-blue-secondary text-neutral-800 text-2xl font-medium transition-all duration-300">
@@ -200,9 +200,9 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="bg-[#F4F9FF] flex items-center h-[345px]">
-          <div className="w-[74%]">
-            <div className="flex group pl-8">
+        <div className="lg:bg-[#F4F9FF] bg-white flex lg:justify-start justify-center items-center sm:h-[345px]">
+          <div className="xs:w-[74%] w-11/12 sm:py-0 py-6">
+            <div className="flex group lg:pl-8">
               <FaMapMarkedAlt className="text-green-500 bg-green-600/30 rounded-full shrink-0 w-[50px] h-[50px] p-2 overflow-visible" />
               <div className="flex flex-col w-fit ml-4">
                 <h3 className="group-hover:text-blue-secondary text-neutral-800 text-2xl font-medium transition-all duration-300">
@@ -220,9 +220,9 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="bg-[#F4F9FF] flex items-center justify-end h-[345px]">
-          <div className="w-[74%]">
-            <div className="flex group pr-8">
+        <div className="bg-[#F4F9FF] flex lg:justify-end items-center justify-center sm:h-[345px]">
+          <div className="xs:w-[74%] w-11/12 sm:py-0 py-6">
+            <div className="flex group lg:pr-8">
               <BsFileBarGraph className="text-sky-500 bg-sky-400/70 rounded-full shrink-0 w-[50px] h-[50px] p-2 overflow-visible" />
               <div className="flex flex-col w-fit ml-4">
                 <h3 className="group-hover:text-blue-secondary text-neutral-800 text-2xl font-medium transition-all duration-300">
@@ -242,9 +242,9 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center">
-          <div className="w-[74%]">
-            <div className="flex group pl-8">
+        <div className="flex lg:justify-start justify-center items-center sm:h-[345px]">
+          <div className="xs:w-[74%] w-11/12 sm:py-0 py-6">
+            <div className="flex group lg:pl-8">
               <BiLock className="text-black bg-blue-primary/25 rounded-full shrink-0 w-[50px] h-[50px] p-2" />
               <div className="flex flex-col w-fit ml-4">
                 <h3 className="group-hover:text-blue-secondary text-neutral-800 text-2xl font-medium transition-all duration-300">

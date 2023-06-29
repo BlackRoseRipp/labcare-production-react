@@ -13,9 +13,9 @@ const Services = () => {
         </h4>
       </section>
       <section className="px-2 mb-24">
-        <div className="max-w-screen-xl mx-auto grid grid-cols-2 gap-8">
-          <div className="group shadow-[0_0_24px_-5px_rgba(0,0,0,0.3)] grid grid-cols-2 overflow-hidden">
-            <div className="flex flex-col p-8">
+        <div className="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-8">
+          <div className="group shadow-[0_0_24px_-5px_rgba(0,0,0,0.3)] grid lg:grid-cols-2 overflow-hidden">
+            <div className="flex flex-col p-8 lg:order-1 order-2">
               <h2 className="text-blue-secondary font-semibold text-2xl mb-6">
                 Testing Sites
                 <br />
@@ -35,12 +35,12 @@ const Services = () => {
                 LOCATIONS
               </a>
             </div>
-            <div className="overflow-hidden">
+            <div className="overflow-hidden lg:order-2 order-1 lg:h-auto h-40">
               <div className="bg-[url(../public/img/labq-HQ-brooklyn-1.jpg)] bg-cover bg-center group-hover:scale-110 transition-all h-full w-full"></div>
             </div>
           </div>
-          <div className="group shadow-[0_0_24px_-5px_rgba(0,0,0,0.3)] grid grid-cols-2 overflow-hidden">
-            <div className="flex flex-col p-8">
+          <div className="group shadow-[0_0_24px_-5px_rgba(0,0,0,0.3)] grid lg:grid-cols-2 overflow-hidden">
+            <div className="flex flex-col p-8 lg:order-1 order-2">
               <h2 className="text-blue-secondary font-semibold text-2xl mb-6">
                 Laboratory
                 <br />
@@ -62,12 +62,12 @@ const Services = () => {
                 OUR TECHONOLOGY
               </a>
             </div>
-            <div className="overflow-hidden">
+            <div className="overflow-hidden lg:order-2 order-1 lg:h-auto h-40">
               <div className="bg-[url(../public/img/labq-auto.png)] bg-cover bg-center group-hover:scale-110 transition-all h-full w-full"></div>
             </div>
           </div>
-          <div className="group shadow-[0_0_24px_-5px_rgba(0,0,0,0.3)] grid grid-cols-2 overflow-hidden">
-            <div className="overflow-hidden">
+          <div className="group shadow-[0_0_24px_-5px_rgba(0,0,0,0.3)] grid lg:grid-cols-2 overflow-hidden">
+            <div className="overflow-hidden lg:h-auto h-40">
               <div className="bg-[url(../public/img/nurse-holding-test-tube-LG43K9U.jpg)] bg-cover bg-center group-hover:scale-110 transition-all h-full w-full"></div>
             </div>
             <div className="flex flex-col p-8">
@@ -93,8 +93,8 @@ const Services = () => {
               </a>
             </div>
           </div>
-          <div className="group shadow-[0_0_24px_-5px_rgba(0,0,0,0.3)] grid grid-cols-2 overflow-hidden">
-            <div className="overflow-hidden">
+          <div className="group shadow-[0_0_24px_-5px_rgba(0,0,0,0.3)] grid lg:grid-cols-2 overflow-hidden">
+            <div className="overflow-hidden lg:h-auto h-40">
               <div className="bg-[url(../public/img/antigen.jpg)] bg-cover bg-center group-hover:scale-110 transition-all h-full w-full"></div>
             </div>
             <div className="flex flex-col p-8">

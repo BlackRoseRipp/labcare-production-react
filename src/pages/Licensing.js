@@ -5,7 +5,7 @@ const Licensing = () => {
   return (
     <Fragment>
       <section className="py-8 flex flex-col items-center">
-        <h1 className="heading font-semibold text-center text-5xl mb-4">
+        <h1 className="heading font-semibold text-center sm:text-5xl text-3xl mb-4">
           Accreditation ＆ Licensing
         </h1>
         <h4 className="text-center text-lg">
@@ -13,8 +13,8 @@ const Licensing = () => {
           licenses
         </h4>
       </section>
-      <section className="max-w-6xl w-full mx-auto mb-24">
-        <div className="grid grid-cols-3 gap-8">
+      <section className="max-w-6xl w-full mx-auto px-2 mb-24">
+        <div className="grid md:grid-cols-3 gap-8">
           <div className="flex flex-col items-center justify-center w-full py-4 gap-2 shadow-[0_5px_16px_0_rgba(0,0,0,0.25)]">
             <img
               src="/img/clia-logo-1.png"
@@ -64,7 +64,7 @@ const Licensing = () => {
             </a>
           </div>
         </div>
-        <div className="grid grid-cols-5 gap-4 mt-12">
+        <div className="grid lg:grid-cols-5 md:grid-cols-3 gap-4 mt-12">
           <div className="flex flex-col items-center justify-center w-full py-4 gap-2 shadow-[0_5px_16px_0_rgba(0,0,0,0.25)]">
             <img
               src="/img/NYS_DOH_Wadsworth_copy.png"

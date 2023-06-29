@@ -16,7 +16,7 @@ const Insurance = () => {
         <div className="w-[180px] pt-1.5 mx-2 bg-[#3892E7]"></div>
       </section>
       <section className="py-24">
-        <div className="max-w-[800px] mx-auto grid grid-cols-2 gap-8">
+        <div className="max-w-[800px] mx-auto grid xs:grid-cols-2 gap-8">
           <div className="flex flex-col">
             <div className="flex flex-col">
               <span className="flex items-center before:border-t before:border-black before:content-[''] before:w-full after:border-t after:border-black after:content-[''] after:w-full">
@@ -264,7 +264,7 @@ const Insurance = () => {
             </div>
           </div>
         </div>
-        <div className="w-[320px] border-t border-black mx-auto my-4"></div>
+        <div className="xs:w-[320px] w-full border-t border-black mx-auto my-4"></div>
       </section>
       <section className="mt-5 mb-24">
         <div className="max-w-[800px] mx-auto">

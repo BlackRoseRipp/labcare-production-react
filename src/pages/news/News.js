@@ -12,7 +12,7 @@ const News = () => {
         News
       </h1>
       <section className="py-8 max-w-6xl mx-auto">
-        <div className="grid lg:grid-cols-2 mx-2 gap-6">
+        <div className="grid md:grid-cols-2 mx-2 gap-6">
           {newsList.map((art) => (
             <div className="shadow-md hover:shadow-xl bg-white flex flex-col group overflow-hidden transition-all">
               <a href={"/news/" + art.id} className="w-full relative">

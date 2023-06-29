@@ -30,7 +30,7 @@ const Careers = () => {
           Available Positions: New York
         </h2>
         <div className="border-t-[3px] border-[#3892E7] mx-auto w-32 my-12"></div>
-        <div className="grid lg:grid-cols-3 gap-8 mt-24 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mt-24 max-w-6xl mx-auto">
           {listingsNY.map((listing) => (
             <div className="border rounded-lg border-slate-100 p-6 flex flex-col">
               <h3 className="text-2xl font-medium mb-4">{listing.title}</h3>
@@ -66,7 +66,7 @@ const Careers = () => {
           Available Positions: New Jersey
         </h2>
         <div className="border-t-[3px] border-[#3892E7] mx-auto w-32 my-12"></div>
-        <div className="grid lg:grid-cols-3 gap-8 mt-24 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mt-24 max-w-6xl mx-auto">
           {listingsNJ.map((listing) => (
             <div className="border rounded-lg border-slate-100 p-6 flex flex-col">
               <h3 className="text-2xl font-medium mb-4">{listing.title}</h3>
@@ -102,7 +102,7 @@ const Careers = () => {
           Available Positions: Pennsylvania
         </h2>
         <div className="border-t-[3px] border-[#3892E7] mx-auto w-32 my-12"></div>
-        <div className="grid lg:grid-cols-3 gap-8 mt-24 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mt-24 max-w-6xl mx-auto">
           {listingsPA.map((listing) => (
             <div className="border rounded-lg border-slate-100 p-6 flex flex-col">
               <h3 className="text-2xl font-medium mb-4">{listing.title}</h3>

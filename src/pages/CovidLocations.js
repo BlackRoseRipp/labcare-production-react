@@ -7,8 +7,8 @@ const CovidLocations = () => {
   return (
     <Fragment>
       <section className="bg-[#F4F9FE]">
-        <div className="max-w-screen-lg mx-auto grid grid-cols-3">
-          <div className="flex items-center justify-center">
+        <div className="max-w-screen-lg mx-auto grid md:grid-cols-3">
+          <div className="hidden md:flex items-center justify-center">
             <div className="mask-img scale-110">
               <img
                 className="w-full"
@@ -18,7 +18,7 @@ const CovidLocations = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center col-span-2 p-12">
+          <div className="flex flex-col justify-center items-center md:col-span-2 p-12">
             <h1 className="text-blue-primary text-[42px] text-center heading mb-4">
               Test for COVID-19
             </h1>
