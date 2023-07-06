@@ -36,7 +36,7 @@ const Services = () => {
               </a>
             </div>
             <div className="overflow-hidden lg:order-2 order-1 lg:h-auto h-40">
-              <div className="bg-[url(../public/img/labq-HQ-brooklyn-1.jpg)] bg-cover bg-center group-hover:scale-110 transition-all h-full w-full"></div>
+              <div className="bg-[url(../public/img/Picture1-1.png)] bg-cover bg-center group-hover:scale-110 transition-all h-full w-full"></div>
             </div>
           </div>
           <div className="group shadow-[0_0_24px_-5px_rgba(0,0,0,0.3)] grid lg:grid-cols-2 overflow-hidden">

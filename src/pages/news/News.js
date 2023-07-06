@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
-import newsList from "../../store/ARTICLES.json";
+//import newsList from "../../store/ARTICLES.json";
 
 const News = () => {
+  const newsList = [];
   const classNames = (...classes) => {
     return classes.filter(Boolean).join(" ");
   };
@@ -54,7 +54,7 @@ const News = () => {
           ))}
         </div>
       </section>
-      <section className="py-14 max-w-6xl mx-auto">
+      {/* <section className="py-14 max-w-6xl mx-auto">
         <div className="bg-blue-primary mx-2 rounded-lg py-9 px-7 flex flex-col items-center gap-12">
           <h2 className="text-white text-4xl font-semibold heading">
             Subscribe for the latest LabCare news
@@ -71,7 +71,7 @@ const News = () => {
             </button>
           </form>
         </div>
-      </section>
+      </section> */}
     </section>
   );
 };

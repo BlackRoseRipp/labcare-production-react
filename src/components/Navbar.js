@@ -50,13 +50,13 @@ const Navbar = () => {
         ) : (
           <div className="max-w-6xl mx-auto flex justify-between items-center w-full">
             <div className="flex items-center gap-6">
-              <a
+              {/* <a
                 href="tel:(888)LABQ-247"
                 className="text-white hover:text-blue-500 flex items-center text-xs"
               >
                 <FaPhoneSquareAlt className="text-xl pr-2" />
                 (888) LABQ-247
-              </a>
+              </a> */}
               <div className="flex items-center">
                 <AiOutlineClockCircle className="text-white text-2xl pr-2" />
                 <p className="text-white text-xs">24/7</p>
@@ -79,7 +79,7 @@ const Navbar = () => {
                     <a
                       className="text-gray-700 hover:text-blue-primary hover:bg-[#F4F9FF] p-2 transition-all font-medium py-3 px-6"
                       aria-current="page"
-                      href="https://app.labq.com"
+                      href="/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -88,7 +88,7 @@ const Navbar = () => {
                     <a
                       className="text-gray-700 hover:text-blue-primary hover:bg-[#F4F9FF] p-2 transition-all font-medium py-3 px-6"
                       aria-current="page"
-                      href="https://labq.labsvc.net/labgen/"
+                      href="/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -146,7 +146,7 @@ const Navbar = () => {
                 dropdownLinks={[
                   {
                     primary: "Patient Portal",
-                    to: "https://app.labq.com",
+                    to: "/",
                   },
                   {
                     primary: "Lab Locations",
@@ -174,7 +174,7 @@ const Navbar = () => {
                   },
                   {
                     primary: "Pay Your Bill",
-                    to: "https://www.firstaccept.net/labq5",
+                    to: "/billing",
                   },
                 ]}
               />
@@ -202,7 +202,7 @@ const Navbar = () => {
                   }, */,
                   {
                     primary: "Physicians's Portal",
-                    to: "https://labq.labsvc.net/labgen/",
+                    to: "/",
                   },
                 ]}
               />

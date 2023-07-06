@@ -71,7 +71,7 @@ const Home = () => {
             aria-label="Slide 2"
           >
             <img
-              src="/img/icons/labq-icon.png"
+              src="/img/icons/LabCare_Logo.png"
               className="h-[50px] w-auto mr-4"
             />
             <span className="hover:text-slate-100 transition-all md:block hidden">
@@ -170,7 +170,7 @@ const Home = () => {
                     </a>
                   </div>
                 </div>
-                <div className="hidden lg:flex flex-col justify-end items-center">
+                <div className="hidden lg:flex flex-col justify-center items-center">
                   <div className="flex justify-end w-full">
                     <img
                       src="/img/icons/labq-600test.svg"
@@ -178,11 +178,11 @@ const Home = () => {
                       alt="600 Tests"
                     />
                   </div>
-                  <img
+                  {/* <img
                     src="/img/VAN_Mockup.png"
                     className="w-[500px] h-auto"
                     alt="Mobile Van"
-                  />
+                  /> */}
                 </div>
               </div>
             </div>
@@ -309,7 +309,7 @@ const Home = () => {
             </div>
           ))}
         </div>
-        <div className="max-w-screen-lg mx-auto flex lg:flex-row flex-col items-center gap-x-16 gap-y-8 my-16">
+        {/* <div className="max-w-screen-lg mx-auto flex lg:flex-row flex-col items-center gap-x-16 gap-y-8 my-16">
           <h2 className="text-2xl font-medium">
             What Our Patients Say About Us!
           </h2>
@@ -343,7 +343,7 @@ const Home = () => {
               <p className="text-sm text-neutral-500">Based on 1506 reviews</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
       <section className="grid lg:grid-cols-2">
         <div className="bg-[#F4F9FF] flex flex-col items-end justify-center gap-y-8 pr-2 lg:pl-56 pl-2 py-20 lg:order-1 order-2">
@@ -422,7 +422,7 @@ const Home = () => {
           </h2>
         </div>
       </section>
-      <section className="max-w-screen-xl mx-auto py-16">
+      <section className="max-w-screen-xl mx-auto py-16 hidden">
         <BlogSlider />
       </section>
     </Fragment>

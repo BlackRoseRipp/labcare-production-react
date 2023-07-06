@@ -73,12 +73,12 @@ const Accessibility = () => {
           info@labcare.bio
         </a>
         <br></br>
-        <a
+        {/* <a
           className="text-[#3892e7] underline-animation after:bg-[#3892e7]"
           href="tel:888.522.7247"
         >
           888.522.7247
-        </a>
+        </a> */}
       </div>
     </Fragment>
   );

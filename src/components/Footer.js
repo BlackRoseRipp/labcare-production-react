@@ -29,9 +29,9 @@ const Footer = () => {
     <Fragment>
       <footer className="py-12 mt-auto bg-blue-primary">
         <div className="max-w-screen-xl lg:mx-auto mx-8">
-          <div className="grid lg:grid-cols-3 gap-4">
+          <div className="flex justify-between w-full gap-4">
             <div className="flex flex-col justify-center lg:items-start items-center gap-4">
-              <a href="/" className="w-1/2">
+              <a href="/" className="w-[300px]">
                 <img
                   src="/img/LabCare-Logo.png"
                   className="w-full bg-transparent rounded p-4"
@@ -63,7 +63,7 @@ const Footer = () => {
                   <FaTwitter />
                 </a>
               </div>
-              <div className="flex items-center gap-x-8 mt-10">
+              {/* <div className="flex items-center gap-x-8 mt-10">
                 <a href="https://apps.apple.com/us/app/labq/id1610376669">
                   <img
                     className="w-[120px] h-10"
@@ -76,7 +76,7 @@ const Footer = () => {
                     src="/img/icons/Asset-1.svg"
                   />
                 </a>
-              </div>
+              </div> */}
             </div>
             <div className="flex flex-col lg:items-start items-center">
               <h3 className="heading text-blue-secondary text-3xl font-medium">
@@ -159,7 +159,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col items-center">
+            {/* <div className="flex flex-col items-center">
               <h3 className="heading text-blue-secondary text-3xl font-medium mb-12">
                 Subscribe to our Newsletter
               </h3>
@@ -172,7 +172,7 @@ const Footer = () => {
               <button className="bg-blue-secondary text-white mt-6 w-4/5 text-center font-bold px-4 py-2">
                 Sign Up
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </footer>

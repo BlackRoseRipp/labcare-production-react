@@ -97,7 +97,7 @@ const About = () => {
           <div className="mx-2 grid lg:grid-cols-2 gap-y-12">
             <div className="grid sm:grid-cols-2 gap-6">
               <div className="flex item-center justify-center sm:h-auto h-60">
-                <div className="w-full h-full bg-[url(../public/img/20210216_163936-scaled.jpg)] bg-cover bg-top"></div>
+                <div className="w-full h-full bg-[url(../public/img/Image_1.jpg)] bg-cover bg-top"></div>
               </div>
               <div className="flex flex-col justify-center h-60">
                 <h2 className="text-2xl font-semibold mb-4 text-blue-primary">
@@ -132,7 +132,7 @@ const About = () => {
                 </h6>
               </div>
               <div className="flex item-center justify-center lg:order-2 order-1 sm:h-auto h-60">
-                <div className="w-full h-full bg-[url(../public/img/72fe787c-fdec-45bb-8cb1-b66dd12ffc02.jpg)] bg-cover bg-top"></div>
+                <div className="w-full h-full bg-[url(../public/img/Image_3.jpg)] bg-cover bg-top"></div>
               </div>
             </div>
             <div className="grid sm:grid-cols-2 gap-6">
@@ -145,7 +145,7 @@ const About = () => {
                 </h6>
               </div>
               <div className="flex item-center justify-center sm:h-auto h-60 sm:order-2 order-1">
-                <div className="w-full h-full bg-[url(../public/img/20210218_164250-01.jpg)] bg-cover bg-top"></div>
+                <div className="w-full h-full bg-[url(../public/img/Image_4.jpg)] bg-cover bg-top"></div>
               </div>
             </div>
           </div>

@@ -20,25 +20,19 @@ const Locations = () => {
       </div>
       <section className="max-w-6xl mx-auto pt-24 pb-5">
         <h2 className="heading text-blue-primary font-semibold text-6xl mb-4">
-          Brooklyn - Sunset Park Location
+          NTC Labs
         </h2>
-        <h4 className="text-blue-primary text-2xl mb-4">
-          140 58th St, Bldg A Suite 3L, Brooklyn, NY 11220
-        </h4>
+        <h4 className="text-blue-primary text-2xl mb-4">TBD</h4>
         <div className="flex items-center justify-center gap-x-6">
           <div className="flex justify-center items-center w-[62%]">
             <img
               className="w-full"
-              src="/img/labq-HQ-brooklyn-1.jpg"
+              src="/img/NTC-Albany.jpg"
               alt="Brooklyn - Sunset Park Location"
             />
           </div>
           <div className="hidden md:flex flex-col justify-center items-center gap-6 w-[37.5%]">
-            <img
-              className="w-full"
-              src="/img/147478104_759704334961702_2772377612182770053_n-1.jpg"
-              alt="Lab Technicians"
-            />
+            <img className="w-full" src="" alt="Lab Technicians" />
             <img
               className="w-full"
               src="/img/20210620_200027-1.jpg"
@@ -107,20 +101,18 @@ const Locations = () => {
       </section>
       <section className="max-w-6xl mx-auto pt-24 pb-5">
         <h2 className="heading text-blue-primary font-semibold text-6xl mb-4">
-          Brooklyn - Boro Park Location
+          Encino
         </h2>
-        <h4 className="text-blue-primary text-2xl mb-4">
-          4508 16th Avenue, 3rd Floor, Brooklyn NY 11204
-        </h4>
+        <h4 className="text-blue-primary text-2xl mb-4">TBD</h4>
         <div className="flex items-center justify-center gap-x-6">
-          <div className="flex justify-center items-center w-[68%]">
+          <div className="flex justify-center items-center w-[62%]">
             <img
               className="w-full"
-              src="/img/20201027_111w657-1.jpg"
+              src="/img/Encino.jpg"
               alt="Brooklyn - Boro Park Location"
             />
           </div>
-          <div className="hidden md:flex flex-col justify-center items-center gap-6 w-[32.5%]">
+          <div className="hidden md:flex flex-col justify-center items-center gap-6 w-[37.8%]">
             <img
               className="w-full"
               src="/img/20201027_112503-1.jpg"
@@ -216,14 +208,14 @@ const Locations = () => {
           100 International Dr, Mount Olive, NJ 07828
         </h4>
         <div className="flex items-center justify-center gap-x-6">
-          <div className="flex justify-center items-center w-[70%]">
+          <div className="flex justify-center items-center w-[67%]">
             <img
               className="w-full"
               src="/img/Picture1-1.png"
               alt="New Jersey - Mount Olive Location"
             />
           </div>
-          <div className="hidden md:flex flex-col justify-center items-center gap-6 w-[29.7%]">
+          <div className="hidden md:flex flex-col justify-center items-center gap-6 w-[32.4%]">
             <img
               className="w-full"
               src="/img/72fe787c-fdec-45bb-8cb1-b66dd12ffc02.jpg"
@@ -231,7 +223,7 @@ const Locations = () => {
             />
             <img
               className="w-full"
-              src="/img/20210216_163452-01-scaled.jpg"
+              src="/img/147478104_759704334961702_2772377612182770053_n-1.jpg"
               alt="Lab Technicians"
             />
           </div>

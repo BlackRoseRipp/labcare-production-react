@@ -12,26 +12,24 @@ const Contact = () => {
           <div className="flex flex-col">
             <img
               className="w-full h-[244px] rounded-lg"
-              src="/img/labq-HQ-brooklyn-1.jpg"
-              alt="Brooklyn - Sunset Park Location"
+              src="/img/NTC-Albany.jpg"
+              alt="NTC Lab Location"
             />
-            <h2 className="text-2xl font-bold heading my-4">
-              Brooklyn Laboratory
-            </h2>
+            <h2 className="text-2xl font-bold heading my-4">NTC Lab</h2>
             <div className="flex flex-col">
               <h5 className="text-neutral-400 mb-4">
-                140 58th St, Bldg A Suite 3L
+                TBD
                 <br />
-                Brooklyn, NY 11220
+                TBD
               </h5>
               <a href="tel:(718)534-5227" className="text-[#3892E7] mb-4 w-fit">
-                (718) 534-5227
+                TBD
               </a>
               <a
                 href="mailto:helpdesk@labq.com"
                 className="text-[#3892E7] mb-4 w-fit"
               >
-                helpdesk@labq.com
+                TBD
               </a>
             </div>
 
@@ -81,26 +79,24 @@ const Contact = () => {
           <div className="flex flex-col">
             <img
               className="w-full h-[244px] rounded-lg"
-              src="/img/bp-1-1024x768.jpg"
-              alt="Brooklyn - Boro Park Outside"
+              src="/img/Encino.jpg"
+              alt="Encino Location"
             />
-            <h2 className="text-2xl font-bold heading my-4">
-              Boro Park Patient Center
-            </h2>
+            <h2 className="text-2xl font-bold heading my-4">Encino Location</h2>
             <div className="flex flex-col">
               <h5 className="text-neutral-400 mb-4">
-                4508 16th Avenue, 3rd Floor
+                TBD
                 <br />
-                Brooklyn NY 11204
+                TBD
               </h5>
               <a href="tel:(718)247-8000" className="text-[#3892E7] mb-4 w-fit">
-                (718) 247-8000
+                TBD
               </a>
               <a
                 href="mailto:psc1001@labq.com"
                 className="text-[#3892E7] mb-4 w-fit"
               >
-                psc1001@labq.com
+                TBD
               </a>
             </div>
 

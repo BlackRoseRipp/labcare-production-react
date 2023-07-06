@@ -19,8 +19,8 @@ const Careers = () => {
 
   return (
     <Fragment>
-      <section className="bg-[url(../public/img/4Q0A3673.jpg)] bg-cover bg-top bg-no-repeat">
-        <div className="bg-black/60 h-[300px] w-full"></div>
+      <section className="bg-[url(../public/img/Image_5.jpg)] bg-cover bg-top bg-no-repeat">
+        <div className="bg-black/60 h-[600px] w-full"></div>
       </section>
       <section
         className={classNames(listingsNY.length > 0 ? "pt-24 pb-8" : "hidden")}
