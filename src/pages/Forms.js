@@ -15,7 +15,7 @@ const Forms = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-8 mx-2">
             <a
-              href="/forms/labq_custom_panel_request_form.pdf"
+              href="/forms/LabCare_Custom_Panel_Request_Form.pdf"
               className="flex items-center"
               target="_blank"
               rel="noopener noreferrer"
@@ -26,7 +26,7 @@ const Forms = () => {
               </p>
             </a>
             <a
-              href="/forms/LabQ-Covid-form_Interactive_Feb18.pdf"
+              href="/forms/LabCare-Covid-Form.pdf"
               className="flex items-center"
               target="_blank"
               rel="noopener noreferrer"
@@ -37,7 +37,7 @@ const Forms = () => {
               </p>
             </a>
             <a
-              href="/forms/labq_house_call_request.pdf"
+              href="/forms/LabCare_House_Call_Request.pdf"
               className="flex items-center"
               target="_blank"
               rel="noopener noreferrer"
@@ -48,7 +48,7 @@ const Forms = () => {
               </p>
             </a>
             <a
-              href="/forms/General-Test-Requisition-3-21.pdf"
+              href="/forms/LabCare-General-Test-Requisition.pdf"
               className="flex items-center"
               target="_blank"
               rel="noopener noreferrer"

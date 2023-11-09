@@ -28,10 +28,10 @@ const About = () => {
           </h3>
         </div>
       </section>
-      <section className="grid lg:grid-cols-8 sm:grid-cols-4 xs:grid-cols-2 p-16 gap-12">
+      <section className="flex sm:flex-row flex-col justify-center items-center p-16 gap-12 flex-wrap">
         <div className="flex flex-col items-center justify-center gap-8">
           <img
-            className="w-full"
+            className="w-40"
             src="/img/clia-logo-1.png"
             alt="CLIA Certified"
           />
@@ -39,56 +39,56 @@ const About = () => {
         </div>
         <div className="flex flex-col items-center justify-center gap-8">
           <img
-            className="w-full"
+            className="w-40"
             src="/img/8b873fec4fe309b1_800x800ar.jpg"
             alt="CAP"
           />
           <h6>CAP</h6>
         </div>
-        <div className="flex flex-col items-center justify-center gap-8">
+        {/* <div className="flex flex-col items-center justify-center gap-8">
           <img className="w-full" src="/img/images.jpg" alt="API - 2020" />
           <h6>API - 2020</h6>
-        </div>
+        </div> */}
         <div className="flex flex-col items-center justify-center gap-8">
           <img
-            className="w-full"
+            className="w-40"
             src="/img/NYS_DOH_Wadsworth_copy.png"
             alt="NYS DOH"
           />
           <h6>NYS DOH</h6>
         </div>
-        <div className="flex flex-col items-center justify-center gap-8">
+        {/* <div className="flex flex-col items-center justify-center gap-8">
           <img
             className=""
             src="/img/california-dept-of-health-pj8z1spknaqzmyrcb4e2t5ds0xyreizij6ub2on37k.png"
             alt="California DOH"
           />
           <h6>California DOH</h6>
-        </div>
-        <div className="flex flex-col items-center justify-center gap-8">
+        </div> */}
+        {/* <div className="flex flex-col items-center justify-center gap-8">
           <img
             className="w-full"
             src="/img/agency-title.jpg"
             alt="MD Dept of Health"
           />
           <h6>MD Dept of Health</h6>
-        </div>
+        </div> */}
         <div className="flex flex-col items-center justify-center gap-8">
           <img
-            className="w-full"
+            className="w-40"
             src="/img/njdoh_svg.png"
             alt="State of NJ DOH"
           />
           <h6>State of NJ DOH</h6>
         </div>
-        <div className="flex flex-col items-center justify-center gap-8">
+        {/* <div className="flex flex-col items-center justify-center gap-8">
           <img
             className="w-full"
             src="/img/DOH-logo.png"
             alt="PA Dept of Health"
           />
           <h6>PA Dept of Health</h6>
-        </div>
+        </div> */}
       </section>
 
       <div className="mx-4 border-t border-[#8b98b8]"></div>

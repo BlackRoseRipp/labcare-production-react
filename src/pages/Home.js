@@ -188,27 +188,30 @@ const Home = () => {
             </div>
           </div>
           <div
-            class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none bg-[url(../public/img/Untitled-2-3.jpg)] bg-cover bg-center bg-no-repeat pb-24 lg:h-[667px]"
+            class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none bg-[url(../public/img/11e06b8c-be48-4230-a3d1-9012b7d11661.jpg)] bg-cover bg-center bg-no-repeat lg:h-[667px]"
             data-te-carousel-item
           >
-            <div className="flex flex-col justify-center h-full py-5 max-w-screen-lg lg:mx-auto mx-2">
-              <h3 className="text-blue-secondary font-semibold text-xl mb-4">
-                Quick Reliable Results Save Lives
-              </h3>
-              <h2 className="text-blue-primary font-bold text-6xl mb-4 heading">
-                Automation
-                <br />
-                and Innovation
-              </h2>
-              <h4 className="text-blue-secondary text-lg mb-4">
-                Fastest Turnaround Time in the Region
-              </h4>
-              <a
-                href="/about"
-                className="mt-8 w-fit rounded-md py-2.5 px-5 font-bold border bg-white text-blue-secondary border-blue-secondary hover:text-white hover:bg-blue-secondary flex items-center"
-              >
-                Learn More <RxCaretRight className="shrink-0 ml-0.5 text-xl" />
-              </a>
+            <div className="pb-24 bg-gradient-to-l from-transparent to-white w-full h-full">
+              <div className="flex flex-col justify-center h-full py-5 max-w-screen-lg lg:mx-auto mx-2">
+                <h3 className="text-blue-secondary font-semibold text-xl mb-4">
+                  Quick Reliable Results Save Lives
+                </h3>
+                <h2 className="text-blue-primary font-bold text-6xl mb-4 heading">
+                  Automation
+                  <br />
+                  and Innovation
+                </h2>
+                <h4 className="text-blue-secondary text-lg mb-4">
+                  Fastest Turnaround Time in the Region
+                </h4>
+                <a
+                  href="/about"
+                  className="mt-8 w-fit rounded-md py-2.5 px-5 font-bold border bg-white text-blue-secondary border-blue-secondary hover:text-white hover:bg-blue-secondary flex items-center"
+                >
+                  Learn More{" "}
+                  <RxCaretRight className="shrink-0 ml-0.5 text-xl" />
+                </a>
+              </div>
             </div>
           </div>
           <div

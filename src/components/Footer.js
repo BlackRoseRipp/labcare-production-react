@@ -29,7 +29,7 @@ const Footer = () => {
     <Fragment>
       <footer className="py-12 mt-auto bg-blue-primary">
         <div className="max-w-screen-xl lg:mx-auto mx-8">
-          <div className="flex justify-between w-full gap-4">
+          <div className="flex lg:flex-row flex-col lg:items-start items-center justify-between w-full gap-4">
             <div className="flex flex-col justify-center lg:items-start items-center gap-4">
               <a href="/" className="w-[300px]">
                 <img

@@ -24,19 +24,11 @@ const Locations = () => {
         </h2>
         <h4 className="text-blue-primary text-2xl mb-4">TBD</h4>
         <div className="flex items-center justify-center gap-x-6">
-          <div className="flex justify-center items-center w-[62%]">
+          <div className="flex justify-center items-center w-full">
             <img
               className="w-full"
               src="/img/NTC-Albany.jpg"
               alt="Brooklyn - Sunset Park Location"
-            />
-          </div>
-          <div className="hidden md:flex flex-col justify-center items-center gap-6 w-[37.5%]">
-            <img className="w-full" src="" alt="Lab Technicians" />
-            <img
-              className="w-full"
-              src="/img/20210620_200027-1.jpg"
-              alt="Brooklyn - Sunset Park Van"
             />
           </div>
         </div>
@@ -105,23 +97,11 @@ const Locations = () => {
         </h2>
         <h4 className="text-blue-primary text-2xl mb-4">TBD</h4>
         <div className="flex items-center justify-center gap-x-6">
-          <div className="flex justify-center items-center w-[62%]">
+          <div className="flex justify-center items-center w-full">
             <img
               className="w-full"
               src="/img/Encino.jpg"
               alt="Brooklyn - Boro Park Location"
-            />
-          </div>
-          <div className="hidden md:flex flex-col justify-center items-center gap-6 w-[37.8%]">
-            <img
-              className="w-full"
-              src="/img/20201027_112503-1.jpg"
-              alt="Nurses"
-            />
-            <img
-              className="w-full"
-              src="/img/bp-1-1024x768.jpg"
-              alt="Brooklyn - Boro Park Outside"
             />
           </div>
         </div>
@@ -208,23 +188,11 @@ const Locations = () => {
           100 International Dr, Mount Olive, NJ 07828
         </h4>
         <div className="flex items-center justify-center gap-x-6">
-          <div className="flex justify-center items-center w-[67%]">
+          <div className="flex justify-center items-center w-full">
             <img
               className="w-full"
               src="/img/Picture1-1.png"
               alt="New Jersey - Mount Olive Location"
-            />
-          </div>
-          <div className="hidden md:flex flex-col justify-center items-center gap-6 w-[32.4%]">
-            <img
-              className="w-full"
-              src="/img/72fe787c-fdec-45bb-8cb1-b66dd12ffc02.jpg"
-              alt="Result Analytics"
-            />
-            <img
-              className="w-full"
-              src="/img/147478104_759704334961702_2772377612182770053_n-1.jpg"
-              alt="Lab Technicians"
             />
           </div>
         </div>

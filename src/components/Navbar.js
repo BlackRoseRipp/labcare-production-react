@@ -1,9 +1,10 @@
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { FaArrowRight, FaPhoneSquareAlt } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useLocation } from "react-router-dom";
+import { Collapse, initTE } from "tw-elements";
 import useWindowSize from "../hooks/useWindowSize";
 import newsList from "../store/ARTICLES.json";
 import careerListing from "../store/CAREER_LISTINGS.json";
@@ -19,6 +20,10 @@ const Navbar = () => {
   const classNames = (...classes) => {
     return classes.filter(Boolean).join(" ");
   };
+
+  useEffect(() => {
+    initTE({ Collapse });
+  }, []);
 
   return (
     <Fragment>
@@ -135,8 +140,8 @@ const Navbar = () => {
           </button>
           <ul
             className={classNames(
-              size.width < 1024 ? "hidden" : "",
-              "flex flex-row justify-center items-center grow rounded-lg ml-4"
+              size.width < 1024 ? "hidden" : "flex",
+              "flex-row justify-center items-center grow rounded-lg ml-4"
             )}
           >
             <li>
@@ -246,7 +251,7 @@ const Navbar = () => {
         </div>
         <div
           className={classNames(
-            expanded ? "max-h-[180px]" : "max-h-0",
+            expanded ? "max-h-[700px]" : "max-h-0",
             "block lg:max-h-full w-full lg:w-auto transition-all duration-700 rounded-none md:rounded-2xl md:container overflow-hidden lg:hidden"
           )}
           id="navbar"
@@ -254,9 +259,96 @@ const Navbar = () => {
           {size.width < 1024 ? (
             <div className="flex flex-col bg-white">
               <NavButton to="/" primary="Home" />
-              <NavButton to="/services" primary="What We Offer" />
-              <NavButton to="/plans" primary="Plans" />
-              <NavButton to="/contact" primary="Contact Us" />
+              <div className="accordion accordion-flush" id="mobileMenu">
+                <NavButton
+                  to="#"
+                  primary="Patient"
+                  id="One"
+                  dropdownLinks={[
+                    {
+                      primary: "Patient Portal",
+                      to: "/",
+                    },
+                    {
+                      primary: "Lab Locations",
+                      to: "/location",
+                    },
+                    {
+                      primary: "Covid Testing",
+                      to: "/covid-mobile-testing",
+                    },
+                    /* {
+                      primary: "Tests",
+                      to: "/tests",
+                    }, */
+                    {
+                      primary: "Appointment",
+                      to: "/appointment",
+                    },
+                    {
+                      primary: "Insurance",
+                      to: "/insurance",
+                    },
+                    {
+                      primary: "Billing",
+                      to: "/billing",
+                    },
+                    {
+                      primary: "Pay Your Bill",
+                      to: "/billing",
+                    },
+                  ]}
+                />
+                <NavButton
+                  to="#"
+                  primary="Physicians"
+                  id="Two"
+                  dropdownLinks={[
+                    {
+                      primary: "Forms",
+                      to: "/forms",
+                    },
+                    {
+                      primary: "Insurance",
+                      to: "/insurance",
+                    },
+                    {
+                      primary: "Supplies",
+                      to: "/supplies",
+                    } /* 
+                    {
+                      primary: "Tests",
+                      to: "/tests",
+                    }, */,
+                    {
+                      primary: "Physicians's Portal",
+                      to: "/",
+                    },
+                  ]}
+                />
+                <NavButton
+                  to="#"
+                  primary="About"
+                  id="Three"
+                  dropdownLinks={[
+                    {
+                      primary: "About Us",
+                      to: "/about",
+                    },
+                    {
+                      primary: "Accredition & Licensing",
+                      to: "/accredition-licensing",
+                    },
+                    {
+                      primary: "News",
+                      to: "/news",
+                    },
+                  ]}
+                />
+              </div>
+              <NavButton to="/services" primary="Services" />
+              <NavButton to="/careers" primary="Careers" />
+              <NavButton to="/contact-us" primary="Contact" />
             </div>
           ) : null}
         </div>
