@@ -42,7 +42,7 @@ const Home = () => {
         data-te-carousel-slide
       >
         <div
-          class="absolute bottom-0 left-0 right-0 z-[2] list-none justify-center gap-8 bg-black/20 max-w-screen-xl rounded-lg mx-auto mt-12 py-4 px-12 w-full overflow-hidden flex"
+          class="absolute bottom-0 left-0 right-0 z-[2] list-none justify-center md:gap-8 gap-4 bg-black/20 max-w-screen-xl rounded-lg mx-auto mt-12 py-4 px-3 md:px-12 w-full overflow-hidden flex"
           data-te-carousel-indicators
         >
           <button

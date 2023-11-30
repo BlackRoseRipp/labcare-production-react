@@ -45,7 +45,7 @@ const Navbar = () => {
           "bg-blue-primary w-full py-1 px-2 flex flex-col justify-center items-center z-50"
         )}
       >
-        {size.width < 1024 ? (
+        {false ? (
           <a
             href="/covid-mobile-testing"
             className="btn-primary text-white border-white border flex items-center font-semibold"
@@ -156,11 +156,11 @@ const Navbar = () => {
                   {
                     primary: "Lab Locations",
                     to: "/location",
-                  },
+                  } /* 
                   {
                     primary: "Covid Testing",
                     to: "/covid-mobile-testing",
-                  },
+                  }, */,
                   /* {
                     primary: "Tests",
                     to: "/tests",
@@ -227,11 +227,11 @@ const Navbar = () => {
                   {
                     primary: "Accredition & Licensing",
                     to: "/accredition-licensing",
-                  },
+                  } /* 
                   {
                     primary: "News",
                     to: "/news",
-                  },
+                  }, */,
                 ]}
               />
             </li>
@@ -272,11 +272,11 @@ const Navbar = () => {
                     {
                       primary: "Lab Locations",
                       to: "/location",
-                    },
+                    } /* 
                     {
                       primary: "Covid Testing",
                       to: "/covid-mobile-testing",
-                    },
+                    }, */,
                     /* {
                       primary: "Tests",
                       to: "/tests",
@@ -338,11 +338,11 @@ const Navbar = () => {
                     {
                       primary: "Accredition & Licensing",
                       to: "/accredition-licensing",
-                    },
+                    } /* 
                     {
                       primary: "News",
                       to: "/news",
-                    },
+                    }, */,
                   ]}
                 />
               </div>
