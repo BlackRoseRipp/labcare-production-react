@@ -1,6 +1,7 @@
-import React from "react";
+import { useEffect } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useLocation } from "react-router-dom";
+import { Collapse, initTE } from "tw-elements";
 import useWindowSize from "../hooks/useWindowSize";
 
 function NavButton(props) {
@@ -11,6 +12,10 @@ function NavButton(props) {
     return classes.filter(Boolean).join(" ");
   };
 
+  useEffect(() => {
+    initTE({ Collapse });
+  }, []);
+
   const location = useLocation();
   const path = location.pathname;
 
@@ -19,12 +24,13 @@ function NavButton(props) {
   return dropdownLinks ? (
     size.width < 1024 ? (
       <div className="accordion-item">
-        <h2 className="accordion-header mb-0" id={"mobileHeader" + id}>
+        <h2 className="mb-0" id={"mobileHeader" + id}>
           <button
-            className="accordion-button collapsed font-medium text-lg !text-blue-primary px-4 py-2 focus:outline-none !shadow-none flex items-center after:hidden"
+            className="group relative font-medium px-5 py-2 focus:outline-none !shadow-none [overflow-anchor:none] hover:z-[2] focus:z-[3] flex items-center after:hidden"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target={"#mobileSubMenu" + id}
+            data-te-collapse-init
+            data-te-collapse-collapsed
+            data-te-target={"#mobileSubMenu" + id}
             aria-expanded="false"
             aria-controls={"mobileSubMenu" + id}
           >
@@ -35,12 +41,14 @@ function NavButton(props) {
           </button>
         </h2>
         <div
-          className="accordion-collapse collapse"
+          className="!visible hidden"
           id={"mobileSubMenu" + id}
+          data-te-collapse-item
+          data-te-collapse-collapsed
           aria-labelledby={"mobileHeader" + id}
-          data-bs-parent="#mobileMenu"
+          data-te-parent="#mobileMenu"
         >
-          <div className="flex flex-col accordion-body">
+          <div className="flex flex-col">
             {dropdownLinks.map((link) => {
               return link.to.startsWith("/") || link.to.startsWith("#") ? (
                 <a

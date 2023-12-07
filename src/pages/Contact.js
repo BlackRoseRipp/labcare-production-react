@@ -12,31 +12,29 @@ const Contact = () => {
           <div className="flex flex-col">
             <img
               className="w-full h-[244px] rounded-lg"
-              src="/img/labq-HQ-brooklyn-1.jpg"
-              alt="Brooklyn - Sunset Park Location"
+              src="/img/NTC-Albany.jpg"
+              alt="NTC Lab Location"
             />
-            <h2 className="text-2xl font-bold heading my-4">
-              Brooklyn Laboratory
-            </h2>
+            <h2 className="text-2xl font-bold heading my-4">NTC Lab</h2>
             <div className="flex flex-col">
               <h5 className="text-neutral-400 mb-4">
-                140 58th St, Bldg A Suite 3L
+                150 New Scotland Ave,
                 <br />
-                Brooklyn, NY 11220
+                Albany, NY 12208
               </h5>
-              <a href="tel:(718)534-5227" className="text-[#3892E7] mb-4 w-fit">
-                (718) 534-5227
+              <a href="tel:(518)293-0204" className="text-[#3892E7] mb-4 w-fit">
+                (518) 293-0204
               </a>
               <a
-                href="mailto:helpdesk@labq.com"
+                href="mailto:drugtest@ntclab.com"
                 className="text-[#3892E7] mb-4 w-fit"
               >
-                helpdesk@labq.com
+                drugtest@ntclab.com
               </a>
             </div>
 
             <a
-              href="https://g.page/LabQ-Quick-Results-Save-Lives?share"
+              href="https://maps.app.goo.gl/URJPFjXqZz7QdbV78"
               className="bg-white border border-black rounded-lg font-semibold py-4 text-center px-8"
             >
               Get Directions
@@ -64,10 +62,10 @@ const Contact = () => {
                 (732) 359-5227
               </a>
               <a
-                href="mailto:nj@labq.com"
+                href="mailto:helpdesk@labcare.bio"
                 className="text-[#3892E7] mb-4 w-fit"
               >
-                nj@labq.com
+                helpdesk@labcare.bio
               </a>
             </div>
 
@@ -81,31 +79,29 @@ const Contact = () => {
           <div className="flex flex-col">
             <img
               className="w-full h-[244px] rounded-lg"
-              src="/img/bp-1-1024x768.jpg"
-              alt="Brooklyn - Boro Park Outside"
+              src="/img/Encino.jpg"
+              alt="Encino Location"
             />
-            <h2 className="text-2xl font-bold heading my-4">
-              Boro Park Patient Center
-            </h2>
+            <h2 className="text-2xl font-bold heading my-4">Encino Location</h2>
             <div className="flex flex-col">
               <h5 className="text-neutral-400 mb-4">
-                4508 16th Avenue, 3rd Floor
+                16311 Ventura Blvd # 888,
                 <br />
-                Brooklyn NY 11204
+                Encino, CA 91436
               </h5>
-              <a href="tel:(718)247-8000" className="text-[#3892E7] mb-4 w-fit">
-                (718) 247-8000
+              <a href="tel:(818)789-2585" className="text-[#3892E7] mb-4 w-fit">
+                (818) 789-2585
               </a>
               <a
-                href="mailto:psc1001@labq.com"
+                href="mailto:carebio@labcare.bio"
                 className="text-[#3892E7] mb-4 w-fit"
               >
-                psc1001@labq.com
+                carebio@labcare.bio
               </a>
             </div>
 
             <a
-              href="https://www.google.com/maps/place/LabQ+Diagnostics/@40.6332191,-73.9857885,17z/data=!3m1!4b1!4m5!3m4!1s0x89c24546f8fcaecf:0x319c55671fe57774!8m2!3d40.633215!4d-73.9835998?shorturl=1"
+              href="https://maps.app.goo.gl/JGkvZiRBnrDLoSc69"
               className="bg-white border border-black rounded-lg font-semibold py-4 text-center px-8"
             >
               Get Directions

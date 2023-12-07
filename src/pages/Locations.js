@@ -20,29 +20,17 @@ const Locations = () => {
       </div>
       <section className="max-w-6xl mx-auto pt-24 pb-5">
         <h2 className="heading text-blue-primary font-semibold text-6xl mb-4">
-          Brooklyn - Sunset Park Location
+          NTC Labs
         </h2>
         <h4 className="text-blue-primary text-2xl mb-4">
-          140 58th St, Bldg A Suite 3L, Brooklyn, NY 11220
+          150 New Scotland Ave, Albany, NY 12208
         </h4>
         <div className="flex items-center justify-center gap-x-6">
-          <div className="flex justify-center items-center w-[62%]">
+          <div className="flex justify-center items-center w-full">
             <img
               className="w-full"
-              src="/img/labq-HQ-brooklyn-1.jpg"
+              src="/img/NTC-Albany.jpg"
               alt="Brooklyn - Sunset Park Location"
-            />
-          </div>
-          <div className="hidden md:flex flex-col justify-center items-center gap-6 w-[37.5%]">
-            <img
-              className="w-full"
-              src="/img/147478104_759704334961702_2772377612182770053_n-1.jpg"
-              alt="Lab Technicians"
-            />
-            <img
-              className="w-full"
-              src="/img/20210620_200027-1.jpg"
-              alt="Brooklyn - Sunset Park Van"
             />
           </div>
         </div>
@@ -85,19 +73,19 @@ const Locations = () => {
           </div>
           <div className="flex flex-col sm:items-start items-center gap-4">
             <a
-              href="tel:%20(718)%20534-5227"
+              href="tel:(518)293-0204"
               className="text-blue-primary text-lg font-medium"
             >
-              (718) 534-5227
+              (518) 293-0204
             </a>
             <a
-              href="mailto:%20helpdesk@labq.com"
+              href="mailto:drugtest@ntclab.com"
               className="text-blue-primary text-lg font-medium"
             >
-              helpdesk@labq.com
+              drugtest@ntclab.com
             </a>
             <a
-              href="https://g.page/LabQ-Quick-Results-Save-Lives?share"
+              href="https://maps.app.goo.gl/URJPFjXqZz7QdbV78"
               className="border border-black rounded-lg font-semibold py-6 text-center px-8"
             >
               Get Directions
@@ -107,29 +95,17 @@ const Locations = () => {
       </section>
       <section className="max-w-6xl mx-auto pt-24 pb-5">
         <h2 className="heading text-blue-primary font-semibold text-6xl mb-4">
-          Brooklyn - Boro Park Location
+          Encino
         </h2>
         <h4 className="text-blue-primary text-2xl mb-4">
-          4508 16th Avenue, 3rd Floor, Brooklyn NY 11204
+          16311 Ventura Blvd # 888, Encino, CA 91436
         </h4>
         <div className="flex items-center justify-center gap-x-6">
-          <div className="flex justify-center items-center w-[68%]">
+          <div className="flex justify-center items-center w-full">
             <img
               className="w-full"
-              src="/img/20201027_111w657-1.jpg"
+              src="/img/Encino.jpg"
               alt="Brooklyn - Boro Park Location"
-            />
-          </div>
-          <div className="hidden md:flex flex-col justify-center items-center gap-6 w-[32.5%]">
-            <img
-              className="w-full"
-              src="/img/20201027_112503-1.jpg"
-              alt="Nurses"
-            />
-            <img
-              className="w-full"
-              src="/img/bp-1-1024x768.jpg"
-              alt="Brooklyn - Boro Park Outside"
             />
           </div>
         </div>
@@ -188,19 +164,19 @@ const Locations = () => {
           </div>
           <div className="flex flex-col sm:items-start items-center gap-4">
             <a
-              href="tel:%20(718)%20247-8000"
+              href="tel:(818)789-2585"
               className="text-blue-primary text-lg font-medium"
             >
-              (718) 247-8000
+              (818) 789-2585
             </a>
             <a
-              href="mailto:%20psc1001@labq.com"
+              href="mailto:carebio@labcare.bio"
               className="text-blue-primary text-lg font-medium"
             >
-              psc1001@labq.com
+              carebio@labcare.bio
             </a>
             <a
-              href="https://www.google.com/maps/place/LabQ+Diagnostics/@40.6332191,-73.9857885,17z/data=!3m1!4b1!4m5!3m4!1s0x89c24546f8fcaecf:0x319c55671fe57774!8m2!3d40.633215!4d-73.9835998?shorturl=1"
+              href="https://maps.app.goo.gl/JGkvZiRBnrDLoSc69"
               className="border border-black rounded-lg font-semibold py-6 text-center px-8"
             >
               Get Directions
@@ -216,23 +192,11 @@ const Locations = () => {
           100 International Dr, Mount Olive, NJ 07828
         </h4>
         <div className="flex items-center justify-center gap-x-6">
-          <div className="flex justify-center items-center w-[70%]">
+          <div className="flex justify-center items-center w-full">
             <img
               className="w-full"
               src="/img/Picture1-1.png"
               alt="New Jersey - Mount Olive Location"
-            />
-          </div>
-          <div className="hidden md:flex flex-col justify-center items-center gap-6 w-[29.7%]">
-            <img
-              className="w-full"
-              src="/img/72fe787c-fdec-45bb-8cb1-b66dd12ffc02.jpg"
-              alt="Result Analytics"
-            />
-            <img
-              className="w-full"
-              src="/img/20210216_163452-01-scaled.jpg"
-              alt="Lab Technicians"
             />
           </div>
         </div>
@@ -281,10 +245,10 @@ const Locations = () => {
               (732) 359-5227
             </a>
             <a
-              href="mailto:%20nj@labq.com"
+              href="mailto:helpdesk@labcare.bio"
               className="text-blue-primary text-lg font-medium"
             >
-              nj@labq.com
+              helpdesk@labcare.bio
             </a>
             <a
               href="https://g.page/hqcenter-mount-olive?share"

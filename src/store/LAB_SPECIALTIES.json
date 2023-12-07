@@ -20,7 +20,7 @@
     "icon": "home-icon-5.svg"
   },
   {
-    "title": "Hemotology",
+    "title": "Hematology",
     "icon": "home-icon-6.svg"
   },
   {
@@ -42,9 +42,5 @@
   {
     "title": "Oncology",
     "icon": "home-icon-11.svg"
-  },
-  {
-    "title": "COVID-19",
-    "icon": "home-icon-12.svg"
   }
 ]

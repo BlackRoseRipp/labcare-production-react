@@ -84,12 +84,12 @@ function StoreList(props) {
                 <p className="text-xs text-neutral-900 mb-2">
                   {location.address}
                 </p>
-                <a
+                {/* <a
                   className="text-blue-secondary text-xs hover:underline"
                   href={"tel:" + location.phone}
                 >
                   {location.phone}
-                </a>
+                </a> */}
               </div>
             </div>
           );

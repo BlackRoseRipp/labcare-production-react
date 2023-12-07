@@ -43,8 +43,8 @@ const Privacy = () => {
           <li>
             <p className="mb-4">
               <strong>Company</strong> (referred to as either "the Company",
-              "We", "Us" or "Our" in this Agreement) refers to LabCare, 140 58TH
-              ST. BLDG A, SUITE 3L BROOKLYN, NY 11220.
+              "We", "Us" or "Our" in this Agreement) refers to LabCare, 100
+              INTERNATIONAL DR. BUDD LAKE, NJ 07828.
             </p>
           </li>
           <li>
@@ -57,7 +57,7 @@ const Privacy = () => {
           </li>
           <li>
             <p className="mb-4">
-              <strong>Country</strong> refers to: New York, United States
+              <strong>Country</strong> refers to: United States
             </p>
           </li>
           <li>
@@ -693,7 +693,7 @@ const Privacy = () => {
               </a>
             </p>
           </li>
-          <li>
+          {/* <li>
             <p className="mb-4">
               By phone number:{" "}
               <a
@@ -703,14 +703,14 @@ const Privacy = () => {
                 888.522.7247
               </a>
             </p>
-          </li>
+          </li> */}
           <li>
             <p className="mb-4">
               By mail: LabCare
               <br></br>
-              140 58th St. Bldg A, Suite 3L
+              100 International Dr.
               <br></br>
-              Brooklyn, NY 11220
+              Budd Lake, NJ 07828
             </p>
           </li>
         </ul>

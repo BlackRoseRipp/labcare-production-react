@@ -42,7 +42,7 @@ const Home = () => {
         data-te-carousel-slide
       >
         <div
-          class="absolute bottom-0 left-0 right-0 z-[2] list-none justify-center gap-8 bg-black/20 max-w-screen-xl rounded-lg mx-auto mt-12 py-4 px-12 w-full overflow-hidden flex"
+          class="absolute bottom-0 left-0 right-0 z-[2] list-none justify-center gap-2 bg-black/20 max-w-4xl rounded-lg mx-auto mt-12 py-4 px-3 md:px-12 w-full overflow-hidden flex"
           data-te-carousel-indicators
         >
           <button
@@ -71,13 +71,14 @@ const Home = () => {
             aria-label="Slide 2"
           >
             <img
-              src="/img/icons/labq-icon.png"
+              src="/img/icons/LabCare_Logo.png"
               className="h-[50px] w-auto mr-4"
             />
             <span className="hover:text-slate-100 transition-all md:block hidden">
               Automation & Innovation
             </span>
           </button>
+          {/* 
           <button
             type="button"
             data-te-target="#homeBanner"
@@ -93,7 +94,7 @@ const Home = () => {
               {" "}
               COVID Testing{" "}
             </span>
-          </button>
+          </button> */}
         </div>
         <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
           <div
@@ -123,7 +124,7 @@ const Home = () => {
                         General Blood Work
                       </h5>
                     </div>
-                    <div className="flex flex-col items-center gap-2">
+                    {/* <div className="flex flex-col items-center gap-2">
                       <img
                         className=" w-[72px] h-[72px]"
                         src="/img/icons/Untitled-1-04-01-2.svg"
@@ -132,7 +133,7 @@ const Home = () => {
                       <h5 className="text-white/80 text-sm text-center">
                         COVID/Flu/RSV Testing
                       </h5>
-                    </div>
+                    </div> */}
                     <div className="flex flex-col items-center gap-2">
                       <img
                         className=" w-[72px] h-[72px]"
@@ -156,21 +157,21 @@ const Home = () => {
                   </div>
                   <div className="flex justify-evenly gap-6">
                     <a
-                      href="/covid"
+                      href="/services"
                       className="text-sm px-7 py-3.5 font-semibold rounded flex items-center justify-center border text-white border-white bg-transparent hover:bg-[#0568F6] hover:border-[#0568F6]"
                     >
                       LEARN MORE
                     </a>
                     <a
-                      href="/covid-mobile-testing"
-                      className="text-sm px-7 py-3.5 font-semibold rounded flex items-center justify-center border text-white border-[#0568F6] bg-[#0568F6] hover:bg-transparent hover:border-white"
+                      href="/location"
+                      className="text-sm px-7 py-3.5 uppercase font-semibold rounded flex items-center justify-center border text-white border-[#0568F6] bg-[#0568F6] hover:bg-transparent hover:border-white"
                     >
                       <AiOutlineSearch className="mr-2 shrink-0 text-lg" />
-                      FIND A MOBILE PATIENT CENTER NEAR YOU
+                      FIND A LOCATION NEAR YOU
                     </a>
                   </div>
                 </div>
-                <div className="hidden lg:flex flex-col justify-end items-center">
+                <div className="hidden lg:flex flex-col justify-center items-center">
                   <div className="flex justify-end w-full">
                     <img
                       src="/img/icons/labq-600test.svg"
@@ -178,40 +179,43 @@ const Home = () => {
                       alt="600 Tests"
                     />
                   </div>
-                  <img
+                  {/* <img
                     src="/img/VAN_Mockup.png"
                     className="w-[500px] h-auto"
                     alt="Mobile Van"
-                  />
+                  /> */}
                 </div>
               </div>
             </div>
           </div>
           <div
-            class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none bg-[url(../public/img/Untitled-2-3.jpg)] bg-cover bg-center bg-no-repeat pb-24 lg:h-[667px]"
+            class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none bg-[url(../public/img/11e06b8c-be48-4230-a3d1-9012b7d11661.jpg)] bg-cover bg-center bg-no-repeat lg:h-[667px]"
             data-te-carousel-item
           >
-            <div className="flex flex-col justify-center h-full py-5 max-w-screen-lg lg:mx-auto mx-2">
-              <h3 className="text-blue-secondary font-semibold text-xl mb-4">
-                Quick Reliable Results Save Lives
-              </h3>
-              <h2 className="text-blue-primary font-bold text-6xl mb-4 heading">
-                Automation
-                <br />
-                and Innovation
-              </h2>
-              <h4 className="text-blue-secondary text-lg mb-4">
-                Fastest Turnaround Time in the Region
-              </h4>
-              <a
-                href="/about"
-                className="mt-8 w-fit rounded-md py-2.5 px-5 font-bold border bg-white text-blue-secondary border-blue-secondary hover:text-white hover:bg-blue-secondary flex items-center"
-              >
-                Learn More <RxCaretRight className="shrink-0 ml-0.5 text-xl" />
-              </a>
+            <div className="pb-24 bg-gradient-to-l from-transparent to-white w-full h-full">
+              <div className="flex flex-col justify-center h-full py-5 max-w-screen-lg lg:mx-auto mx-2">
+                <h3 className="text-blue-secondary font-semibold text-xl mb-4">
+                  Quick Reliable Results Save Lives
+                </h3>
+                <h2 className="text-blue-primary font-bold text-6xl mb-4 heading">
+                  Automation
+                  <br />
+                  and Innovation
+                </h2>
+                <h4 className="text-blue-secondary text-lg mb-4">
+                  Fastest Turnaround Time in the Region
+                </h4>
+                <a
+                  href="/about"
+                  className="mt-8 w-fit rounded-md py-2.5 px-5 font-bold border bg-white text-blue-secondary border-blue-secondary hover:text-white hover:bg-blue-secondary flex items-center"
+                >
+                  Learn More{" "}
+                  <RxCaretRight className="shrink-0 ml-0.5 text-xl" />
+                </a>
+              </div>
             </div>
           </div>
-          <div
+          {/* <div
             class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none bg-[url(../public/img/landing22.jpg)] bg-cover bg-center bg-no-repeat pb-24 lg:h-[667px]"
             data-te-carousel-item
           >
@@ -279,7 +283,7 @@ const Home = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -309,7 +313,7 @@ const Home = () => {
             </div>
           ))}
         </div>
-        <div className="max-w-screen-lg mx-auto flex lg:flex-row flex-col items-center gap-x-16 gap-y-8 my-16">
+        {/* <div className="max-w-screen-lg mx-auto flex lg:flex-row flex-col items-center gap-x-16 gap-y-8 my-16">
           <h2 className="text-2xl font-medium">
             What Our Patients Say About Us!
           </h2>
@@ -343,7 +347,7 @@ const Home = () => {
               <p className="text-sm text-neutral-500">Based on 1506 reviews</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
       <section className="grid lg:grid-cols-2">
         <div className="bg-[#F4F9FF] flex flex-col items-end justify-center gap-y-8 pr-2 lg:pl-56 pl-2 py-20 lg:order-1 order-2">
@@ -422,7 +426,7 @@ const Home = () => {
           </h2>
         </div>
       </section>
-      <section className="max-w-screen-xl mx-auto py-16">
+      <section className="max-w-screen-xl mx-auto py-16 hidden">
         <BlogSlider />
       </section>
     </Fragment>
