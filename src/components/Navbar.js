@@ -40,66 +40,57 @@ const Navbar = () => {
           "bg-blue-primary w-full py-1 px-2 flex flex-col justify-center items-center z-50"
         )}
       >
-        {size.width < 1024 ? (
-          <a
-            href="/covid-mobile-testing"
-            className="btn-primary text-white border-white border flex items-center font-semibold"
-          >
-            Covid-19 Testing <FaArrowRight className="ml-2 text-lg" />
-          </a>
-        ) : (
-          <div className="max-w-6xl mx-auto flex justify-between items-center w-full">
-            <div className="flex items-center gap-6">
-              <a
-                href="tel:(888)LABQ-247"
-                className="text-white hover:text-blue-500 flex items-center text-xs"
-              >
-                <FaPhoneSquareAlt className="text-xl pr-2" />
-                (888) LABQ-247
-              </a>
-              <div className="flex items-center">
-                <AiOutlineClockCircle className="text-white text-2xl pr-2" />
-                <p className="text-white text-xs">24/7</p>
-              </div>
-            </div>
+        <div className="max-w-6xl mx-auto flex justify-between items-center w-full">
+          <div className="flex items-center gap-6">
+            <a
+              href="tel:(888)LABQ-247"
+              className="text-white hover:text-blue-500 flex items-center text-xs"
+            >
+              <FaPhoneSquareAlt className="text-xl pr-2" />
+              (888) LABQ-247
+            </a>
             <div className="flex items-center">
-              <div className="relative">
-                <a className="border-transparent text-white hover:border-sky-400 text-xs peer group bg-transparent py-2 px-5 transition-all flex items-center font-medium border-b-[3px]">
-                  Portal Login
-                  <span className="ml-2">
-                    <MdKeyboardArrowDown className="group-hover:rotate-180 transition-all text-xl" />
-                  </span>
-                </a>
-                <div
-                  className={
-                    "block peer-hover:max-h-[380px] hover:max-h-[380px] mt-px max-h-0 w-max min-w-full bg-white drop-shadow-lg absolute rounded-b-lg z-[999] transition-all duration-300 ease-linear overflow-hidden"
-                  }
-                >
-                  <div className="flex flex-col">
-                    <a
-                      className="text-gray-700 hover:text-blue-primary hover:bg-[#F4F9FF] p-2 transition-all font-medium py-3 px-6"
-                      aria-current="page"
-                      href="https://app.labq.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      PATIENT PORTAL
-                    </a>
-                    <a
-                      className="text-gray-700 hover:text-blue-primary hover:bg-[#F4F9FF] p-2 transition-all font-medium py-3 px-6"
-                      aria-current="page"
-                      href="https://labq.labsvc.net/labgen/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      DOCTOR'S PORTAL
-                    </a>
-                  </div>
+              <AiOutlineClockCircle className="text-white text-2xl pr-2" />
+              <p className="text-white text-xs">24/7</p>
+            </div>
+          </div>
+          <div className="flex items-center">
+            <div className="relative">
+              <a className="border-transparent text-white hover:border-sky-400 text-xs peer group bg-transparent py-2 px-5 transition-all flex items-center font-medium border-b-[3px]">
+                Portal Login
+                <span className="ml-2">
+                  <MdKeyboardArrowDown className="group-hover:rotate-180 transition-all text-xl" />
+                </span>
+              </a>
+              <div
+                className={
+                  "block peer-hover:max-h-[380px] hover:max-h-[380px] mt-px max-h-0 w-max min-w-full bg-white drop-shadow-lg absolute rounded-b-lg z-[999] transition-all duration-300 ease-linear overflow-hidden"
+                }
+              >
+                <div className="flex flex-col">
+                  <a
+                    className="text-gray-700 hover:text-blue-primary hover:bg-[#F4F9FF] p-2 transition-all font-medium py-3 px-6"
+                    aria-current="page"
+                    href="https://app.labq.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    PATIENT PORTAL
+                  </a>
+                  <a
+                    className="text-gray-700 hover:text-blue-primary hover:bg-[#F4F9FF] p-2 transition-all font-medium py-3 px-6"
+                    aria-current="page"
+                    href="https://labq.labsvc.net/labgen/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    DOCTOR'S PORTAL
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-        )}
+        </div>
       </nav>
       <nav
         className={classNames(

@@ -37,8 +37,8 @@ export const pages = [
   { path: "/services", component: <Services /> },
   { path: "/appointment", component: <Appointment /> },
   { path: "/location", component: <Locations /> },
-  { path: "/covid-mobile-testing", component: <CovidLocations /> },
-  { path: "/covid", component: <Covid /> },
+  /* { path: "/covid-mobile-testing", component: <CovidLocations /> },
+  { path: "/covid", component: <Covid /> }, */
   { path: "/news", component: <News /> },
   { path: "/news/:id", component: <Article /> },
   { path: "/careers", component: <Careers /> },

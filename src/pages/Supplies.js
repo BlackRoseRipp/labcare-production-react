@@ -79,7 +79,7 @@ const Supplies = () => {
             <option value="Butterfly Needles">Butterfly Needles</option>
             <option value="Blood Culture Set">Blood Culture Set</option>
             <option value="24h Urine Kit">24h Urine Kit</option>
-            <option value="Covid Kit">Covid Kit</option>
+            {/* <option value="Covid Kit">Covid Kit</option> */}
           </select>
           <input
             className="form-input lg:col-span-3"
@@ -109,7 +109,7 @@ const Supplies = () => {
             <option value="Butterfly Needles">Butterfly Needles</option>
             <option value="Blood Culture Set">Blood Culture Set</option>
             <option value="24h Urine Kit">24h Urine Kit</option>
-            <option value="Covid Kit">Covid Kit</option>
+            {/* <option value="Covid Kit">Covid Kit</option> */}
           </select>
           <input
             className="form-input lg:col-span-3"
@@ -139,7 +139,7 @@ const Supplies = () => {
             <option value="Butterfly Needles">Butterfly Needles</option>
             <option value="Blood Culture Set">Blood Culture Set</option>
             <option value="24h Urine Kit">24h Urine Kit</option>
-            <option value="Covid Kit">Covid Kit</option>
+            {/* <option value="Covid Kit">Covid Kit</option> */}
           </select>
           <input
             className="form-input lg:col-span-3"
@@ -169,7 +169,7 @@ const Supplies = () => {
             <option value="Butterfly Needles">Butterfly Needles</option>
             <option value="Blood Culture Set">Blood Culture Set</option>
             <option value="24h Urine Kit">24h Urine Kit</option>
-            <option value="Covid Kit">Covid Kit</option>
+            {/* <option value="Covid Kit">Covid Kit</option> */}
           </select>
           <input
             className="form-input lg:col-span-3"
@@ -199,7 +199,7 @@ const Supplies = () => {
             <option value="Butterfly Needles">Butterfly Needles</option>
             <option value="Blood Culture Set">Blood Culture Set</option>
             <option value="24h Urine Kit">24h Urine Kit</option>
-            <option value="Covid Kit">Covid Kit</option>
+            {/* <option value="Covid Kit">Covid Kit</option> */}
           </select>
           <input
             className="form-input lg:col-span-3"
@@ -229,7 +229,7 @@ const Supplies = () => {
             <option value="Butterfly Needles">Butterfly Needles</option>
             <option value="Blood Culture Set">Blood Culture Set</option>
             <option value="24h Urine Kit">24h Urine Kit</option>
-            <option value="Covid Kit">Covid Kit</option>
+            {/* <option value="Covid Kit">Covid Kit</option> */}
           </select>
           <input
             className="form-input lg:col-span-3"

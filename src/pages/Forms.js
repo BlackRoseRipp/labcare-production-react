@@ -13,7 +13,7 @@ const Forms = () => {
           <div className="mx-2 border-t border-black"></div>
         </div>
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-8 mx-2">
+          <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-8 mx-2">
             <a
               href="/forms/labq_custom_panel_request_form.pdf"
               className="flex items-center"
@@ -25,7 +25,7 @@ const Forms = () => {
                 Custom Panel Request Form
               </p>
             </a>
-            <a
+            {/* <a
               href="/forms/LabQ-Covid-form_Interactive_Feb18.pdf"
               className="flex items-center"
               target="_blank"
@@ -35,7 +35,7 @@ const Forms = () => {
               <p className="text-[#3892e7] font-semibold text-2xl">
                 COVID-19 Requisition Form
               </p>
-            </a>
+            </a> */}
             <a
               href="/forms/labq_house_call_request.pdf"
               className="flex items-center"
