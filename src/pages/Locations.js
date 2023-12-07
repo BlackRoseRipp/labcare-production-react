@@ -3,7 +3,7 @@ import { Fragment } from "react";
 const Locations = () => {
   return (
     <Fragment>
-      <div className="bg-blue-primary py-2 grid md:grid-cols-2 gap-x-12">
+      {/* <div className="bg-blue-primary py-2 grid md:grid-cols-2 gap-x-12">
         <div className="hidden md:flex items-center justify-end">
           <h4 className="text-white font-bold text-lg">
             CHECK OUR COVID-19 TESTING SITES IN NYC, NJ, PA
@@ -17,7 +17,7 @@ const Locations = () => {
             COVID-19 TESTING SITES
           </a>
         </div>
-      </div>
+      </div> */}
       <section className="max-w-6xl mx-auto pt-24 pb-5">
         <h2 className="heading text-blue-primary font-semibold text-6xl mb-4">
           NTC Labs
