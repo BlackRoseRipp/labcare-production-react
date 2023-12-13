@@ -228,9 +228,30 @@ const Home = () => {
         className="max-w-screen-xl w-full px-2 mx-auto lg:py-24 py-16"
         id="technology"
       >
-        <h2 className="heading text-center lg:text-5xl text-3xl font-semibold mb-16">
-          Technology
-        </h2>
+        <div className="grid lg:grid-cols-2 gap-12">
+          <div className="flex flex-col items-center justify-center lg:items-end">
+            <h2 className="heading text-center lg:text-end lg:text-5xl text-3xl font-semibold mb-16">
+              Technology
+            </h2>
+            <p className="lg:text-end text-center">
+              LabCare.Bio’s molecular diagnostic solutions are designed to
+              enhance the accuracy, speed, and efficiency of disease detection.
+              Utilizing cutting-edge technology that encompasses a comprehensive
+              range of PCR-based assays and Next-Generation Sequencing (NGS)
+              platforms that enable precise identification and characterization
+              of pathogens, genetic mutations, and infectious diseases. Our
+              technology delivers rapid and reliable results crucial for
+              informed clinical decision-making.
+            </p>
+          </div>
+          <div className="justify-center items-center lg:flex hidden">
+            <img
+              src="/img/Image_3.jpg"
+              className="w-[500px] rounded-lg"
+              alt="Technology"
+            />
+          </div>
+        </div>
       </section>
       <section
         className="max-w-screen-xl w-full px-2 mx-auto lg:py-24 py-16"
