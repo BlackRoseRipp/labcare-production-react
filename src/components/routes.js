@@ -28,21 +28,21 @@ const PageNotFound = React.lazy(() => import("../pages/PageNotFound"));
 
 export const pages = [
   { path: "/", component: <Home /> },
-  { path: "/insurance", component: <Insurance /> },
+  /*   { path: "/insurance", component: <Insurance /> },
   { path: "/forms", component: <Forms /> },
   { path: "/supplies", component: <Supplies /> },
   { path: "/billing", component: <Billing /> },
   { path: "/about", component: <About /> },
   { path: "/accredition-licensing", component: <Licensing /> },
   { path: "/services", component: <Services /> },
-  { path: "/appointment", component: <Appointment /> },
+  { path: "/appointment", component: <Appointment /> }, */
   { path: "/location", component: <Locations /> },
   /* { path: "/covid-mobile-testing", component: <CovidLocations /> },
-  { path: "/covid", component: <Covid /> }, */
+  { path: "/covid", component: <Covid /> },
   { path: "/news", component: <News /> },
   { path: "/news/:id", component: <Article /> },
   { path: "/careers", component: <Careers /> },
-  { path: "/careers/:id", component: <CareerListing /> },
+  { path: "/careers/:id", component: <CareerListing /> }, */
   { path: "/accessibility-statement", component: <Accessibility /> },
   { path: "/privacy-policy", component: <Privacy /> },
   { path: "/terms-and-conditions", component: <Terms /> },

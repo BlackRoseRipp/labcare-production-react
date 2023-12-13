@@ -1,0 +1,20 @@
+[
+    {
+        "title": "NTC Lab",
+        "address": "150 New Scotland Ave, Albany, NY 12208",
+        "phone": "(518) 293-0204",
+        "email" : "drugtest@ntclab.com"
+    },
+    {
+        "title": "New Jersey Laboratory",
+        "address": "100 International Dr, Mount Olive, NJ 07828",
+        "phone": "(732) 359-5227",
+        "email" : "helpdesk@labcare.bio"
+    },
+    {
+        "title": "Encino Location",
+        "address": "16311 Ventura Blvd # 888, Encino, CA 91436",
+        "phone": "(818) 789-2585",
+        "email" : "carebio@labcare.bio"
+    }
+]

@@ -17,7 +17,7 @@ function NavButton(props) {
   }, []);
 
   const location = useLocation();
-  const path = location.pathname;
+  const path = "";
 
   const activeDropdownLink = dropdownLinks?.some((link) => link.to === path);
 

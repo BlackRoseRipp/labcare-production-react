@@ -1,433 +1,309 @@
-import { Fragment, useEffect, useState } from "react";
-import { AiOutlineSearch } from "react-icons/ai";
-import { BiRun } from "react-icons/bi";
-import { BsFileBarGraph, BsStar, BsStarFill, BsStarHalf } from "react-icons/bs";
-import { FaFacebook, FaMapMarkedAlt } from "react-icons/fa";
-import { FcGoogle } from "react-icons/fc";
-import { IoRibbonOutline } from "react-icons/io5";
-import { RxCaretRight } from "react-icons/rx";
-import BlogSlider from "../components/BlogSlider";
+import { Fragment } from "react";
+import { BsClipboardHeartFill, BsFileBarGraph, BsVirus } from "react-icons/bs";
+import { FaUserPlus } from "react-icons/fa";
+import { FaCheck, FaCircleCheck, FaShieldVirus } from "react-icons/fa6";
+import { MdFormatListBulletedAdd } from "react-icons/md";
+import StoreLocator from "../components/Locations/StoreLocator";
 import useWindowSize from "../hooks/useWindowSize";
-import LAB_SPECIALTIES from "../store/LAB_SPECIALTIES.json";
+import LocationList from "../store/LOCATIONS.json";
 
 const Home = () => {
-  const [isVisible, setIsVisible] = useState(0);
-
   const size = useWindowSize();
   const classNames = (...classes) => {
     return classes.filter(Boolean).join(" ");
   };
-  const num = size.width < 1024 ? [1, 2, 5, 6, 9, 10] : [1, 3, 4, 6, 9, 11];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsVisible((isVisible) => (isVisible < 3 ? isVisible + 1 : 0));
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const yourLabArr = [
-    "Qualified Staff",
-    "Quick Results",
-    "Quality Control",
-    "Quantity of Services",
-  ];
 
   return (
     <Fragment>
-      <div
-        id="homeBanner"
-        class="relative"
-        data-te-carousel-init
-        data-te-carousel-slide
+      <section className="bg-[url(../public/img/woman-collecting-blood-samples-for-testing-on-diff-2022-12-16-06-56-53-utc-scaled-1.jpg)] bg-cover bg-center bg-no-repeat lg:h-[667px]">
+        <div className="w-full h-full mobile-testing-slide">
+          <div className="max-w-screen-xl mx-auto w-full h-full px-2 py-16 lg:py-24 flex flex-col justify-center items-center gap-8">
+            <h1 className="heading text-white text-3xl lg:text-5xl font-semibold text-center">
+              "Providing Revolutionizing Advanced Genotyping Technology" for HIV
+              Treatment
+            </h1>
+            <h4 className="heading text-white lg:text-3xl text-xl font-medium text-center max-w-screen-lg">
+              Highlighting the FDA authorization and the assay's significance in
+              personalized HIV treatment.
+            </h4>
+          </div>
+        </div>
+      </section>
+      <section
+        className="py-16 lg:py-24 max-w-screen-xl px-2 w-full mx-auto"
+        id="about"
       >
-        <div
-          class="absolute bottom-0 left-0 right-0 z-[2] list-none justify-center gap-2 bg-black/20 max-w-4xl rounded-lg mx-auto mt-12 py-4 px-3 md:px-12 w-full overflow-hidden flex"
-          data-te-carousel-indicators
-        >
-          <button
-            type="button"
-            data-te-target="#homeBanner"
-            data-te-slide-to="0"
-            data-te-carousel-active
-            class="flex items-center justify-end gap-6 text-white font-semibold px-4 text-2xl border-r border-white"
-            aria-current="true"
-            aria-label="Slide 1"
-          >
-            <img
-              src="/img/icons/labq-tests1.svg"
-              className="h-[50px] w-auto mr-4"
-            />
-            <span className="hover:text-slate-100 transition-all md:block hidden">
-              {" "}
-              Mobile Labs{" "}
-            </span>
-          </button>
-          <button
-            type="button"
-            data-te-target="#homeBanner"
-            data-te-slide-to="1"
-            class="flex items-center justify-center gap-6 text-white font-semibold px-4 text-2xl"
-            aria-label="Slide 2"
-          >
-            <img
-              src="/img/icons/LabCare_Logo.png"
-              className="h-[50px] w-auto mr-4"
-            />
-            <span className="hover:text-slate-100 transition-all md:block hidden">
-              Automation & Innovation
-            </span>
-          </button>
-          {/* 
-          <button
-            type="button"
-            data-te-target="#homeBanner"
-            data-te-slide-to="2"
-            class="flex items-center justify-start gap-6 text-white font-semibold px-4 text-2xl border-l border-white"
-            aria-label="Slide 3"
-          >
-            <img
-              src="/img/icons/Untitled-1-04-03.svg"
-              className="h-[50px] w-auto mr-4"
-            />
-            <span className="hover:text-slate-100 transition-all md:block hidden">
-              {" "}
-              COVID Testing{" "}
-            </span>
-          </button> */}
-        </div>
-        <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-          <div
-            class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none bg-[url(../public/img/woman-collecting-blood-samples-for-testing-on-diff-2022-12-16-06-56-53-utc-scaled-1.jpg)] bg-cover bg-center bg-no-repeat lg:h-[667px]"
-            data-te-carousel-item
-            data-te-carousel-active
-          >
-            <div class="w-full h-full pb-24 mobile-testing-slide">
-              <div className="grid lg:grid-cols-2 py-5 max-w-screen-xl lg:mx-auto mx-2 pt-12">
-                <div className="flex flex-col gap-6">
-                  <h2 className="text-6xl text-white heading lg:text-start text-center">
-                    Access convenient medical screening at our{" "}
-                    <span className="font-semibold">mobile lab</span>
-                  </h2>
-                  <h4 className="text-white text-lg lg:text-start text-center">
-                    Lab testing with LabCare’s mobile units located throughout
-                    New York City is easy and convenient.
-                  </h4>
-                  <div className="grid md:grid-cols-4 grid-cols-2 w-full">
-                    <div className="flex flex-col items-center gap-2">
-                      <img
-                        className=" w-[72px] h-[72px]"
-                        src="/img/icons/Untitled-1-04-04-1.svg"
-                        alt="General Blood Work"
-                      />
-                      <h5 className="text-white/80 text-sm text-center">
-                        General Blood Work
-                      </h5>
-                    </div>
-                    {/* <div className="flex flex-col items-center gap-2">
-                      <img
-                        className=" w-[72px] h-[72px]"
-                        src="/img/icons/Untitled-1-04-01-2.svg"
-                        alt="COVID/Flu/RSV Testing"
-                      />
-                      <h5 className="text-white/80 text-sm text-center">
-                        COVID/Flu/RSV Testing
-                      </h5>
-                    </div> */}
-                    <div className="flex flex-col items-center gap-2">
-                      <img
-                        className=" w-[72px] h-[72px]"
-                        src="/img/icons/Untitled-1-04-02-1.svg"
-                        alt="STI Testing"
-                      />
-                      <h5 className="text-white/80 text-sm text-center">
-                        STI Testing
-                      </h5>
-                    </div>
-                    <div className="flex flex-col items-center gap-2">
-                      <img
-                        className=" w-[72px] h-[72px]"
-                        src="/img/icons/Untitled-1-04-05-1.svg"
-                        alt="Medical Screening For Work"
-                      />
-                      <h5 className="text-white/80 text-sm text-center">
-                        Medical Screening For Work
-                      </h5>
-                    </div>
-                  </div>
-                  <div className="flex justify-evenly gap-6">
-                    <a
-                      href="/services"
-                      className="text-sm px-7 py-3.5 font-semibold rounded flex items-center justify-center border text-white border-white bg-transparent hover:bg-[#0568F6] hover:border-[#0568F6]"
-                    >
-                      LEARN MORE
-                    </a>
-                    <a
-                      href="/location"
-                      className="text-sm px-7 py-3.5 uppercase font-semibold rounded flex items-center justify-center border text-white border-[#0568F6] bg-[#0568F6] hover:bg-transparent hover:border-white"
-                    >
-                      <AiOutlineSearch className="mr-2 shrink-0 text-lg" />
-                      FIND A LOCATION NEAR YOU
-                    </a>
-                  </div>
-                </div>
-                <div className="hidden lg:flex flex-col justify-center items-center">
-                  <div className="flex justify-end w-full">
-                    <img
-                      src="/img/icons/labq-600test.svg"
-                      className="h-32 w-32 rounded-full bg-white/50 hover:bg-white"
-                      alt="600 Tests"
-                    />
-                  </div>
-                  {/* <img
-                    src="/img/VAN_Mockup.png"
-                    className="w-[500px] h-auto"
-                    alt="Mobile Van"
-                  /> */}
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none bg-[url(../public/img/11e06b8c-be48-4230-a3d1-9012b7d11661.jpg)] bg-cover bg-center bg-no-repeat lg:h-[667px]"
-            data-te-carousel-item
-          >
-            <div className="pb-24 bg-gradient-to-l from-transparent to-white w-full h-full">
-              <div className="flex flex-col justify-center h-full py-5 max-w-screen-lg lg:mx-auto mx-2">
-                <h3 className="text-blue-secondary font-semibold text-xl mb-4">
-                  Quick Reliable Results Save Lives
-                </h3>
-                <h2 className="text-blue-primary font-bold text-6xl mb-4 heading">
-                  Automation
-                  <br />
-                  and Innovation
-                </h2>
-                <h4 className="text-blue-secondary text-lg mb-4">
-                  Fastest Turnaround Time in the Region
-                </h4>
-                <a
-                  href="/about"
-                  className="mt-8 w-fit rounded-md py-2.5 px-5 font-bold border bg-white text-blue-secondary border-blue-secondary hover:text-white hover:bg-blue-secondary flex items-center"
-                >
-                  Learn More{" "}
-                  <RxCaretRight className="shrink-0 ml-0.5 text-xl" />
-                </a>
-              </div>
-            </div>
-          </div>
-          {/* <div
-            class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none bg-[url(../public/img/landing22.jpg)] bg-cover bg-center bg-no-repeat pb-24 lg:h-[667px]"
-            data-te-carousel-item
-          >
-            <div className="flex flex-col items-center justify-center py-5 max-w-screen-lg mx-auto">
-              <h1 className="heading text-blue-primary font-semibold text-5xl text-center my-4">
-                COVID-19 Mobile Testing Services
-              </h1>
-              <div className="bg-amber-300 p-3">
-                <p className="text-lg font-medium text-center">
-                  ** Please note: Beginning May 10th, a prescription from your
-                  Doctor will be required for covid testing.
-                </p>
-              </div>
-              <div className="grid md:grid-cols-4 grid-cols-2 gap-4 max-w-[725px] mx-auto my-12">
-                <a
-                  href="/covid"
-                  className="rounded-lg bg-white flex flex-col items-center justify-center w-full px-1 py-2"
-                >
-                  <img className="w-[100px]" src="/img/icons/Asset-4mdpi.png" />
-                  <h3 className="text-blue-secondary text-2xl text-center ">
-                    PCR Test
-                  </h3>
-                </a>
-                <a
-                  href="/covid"
-                  className="rounded-lg bg-white flex flex-col items-center justify-center w-full px-1 py-2"
-                >
-                  <img className="w-[100px]" src="/img/icons/Asset-5mdpi.png" />
-                  <h3 className="text-blue-secondary text-2xl text-center ">
-                    Antigen
-                  </h3>
-                </a>
-                <a
-                  href="/covid"
-                  className="rounded-lg bg-white flex flex-col items-center justify-center w-full px-1 py-2"
-                >
-                  <img className="w-[100px]" src="/img/icons/Asset-6mdpi.png" />
-                  <h3 className="text-blue-secondary text-2xl text-center ">
-                    Antibody
-                  </h3>
-                </a>
-                <a
-                  href="/covid-mobile-testing"
-                  className="rounded-lg bg-white flex flex-col items-center justify-center w-full px-1 py-2"
-                >
-                  <img className="w-[100px]" src="/img/icons/flu-rsv.png" />
-                  <h3 className="text-blue-secondary text-2xl text-center ">
-                    Winter Panel
-                  </h3>
-                  <p className="text-blue-secondary text-center">
-                    PCR + FLU + RSV
-                  </p>
-                </a>
-              </div>
-              <div className="flex sm:flex-row flex-col items-center justify-center gap-8">
-                <p className="text-blue-primary text-xl">
-                  Find a Testing Location Near You
-                </p>
-                <a
-                  href="/covid-mobile-testing"
-                  className="btn-primary border-blue-primary text-blue-primary border flex items-center justify-center"
-                >
-                  <AiOutlineSearch className="mr-2 shrink-0" />
-                  Search
-                </a>
-              </div>
-            </div>
-          </div> */}
-        </div>
-      </div>
-
-      <section className="py-16 container mx-auto">
         <h2 className="heading text-4xl font-semibold text-center mb-16">
-          Lab Specialties
+          Introduction to the Technology
         </h2>
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 w-full">
-          {LAB_SPECIALTIES.map((e, i) => (
-            <div
-              className={classNames(
-                size.width < 768
-                  ? i % 2 === 0
-                    ? "bg-white"
-                    : "bg-[#F4F9FF]"
-                  : num.includes(i)
-                  ? "bg-[#F4F9FF]"
-                  : "bg-white",
-                "flex flex-col justify-center md:items-start items-center py-5 px-8 hover:shadow-[0_0_12px_0_rgba(0,0,0,0.25)] hover:z-30 transition-all"
-              )}
+        <div className="grid lg:grid-cols-2 gap-12">
+          <div className="flex flex-col justify-center lg:items-end items-center gap-8">
+            <h4 className="text-blue-primary text-center lg:text-end text-2xl font-semibold">
+              Benefits of Next Generation Sequencing (NGS)
+            </h4>
+            <p className="lg:text-end text-center">
+              NGS has revolutionized genomic research and clinical diagnostics
+              by providing faster, more cost-effective, and higher-throughput
+              sequencing capabilities, allowing for a deeper understanding of
+              genetic variations, disease mechanisms, and personalized medicine.
+            </p>
+          </div>
+          <div className="justify-center items-center lg:flex hidden">
+            <img
+              src="/img/Image_1.jpg"
+              className="w-[500px] rounded-lg"
+              alt="Benefits of NGS"
+            />
+          </div>
+        </div>
+        <h3 className="heading text-4xl font-semibold text-center mt-24 mb-16">
+          Getting the right HIV Treatment for you
+        </h3>
+        <div className="grid lg:grid-cols-2 gap-12">
+          <div className="justify-center items-center lg:flex hidden">
+            <img
+              src="/img/patient-telling-doctor-about-sym.jpg"
+              className="w-[500px] rounded-lg"
+              alt="Benefits of NGS"
+            />
+          </div>
+          <div className="flex flex-col justify-center lg:items-start items-center gap-12">
+            <h4 className="text-blue-primary text-center lg:text-start text-2xl font-semibold">
+              Impact of Drug Resistance Mutations:
+            </h4>
+            <div className="flex flex-col justify-center w-fit gap-8">
+              <div className="flex">
+                <BsVirus className="text-blue-secondary text-3xl shrink-0" />
+                <p className="ml-2 lg:text-xl">
+                  Statistics on the rise of HIV drug resistance globally
+                </p>
+              </div>
+              <div className="flex">
+                <BsVirus className="text-blue-secondary text-3xl shrink-0" />
+                <p className="ml-2 lg:text-xl">
+                  Significance of tailored treatment for patients undergoing
+                  antiviral therapy
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="lg:py-24 py-16 w-full">
+        <h4 className="lg:text-3xl text-xl text-blue-primary font-semibold text-center heading mb-12 max-w-screen-lg px-2 mx-auto">
+          Tailored treatment, also known as personalized or precision medicine,
+          holds significant importance in HIV patient care due to several key
+          reasons:
+        </h4>
+        <div className="grid lg:grid-cols-2">
+          <div className="bg-light-blue flex items-center justify-end sm:h-[345px]">
+            <div className="sm:w-3/4 w-11/12">
+              <div className="flex group lg:pr-8">
+                <FaCircleCheck className="text-black bg-gray-500/50 rounded-full shrink-0 w-[50px] h-[50px] p-2" />
+                <div className="flex flex-col w-fit ml-4">
+                  <h3 className="group-hover:text-blue-secondary text-neutral-800 text-2xl font-medium transition-all duration-300">
+                    Effectiveness and Efficacy
+                  </h3>
+                  <p>
+                    Tailored treatment allows healthcare providers to select
+                    antiretroviral therapies (ART) that specifically target the
+                    patient's strain of the HIV virus. By identifying drug
+                    resistance mutations through tests like the Sentosa SQ HIV
+                    Genotyping Assay, healthcare providers can choose
+                    medications that are more likely to be effective in
+                    suppressing the patient's virus, thereby improving treatment
+                    outcomes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex lg:justify-start justify-center items-center sm:h-[345px]">
+            <div className="sm:w-3/4 w-11/12 sm:py-0 py-6">
+              <div className="flex group lg:pl-8">
+                <FaShieldVirus className="text-red-500 bg-red-300/70 rounded-full shrink-0 w-[50px] h-[50px] p-2" />
+                <div className="flex flex-col w-fit ml-4">
+                  <h3 className="group-hover:text-blue-secondary text-neutral-800 text-2xl font-medium transition-all duration-300">
+                    Reduced Drug Resistance
+                  </h3>
+                  <p>
+                    HIV can mutate over time, leading to drug resistance,
+                    wherein the virus becomes less susceptible to the effects of
+                    certain medications. Tailoring treatment helps in avoiding
+                    or managing drug resistance by using drugs that target the
+                    patient's specific viral mutations, thus reducing the risk
+                    of treatment failure.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex items-center lg:justify-end justify-center sm:h-[345px] lg:bg-white bg-[#F4F9FF]">
+            <div className="sm:w-3/4 w-11/12 sm:py-0 py-6">
+              <div className="flex group lg:pr-8">
+                <MdFormatListBulletedAdd className="text-amber-500 bg-yellow-300/40 rounded-full shrink-0 w-[50px] h-[50px] p-2 overflow-visible" />
+                <div className="flex flex-col w-fit ml-4">
+                  <h3 className="group-hover:text-blue-secondary text-neutral-800 text-2xl font-medium transition-all duration-300">
+                    Improved Adherence and Tolerance
+                  </h3>
+                  <p>
+                    Tailored treatment considers individual patient factors such
+                    as tolerability to certain drugs, potential side effects,
+                    and adherence to medication regimens. By choosing
+                    medications that align with the patient's tolerance and
+                    lifestyle, healthcare providers can enhance treatment
+                    adherence, leading to better outcomes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="lg:bg-[#F4F9FF] bg-white flex lg:justify-start justify-center items-center sm:h-[345px]">
+            <div className="sm:w-3/4 w-11/12 sm:py-0 py-6">
+              <div className="flex group lg:pl-8">
+                <BsClipboardHeartFill className="text-green-500 bg-green-300/40 rounded-full shrink-0 w-[50px] h-[50px] p-2 overflow-visible" />
+                <div className="flex flex-col w-fit ml-4">
+                  <h3 className="group-hover:text-blue-secondary text-neutral-800 text-2xl font-medium transition-all duration-300">
+                    Long-term Health Management
+                  </h3>
+                  <p>
+                    Tailored treatment aims to suppress the virus effectively
+                    while minimizing adverse effects. Successfully managing HIV
+                    through personalized treatment helps patients maintain a
+                    higher quality of life, reduces the risk of complications,
+                    and supports long-term health and well-being.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-[#F4F9FF] flex lg:justify-end items-center justify-center sm:h-[345px]">
+            <div className="sm:w-3/4 w-11/12 sm:py-0 py-6">
+              <div className="flex group lg:pr-8">
+                <BsFileBarGraph className="text-sky-500 bg-sky-400/40 rounded-full shrink-0 w-[50px] h-[50px] p-2 overflow-visible" />
+                <div className="flex flex-col w-fit ml-4">
+                  <h3 className="group-hover:text-blue-secondary text-neutral-800 text-2xl font-medium transition-all duration-300">
+                    Resource Optimization
+                  </h3>
+                  <p>
+                    Personalized treatment approaches help optimize healthcare
+                    resources by avoiding unnecessary treatments that may not be
+                    effective for a particular patient. This targeted approach
+                    can potentially reduce healthcare costs associated with
+                    ineffective therapies or managing complications arising from
+                    drug resistance.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex lg:justify-start justify-center items-center sm:h-[345px]">
+            <div className="sm:w-3/4 w-11/12 sm:py-0 py-6">
+              <div className="flex group lg:pl-8">
+                <FaUserPlus className="text-purple-600 bg-purple-400/40 rounded-full shrink-0 w-[50px] h-[50px] p-2 overflow-visible" />
+                <div className="flex flex-col w-fit ml-4">
+                  <h3 className="group-hover:text-blue-secondary text-neutral-800 text-2xl font-medium transition-all duration-300">
+                    Empowerment and Patient-Centered Care
+                  </h3>
+                  <p>
+                    Tailored treatments involve active participation from
+                    patients in decision-making about their healthcare. This
+                    approach encourages patient involvement and collaboration
+                    with healthcare providers, fostering a sense of empowerment
+                    and promoting patient-centered care.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h6 className="lg:text-2xl text-lg font-medium text-center mt-12 max-w-screen-lg px-2 mx-auto">
+          Overall, tailored treatment in HIV care is crucial for optimizing
+          therapeutic outcomes, minimizing drug resistance, improving patient
+          adherence, and supporting long-term health management, thereby
+          enhancing the overall quality of life for individuals living with HIV.
+        </h6>
+      </section>
+      <section
+        className="max-w-screen-xl w-full px-2 mx-auto lg:py-24 py-16"
+        id="technology"
+      >
+        <h2 className="heading text-center lg:text-5xl text-3xl font-semibold mb-16">
+          Technology
+        </h2>
+      </section>
+      <section
+        className="max-w-screen-xl w-full px-2 mx-auto lg:py-24 py-16"
+        id="benefits"
+      >
+        <div className="grid lg:grid-cols-2 gap-12">
+          <div className="justify-center items-center lg:flex hidden">
+            <img
+              src="/img/doctor-nurse-working-with-tablet.jpg"
+              className="w-[500px] rounded-lg"
+              alt="Advantages of Assay"
+            />
+          </div>
+          <div className="flex flex-col justify-center lg:items-start items-center gap-12">
+            <h4 className="text-blue-primary text-center lg:text-start text-2xl font-semibold">
+              Advantages of the Assay:
+            </h4>
+            <div className="flex flex-col justify-center w-fit gap-8">
+              <div className="flex">
+                <FaCheck className="text-blue-secondary text-3xl shrink-0" />
+                <p className="ml-2 lg:text-xl">
+                  Personalized insights to treatment selection for better
+                  patient outcomes
+                </p>
+              </div>
+              <div className="flex">
+                <FaCheck className="text-blue-secondary text-3xl shrink-0" />
+                <p className="ml-2 lg:text-xl">
+                  Lowering viral loads and enhancing effectiveness of antiviral
+                  therapies
+                </p>
+              </div>
+              <div className="flex">
+                <FaCheck className="text-blue-secondary text-3xl shrink-0" />
+                <p className="ml-2 lg:text-xl">
+                  Role in addressing increasing HIV drug resistance rates
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-light-blue lg:py-24 py-16" id="contact-us">
+        <h2 className="heading text-3xl lg:text-5xl text-center max-w-screen-lg font-semibold mb-12 mx-auto">
+          Find a Location Near You
+        </h2>
+        <div className="max-w-screen-xl px-2 w-full mx-auto">
+          <StoreLocator
+            locations={LocationList}
+            src="https://www.google.com/maps/d/u/1/embed?mid=1t4t-nOECLsl8qrOi6BYdzBdC6ma5EYg&ehbc=2E312F"
+          />
+          <div className="mt-16 flex items-center justify-center">
+            <a
+              href="/location"
+              className="btn-primary font-medium bg-white border border-blue-secondary text-blue-primary hover:text-white hover:bg-blue-primary hover:border-blue-primary"
             >
-              <img
-                src={"/img/icons/" + e.icon}
-                className="w-[78px] h-[78px] hover:scale-110 transition-all duration-300 rounded-full border border-black hover:border-sky-400 p-3"
-              />
-              <h3 className="text-2xl mt-6">{e.title}</h3>
-            </div>
-          ))}
-        </div>
-        {/* <div className="max-w-screen-lg mx-auto flex lg:flex-row flex-col items-center gap-x-16 gap-y-8 my-16">
-          <h2 className="text-2xl font-medium">
-            What Our Patients Say About Us!
-          </h2>
-          <div className="shadow-md bg-white p-2 flex items-center hover:bg-slate-100 border-t-4 border-green-400 gap-x-4 transition-all">
-            <FcGoogle className="w-[44px] h-[44px]" />
-            <div className="flex flex-col justify-center">
-              <p className="text-sm text-neutral-700">Google Rating</p>
-              <div className="flex items-center">
-                <span className="text-orange-500 text-xl mr-2">4.5</span>
-                <BsStarFill className="text-orange-500 w-[18px] h-[18px] mr-1" />
-                <BsStarFill className="text-orange-500 w-[18px] h-[18px] mr-1" />
-                <BsStarFill className="text-orange-500 w-[18px] h-[18px] mr-1" />
-                <BsStarFill className="text-orange-500 w-[18px] h-[18px] mr-1" />
-                <BsStarHalf className="text-orange-500 w-[18px] h-[18px] mr-1" />
-              </div>
-              <p className="text-sm text-neutral-500">Based on 1506 reviews</p>
-            </div>
+              More Location Details
+            </a>
           </div>
-          <div className="shadow-md bg-white p-2 flex items-center hover:bg-slate-100 border-t-4 border-green-400 gap-x-4 transition-all">
-            <FaFacebook className="w-[44px] h-[44px] text-[#3c5b9b]" />
-            <div className="flex flex-col justify-center">
-              <p className="text-sm text-neutral-700">Facebook Rating</p>
-              <div className="flex items-center">
-                <span className="text-[#3c5b9b] text-xl mr-2">3.7</span>
-                <BsStarFill className="text-[#3c5b9b] w-[18px] h-[18px] mr-1" />
-                <BsStarFill className="text-[#3c5b9b] w-[18px] h-[18px] mr-1" />
-                <BsStarFill className="text-[#3c5b9b] w-[18px] h-[18px] mr-1" />
-                <BsStarHalf className="text-[#3c5b9b] w-[18px] h-[18px] mr-1" />
-                <BsStar className="text-[#3c5b9b] w-[18px] h-[18px] mr-1" />
-              </div>
-              <p className="text-sm text-neutral-500">Based on 1506 reviews</p>
-            </div>
-          </div>
-        </div> */}
-      </section>
-      <section className="grid lg:grid-cols-2">
-        <div className="bg-[#F4F9FF] flex flex-col items-end justify-center gap-y-8 pr-2 lg:pl-56 pl-2 py-20 lg:order-1 order-2">
-          <div className="flex group">
-            <BiRun className="text-amber-400 bg-orange-200 rounded-full shrink-0 w-[50px] h-[50px] p-2" />
-            <div className="flex flex-col w-fit ml-4">
-              <h3 className="group-hover:text-blue-secondary text-neutral-800 text-2xl font-medium transition-all duration-300">
-                It's about time.
-              </h3>
-              <p>
-                Waiting for test results has got to be the most nerve wracking
-                experience of all time. Which is why speed takes a center stage
-                at LabCare. We’re proud to have one of the fastest turnaround
-                track record in the entire Tri State area, so that you can hold
-                the test results in your hands within a few hours from the time
-                it was administered. What does that mean for you?{" "}
-                <span className="font-bold">Fast results.</span>
-              </p>
-            </div>
-          </div>
-          <div className="flex group">
-            <IoRibbonOutline className="text-red-500 bg-red-300 rounded-full shrink-0 w-[50px] h-[50px] p-2" />
-            <div className="flex flex-col w-fit ml-4">
-              <h3 className="group-hover:text-blue-secondary text-neutral-800 text-2xl font-medium transition-all duration-300">
-                Higher accuracy
-              </h3>
-              <p>
-                We understand that diagnostics requires accuracy. With a fully
-                automated process, it significantly reduces the mistake margin.
-                Your specimen will not pass multiple checkpoints, nor will it
-                get handled by numerous technicians. What does that mean for
-                you? <span className="font-bold">Reliable results.</span>
-              </p>
-            </div>
-          </div>
-          <div className="flex group">
-            <FaMapMarkedAlt className="text-green-500 bg-green-600/30 rounded-full shrink-0 w-[50px] h-[50px] p-2 overflow-visible" />
-            <div className="flex flex-col w-fit ml-4">
-              <h3 className="group-hover:text-blue-secondary text-neutral-800 text-2xl font-medium transition-all duration-300">
-                Right on track.
-              </h3>
-              <p>
-                Nothing should ever get lost in the shuffle. Especially
-                something as valuable as your specimen. Through a sophisticated
-                tracking system, we keep tabs on your specimen and can track it
-                during various stages. What does that mean for you?{" "}
-                <span className="font-bold">Complete transparency.</span>
-              </p>
-            </div>
-          </div>
-          <div className="flex group">
-            <BsFileBarGraph className="text-sky-500 bg-sky-400/70 rounded-full shrink-0 w-[50px] h-[50px] p-2 overflow-visible" />
-            <div className="flex flex-col w-fit ml-4">
-              <h3 className="group-hover:text-blue-secondary text-neutral-800 text-2xl font-medium transition-all duration-300">
-                Clarity is Key.
-              </h3>
-              <p>
-                Your test results should be easy to access and easier to
-                decipher. No who-can-read-this jargon or high falutin terms to
-                google. All you need to do is log in to your account and you’ll
-                find your easy-to- read test results staring right at you. What
-                does that mean for you?{" "}
-                <span className="font-bold">
-                  Clear results, easy to access.
-                </span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-col items-center justify-center lg:pr-56 lg:order-2 order-1">
-          <div className="your-lab-animation after:bg-black mb-2 bg-blue-50 px-1 py-0.5">
-            <h3 className="font-bold text-[26px]">{yourLabArr[isVisible]}</h3>
-          </div>
-          <h2 className="text-4xl text-center font-medium heading lg:mb-0 mb-16">
-            Your Local Lab
-          </h2>
         </div>
       </section>
-      <section className="max-w-screen-xl mx-auto py-16 hidden">
-        <BlogSlider />
+      <section className="max-w-screen-xl mx-auto px-2 w-full lg:py-24 py-16">
+        <h2 className="text-center heading lg:text-5xl text-3xl font-semibold text-blue-primary mb-16">
+          Get In Touch
+        </h2>
+        <div className="flex justify-center items-center">
+          <a
+            href="/contact-us"
+            className="btn-primary font-medium bg-white border border-blue-secondary text-blue-primary hover:text-white hover:bg-blue-primary hover:border-blue-primary"
+          >
+            Contact Us
+          </a>
+        </div>
       </section>
     </Fragment>
   );
