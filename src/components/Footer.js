@@ -2,6 +2,8 @@ import { Fragment } from "react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { useLocation } from "react-router-dom";
+import newsList from "../store/ARTICLES.json";
+import careerListing from "../store/CAREER_LISTINGS.json";
 import { pages } from "./routes";
 
 const Footer = () => {
@@ -12,7 +14,13 @@ const Footer = () => {
   };
 
   return pages.some(
-    (page) => page.path === pathname || page.path + "/" === pathname
+    (page) =>
+      page.path === pathname ||
+      page.path + "/" === pathname ||
+      (pathname.startsWith("/careers/") &&
+        careerListing.some((listing) => listing.id === pathname.slice(9))) ||
+      (newsList.some((article) => article.id === pathname.slice(6)) &&
+        pathname.startsWith("/news/"))
   ) ? (
     <Fragment>
       <footer className="py-12 mt-auto bg-light-blue">

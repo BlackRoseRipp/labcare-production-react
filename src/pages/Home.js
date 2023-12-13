@@ -16,8 +16,8 @@ const Home = () => {
   return (
     <Fragment>
       <section className="bg-[url(../public/img/woman-collecting-blood-samples-for-testing-on-diff-2022-12-16-06-56-53-utc-scaled-1.jpg)] bg-cover bg-center bg-no-repeat lg:h-[667px]">
-        <div className="w-full h-full mobile-testing-slide">
-          <div className="max-w-screen-xl mx-auto w-full h-full px-2 py-16 lg:py-24 flex flex-col justify-center items-center gap-8">
+        <div className="w-full h-full mobile-testing-slide relative">
+          <div className="max-w-screen-xl mx-auto w-full h-full px-2 py-16 lg:py-24 md:pb-24 flex flex-col justify-center items-center gap-8">
             <h1 className="heading text-white text-3xl lg:text-5xl font-semibold text-center">
               "Providing Revolutionizing Advanced Genotyping Technology" for HIV
               Treatment
@@ -26,6 +26,32 @@ const Home = () => {
               Highlighting the FDA authorization and the assay's significance in
               personalized HIV treatment.
             </h4>
+          </div>
+          <div className="absolute bottom-0 right-0 left-0 md:flex items-center justify-center max-w-screen-xl w-fit z-[2] overflow-hidden rounded-lg bg-black/20 mx-auto mt-12 py-4 px-3 hidden">
+            <a
+              href="#about"
+              className="flex items-center justify-end gap-6 text-white/70 font-semibold px-4 text-2xl border-r border-white/70 hover:text-slate-100 transition-all"
+            >
+              About Us
+            </a>
+            <a
+              href="#technology"
+              className="flex items-center justify-end gap-6 text-white/70 font-semibold px-4 text-2xl border-r border-white/70 hover:text-slate-100 transition-all"
+            >
+              Technology
+            </a>
+            <a
+              href="#benefits"
+              className="flex items-center justify-end gap-6 text-white/70 font-semibold px-4 text-2xl border-r border-white/70 hover:text-slate-100 transition-all"
+            >
+              Benefits
+            </a>
+            <a
+              href="#contact-us"
+              className="flex items-center justify-end gap-6 text-white/70 font-semibold px-4 text-2xl hover:text-slate-100 transition-all"
+            >
+              Contact
+            </a>
           </div>
         </div>
       </section>
@@ -50,7 +76,7 @@ const Home = () => {
           </div>
           <div className="justify-center items-center lg:flex hidden">
             <img
-              src="/img/Image_1.jpg"
+              src="/img/pexels-polina-tankilevitch-37357.jpg"
               className="w-[500px] rounded-lg"
               alt="Benefits of NGS"
             />
@@ -246,7 +272,7 @@ const Home = () => {
           </div>
           <div className="justify-center items-center lg:flex hidden">
             <img
-              src="/img/Image_3.jpg"
+              src="/img/pexels-pixabay-356040.jpg"
               className="w-[500px] rounded-lg"
               alt="Technology"
             />
