@@ -14,8 +14,10 @@ const Billing = () => {
         </h5>
       </section>
       <section className="max-w-6xl mx-auto py-20 flex lg:flex-row flex-col items-center justify-center gap-12">
-        <a
-          href="/billing"
+        <button
+          onClick={() => {
+            alert("Online Payment Not Available Yet");
+          }}
           className="flex flex-col lg:w-1/3 w-3/4 px-12 py-20 shadow-[0_5px_16px_0_rgba(0,0,0,0.25)] hover:shadow-none"
         >
           <h5 className="text-lg font-bold mb-2">PAY ONLINE</h5>
@@ -28,9 +30,9 @@ const Billing = () => {
             <p className="heading mr-2">PAY NOW</p>
             <RxCaretRight className="text-2xl shrink-0 group-hover:translate-x-4 transition-all duration-300" />
           </div>
-        </a>
+        </button>
         <a
-          /* href="tel:1-888-265-5247" */
+          href="tel:(888)522-7247"
           className="flex flex-col lg:w-1/3 w-3/4 px-12 py-20 hover:shadow-[0_5px_16px_0_rgba(0,0,0,0.25)] shadow-none"
         >
           <h5 className="text-lg font-bold mb-2">BY PHONE</h5>

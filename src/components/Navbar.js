@@ -42,16 +42,24 @@ const Navbar = () => {
           )
             ? ""
             : "hidden",
-          "bg-blue-primary w-full py-1 px-2 flex flex-col justify-center items-center z-50"
+          "bg-blue-primary w-full py-1 px-2 flex flex-col justify-center items-center z-50 lg:h-[47px]"
         )}
       >
-        <div className="max-w-6xl mx-auto flex justify-between items-center w-full">
+        <div className="max-w-6xl mx-auto flex justify-start items-center w-full">
           <div className="flex items-center gap-6">
+            <a
+              className="flex items-center w-fit gap-2 text-white hover:text-blue-secondary"
+              href="tel:(888)522-7247"
+            >
+              <FaPhoneSquareAlt className="shrink-0" />
+              <span className="text-xs">(888)522-7247</span>
+            </a>
             <div className="flex items-center">
               <AiOutlineClockCircle className="text-white text-2xl pr-2" />
               <p className="text-white text-xs">24/7</p>
             </div>
           </div>
+          {/* 
           <div className="flex items-center">
             <div className="relative">
               <a className="border-transparent text-white hover:border-sky-400 text-xs peer group bg-transparent py-2 px-5 transition-all flex items-center font-medium border-b-[3px]">
@@ -87,7 +95,7 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </nav>
       <nav

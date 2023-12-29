@@ -64,8 +64,7 @@ const Footer = () => {
       <footer className="bg-blue-primary py-4">
         <div className="max-w-screen-xl lg:mx-auto mx-8 flex lg:flex-row flex-col items-center justify-center">
           <p className="text-white font-medium mx-4 lg:pb-0 pb-2">
-            &copy; LabCare Diagnostics. All Right Reserved{" "}
-            {new Date().getFullYear()}.
+            &copy; LabCare.Bio. All Right Reserved {new Date().getFullYear()}.
           </p>
           <a
             href="/privacy-policy"

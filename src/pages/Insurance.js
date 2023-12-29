@@ -10,8 +10,8 @@ const Insurance = () => {
           Insurances Accepted
         </h1>
         <p className="text-center mb-8">
-          LabCare Diagnostics will bill the following insurance plans (patients
-          will be responsible for any co-pays or deductibles):
+          LabCare.Bio will bill the following insurance plans (patients will be
+          responsible for any co-pays or deductibles):
         </p>
         <div className="w-[180px] pt-1.5 mx-2 bg-[#3892E7]"></div>
       </section>
@@ -60,13 +60,12 @@ const Insurance = () => {
                 <div className="flex my-2">
                   <BsCheck2 className="shrink-0 mr-2 mt-0.5" />
                   <p>
-                    Blue Choice and Medi-Blue *LabCare Diagnostics, Inc. can't
-                    accept: BCBS with prefixes of ADA, BKJ, CAQ, CWZ, DCL,
-                    DZVAN, EEVAN, EZVAN, FIF, FXZ, GF, GZM, HOK, HTC, IDYHQ,
-                    LWK, NAW, NGN, NGO, NYY, PFF,PGI, POP, POS, PWE, PYL, QCB,
-                    SNB,Ã‚ UJAC, WPV,XKC, XOF, YLA, YLD, YLF, YLK, YLL, YLM,
-                    YLN, YLQ, YLR, YLS, YLT, YYM, ZOXM. Please contact us for
-                    more information.
+                    Blue Choice and Medi-Blue *LabCare.Bio, Inc. can't accept:
+                    BCBS with prefixes of ADA, BKJ, CAQ, CWZ, DCL, DZVAN, EEVAN,
+                    EZVAN, FIF, FXZ, GF, GZM, HOK, HTC, IDYHQ, LWK, NAW, NGN,
+                    NGO, NYY, PFF,PGI, POP, POS, PWE, PYL, QCB, SNB,Ã‚ UJAC,
+                    WPV,XKC, XOF, YLA, YLD, YLF, YLK, YLL, YLM, YLN, YLQ, YLR,
+                    YLS, YLT, YYM, ZOXM. Please contact us for more information.
                   </p>
                 </div>
               </div>
@@ -270,13 +269,11 @@ const Insurance = () => {
         <div className="max-w-[800px] mx-auto">
           <p className="mb-4">
             The following insurers will{" "}
-            <span className="font-bold">not reimburse</span> LabCare Diagnostics
-            Inc.
+            <span className="font-bold">not reimburse</span> LabCare.Bio
             <br />
             <br />
-            LabCare Diagnostics can provide laboratory services, however, the
-            specimens will be sent to one of our reference labs for testing and
-            billing.
+            LabCare.Bio can provide laboratory services, however, the specimens
+            will be sent to one of our reference labs for testing and billing.
           </p>
           <div className="flex flex-col ml-5">
             <div className="flex my-2">
