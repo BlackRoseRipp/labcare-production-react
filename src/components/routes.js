@@ -11,6 +11,7 @@ const Billing = React.lazy(() => import("../pages/Billing"));
 const About = React.lazy(() => import("../pages/About"));
 const Licensing = React.lazy(() => import("../pages/Licensing"));
 const Services = React.lazy(() => import("../pages/Services"));
+const ClinicalTrial = React.lazy(() => import("../pages/ClinicalTrial"));
 const Locations = React.lazy(() => import("../pages/Locations"));
 const CovidLocations = React.lazy(() => import("../pages/CovidLocations"));
 const Covid = React.lazy(() => import("../pages/Covid"));
@@ -35,6 +36,7 @@ export const pages = [
   { path: "/about", component: <About /> },
   { path: "/accredition-licensing", component: <Licensing /> },
   { path: "/services", component: <Services /> },
+  { path: "/clinical-trials", component: <ClinicalTrial /> },
   { path: "/appointment", component: <Appointment /> },
   { path: "/location", component: <Locations /> },
   /* { path: "/covid-mobile-testing", component: <CovidLocations /> },
